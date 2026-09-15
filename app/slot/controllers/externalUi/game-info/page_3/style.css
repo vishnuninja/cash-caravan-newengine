@@ -1,0 +1,106 @@
+.page_3_main {
+    padding: 0 93px;
+}
+
+.page_3_title {
+    font-size: 50px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.page_3_item {
+    display: flex;
+    color: #ffffff;
+    font-size: 28px;
+    font-family: "Roboto";
+    margin-top: 20px;
+    gap: 30px;
+    align-items: center;
+}
+
+.page_3_item img {
+    width: 180px;
+    align-items: right;
+
+}
+
+/* This targets the specific item container */
+.page_3_item.centered-item {
+    display: flex;
+    flex-direction: column; /* Stacks image on top, text below */
+    align-items: center;    /* Centers the image horizontally */
+    justify-content: center;
+}
+
+/* This targets the image inside that container */
+.page_3_item.centered-item img {
+    margin-bottom: 10px;    /* Adds space between image and text */
+    max-width: 100%;        /* Prevents image from overflowing */
+}
+
+/* This targets the text container to ensure it stays left-aligned */
+.page_3_item.centered-item .page_3_text {
+    width: 100%;            /* Ensures the text box spans the full width */
+    text-align: left;       /* Aligns the text inside to the left */
+}
+
+/* ==================================================== PORTRAIT ========================================================= */
+.ui-wrapper.portrait .page_3_main {
+    padding: 0 calc(var(--game-ui-percent) * 0);
+}
+
+.ui-wrapper.portrait .page_3_title {
+    font-size: calc(var(--game-ui-percent) * 3);
+    
+}
+
+.ui-wrapper.portrait .page_3_item {
+    font-size: calc(var(--game-ui-percent) * 1.8);
+    margin-top: calc(var(--game-ui-percent) * 1);
+    gap: calc(var(--game-ui-percent) * 1.5);
+}
+
+.ui-wrapper.portrait .page_3_item img {
+    width: calc(var(--game-ui-percent) * 10);
+}
+
+/* ==================================================== LANDCAPE ========================================================= */
+
+.ui-wrapper.landscape .page_3_main {
+    padding: 0 calc(var(--game-ui-percent) * 0);
+    margin-top: calc(var(--game-ui-percent) * -2); 
+}
+
+.ui-wrapper.landscape .page_3_title {
+    font-size: calc(var(--game-ui-percent) * 3);
+    padding-right: calc(var(--game-ui-percent) * 6);
+    
+}
+
+.ui-wrapper.landscape .page_3_item {
+    font-size: calc(var(--game-ui-percent) * 1.5);
+    margin-top: calc(var(--game-ui-percent) * 0.9);
+    gap: calc(var(--game-ui-percent) * 1);
+    padding-right: calc(var(--game-ui-percent) * 6);
+}
+
+.ui-wrapper.landscape .page_3_item img {
+    width: calc(var(--game-ui-percent) * 8);
+}
+.tumble-images {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;    
+    gap: 10px;         
+    margin: 5px 0;
+}
+
+.tumble-images img {
+    max-width: 100%;
+    height: auto;
+    width: 120px;
+}

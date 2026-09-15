@@ -1,0 +1,30 @@
+<font>
+	<info face="winnum-export" size="80" />
+	<common lineHeight="80" scaleW="426" scaleH="428" pages="1" />
+	<pages>
+		<page id="0" file="winnum-export.png" />
+	</pages>
+	<chars count="19">
+		<char id="48" x="184" y="229" width="91" height="114" xoffset="0" yoffset="-34" xadvance="92" page="0" chnl="0" letter="0"/><!-- 0 -->
+		<char id="49" x="357" y="224" width="68" height="114" xoffset="0" yoffset="-34" xadvance="69" page="0" chnl="0" letter="1"/><!-- 1 -->
+		<char id="50" x="0" y="0" width="91" height="111" xoffset="0" yoffset="-32" xadvance="92" page="0" chnl="0" letter="2"/><!-- 2 -->
+		<char id="51" x="0" y="112" width="91" height="114" xoffset="0" yoffset="-34" xadvance="92" page="0" chnl="0" letter="3"/><!-- 3 -->
+		<char id="52" x="276" y="0" width="91" height="108" xoffset="0" yoffset="-31" xadvance="92" page="0" chnl="0" letter="4"/><!-- 4 -->
+		<char id="53" x="92" y="221" width="91" height="111" xoffset="0" yoffset="-32" xadvance="92" page="0" chnl="0" letter="5"/><!-- 5 -->
+		<char id="54" x="184" y="0" width="91" height="114" xoffset="0" yoffset="-34" xadvance="92" page="0" chnl="0" letter="6"/><!-- 6 -->
+		<char id="55" x="92" y="108" width="91" height="112" xoffset="0" yoffset="-33" xadvance="92" page="0" chnl="0" letter="7"/><!-- 7 -->
+		<char id="56" x="276" y="109" width="90" height="114" xoffset="0" yoffset="-34" xadvance="91" page="0" chnl="0" letter="8"/><!-- 8 -->
+		<char id="57" x="184" y="115" width="91" height="113" xoffset="0" yoffset="-33" xadvance="92" page="0" chnl="0" letter="9"/><!-- 9 -->
+		<char id="44" x="133" y="344" width="43" height="71" xoffset="0" yoffset="10" xadvance="44" page="0" chnl="0" letter=","/><!-- , -->
+		<char id="46" x="89" y="344" width="43" height="48" xoffset="0" yoffset="22" xadvance="44" page="0" chnl="0" letter="."/><!-- . -->
+		<char id="36" x="276" y="224" width="80" height="113" xoffset="0" yoffset="-33" xadvance="81" page="0" chnl="0" letter="$"/><!-- $ -->
+		<char id="8364" x="92" y="0" width="91" height="107" xoffset="0" yoffset="-30" xadvance="92" page="0" chnl="0" letter="€"/><!-- € -->
+		<char id="163" x="0" y="227" width="91" height="110" xoffset="0" yoffset="-32" xadvance="92" page="0" chnl="0" letter="£"/><!-- £ -->
+		<char id="75" x="0" y="338" width="88" height="89" xoffset="0" yoffset="-21" xadvance="89" page="0" chnl="0" letter="K"/><!-- K -->
+		<char id="82" x="276" y="338" width="80" height="89" xoffset="0" yoffset="-21" xadvance="81" page="0" chnl="0" letter="R"/><!-- R -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="20" page="0" chnl="0" letter=" "/><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="160" page="0" chnl="0" letter="	"/><!-- 	 -->
+	</chars>
+	<kernings count="0">
+	</kernings>
+</font>

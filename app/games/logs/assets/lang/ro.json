@@ -1,0 +1,31 @@
+{
+	"Game_History": "Istoricul jocului",
+	"Date": "Data",
+	"Game_Name": "Numele jocului",
+	"Round_ID": "ID-ul rundei",
+	"Bet_Amount": "Valoarea pariului",
+	"Win_Amount": "Valoarea câștigului",
+	"Currency": "Moneda",
+	"IP_Address": "Adresa IP",
+
+	"Lines": "Liniile",
+	"Coin_Value": "Valoarea fisei",
+	"Coins": "Fisele",
+	"Bet": "Pariul",
+	"Total_Win": "Câștigul total",
+	"Bonus": "Bonusul",
+	"Date_Time": "Data și ora",
+	"Game_Outcome": "Rezultatul jocului",
+	"HISTORY": "ISTORICUL",
+	"Multiplier": "Multiplicatorul",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

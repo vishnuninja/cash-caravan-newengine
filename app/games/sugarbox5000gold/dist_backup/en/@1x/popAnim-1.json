@@ -1,0 +1,176 @@
+{"frames": {
+
+"effect final_00":
+{
+	"frame": {"x":1,"y":1,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_01":
+{
+	"frame": {"x":1,"y":424,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_02":
+{
+	"frame": {"x":411,"y":1,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_03":
+{
+	"frame": {"x":1,"y":847,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_04":
+{
+	"frame": {"x":411,"y":424,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_05":
+{
+	"frame": {"x":821,"y":1,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_06":
+{
+	"frame": {"x":1,"y":1270,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_07":
+{
+	"frame": {"x":411,"y":847,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_08":
+{
+	"frame": {"x":821,"y":424,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_09":
+{
+	"frame": {"x":1231,"y":1,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_10":
+{
+	"frame": {"x":411,"y":1270,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_11":
+{
+	"frame": {"x":821,"y":847,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_12":
+{
+	"frame": {"x":1231,"y":424,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_13":
+{
+	"frame": {"x":1641,"y":1,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_14":
+{
+	"frame": {"x":821,"y":1270,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_15":
+{
+	"frame": {"x":1231,"y":847,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_16":
+{
+	"frame": {"x":1641,"y":424,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_17":
+{
+	"frame": {"x":1231,"y":1270,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_18":
+{
+	"frame": {"x":1641,"y":847,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+},
+"effect final_19":
+{
+	"frame": {"x":1641,"y":1270,"w":405,"h":418},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":405,"h":418},
+	"sourceSize": {"w":405,"h":420}
+}},
+"animations": {
+	"effect final": ["effect final_00","effect final_01","effect final_02","effect final_03","effect final_04","effect final_05","effect final_06","effect final_07","effect final_08","effect final_09","effect final_10","effect final_11","effect final_12","effect final_13","effect final_14","effect final_15","effect final_16","effect final_17","effect final_18","effect final_19"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "popAnim-1.png",
+	"format": "RGBA8888",
+	"size": {"w":2047,"h":1689},
+	"scale": "0.81",
+	"related_multi_packs": [ "popAnim-0.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:2abb1602182f11510e8e01a0431e64d2:a0fb39aa2fc782f4f1247c32fe772210:ce25e506e052dbd3138a501e0b12f310$"
+}
+}

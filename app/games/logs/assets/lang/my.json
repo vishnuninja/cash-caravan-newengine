@@ -1,0 +1,31 @@
+{
+	"Game_History": "Sejarah Permainan",
+	"Date": "Tarikh",
+	"Game_Name": "Nama Permainan",
+	"Round_ID": "ID Pusingan",
+	"Bet_Amount": "Amaun Pertaruhan",
+	"Win_Amount": "Amaun Kemenangan",
+	"Currency": "Mata wang ",
+	"IP_Address": "Alamat IP",
+
+	"Lines": "Baris",
+	"Coin_Value": "Nilai Syiling",
+	"Coins": "Syiling",
+	"Bet": "Pertaruhan",
+	"Total_Win": "Jumlah Kemenangan",
+	"Bonus": "Bonus",
+	"Date_Time": "Tarikh & Masa",
+	"Game_Outcome": "Hasil Permainan",
+	"HISTORY": "SEJARAH",
+	"Multiplier": "Pengganda",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

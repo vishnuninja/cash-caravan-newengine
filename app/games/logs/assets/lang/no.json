@@ -1,0 +1,31 @@
+{
+	"Game_History": "Spillhistorikk",
+	"Date": "Dato",
+	"Game_Name": "Spillnavn",
+	"Round_ID": "Runde-ID",
+	"Bet_Amount": "Innsatsbeløp",
+	"Win_Amount": "Gevinstbeløp",
+	"Currency": "Valuta",
+	"IP_Address": "IP-adresse",
+
+	"Lines": "Linjer",
+	"Coin_Value": "Myntverdi",
+	"Coins": "Mynter",
+	"Bet": "Innsats",
+	"Total_Win": "Totalgevinst",
+	"Bonus": "Bonus",
+	"Date_Time": "Dato og klokkeslett",
+	"Game_Outcome": "Spillets utfall",
+	"HISTORY": "HISTORIKK",
+	"Multiplier": "Multiplikator",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

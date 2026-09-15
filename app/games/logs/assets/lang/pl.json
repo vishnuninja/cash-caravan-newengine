@@ -1,0 +1,31 @@
+{
+	"Game_History": "Historia gry",
+	"Date": "Data",
+	"Game_Name": "Nazwa gry",
+	"Round_ID": "Identyfikator rundy",
+	"Bet_Amount": "Stawka zakładu",
+	"Win_Amount": "Kwota wygranej",
+	"Currency": "Waluta",
+	"IP_Address": "Adres IP",
+
+	"Lines": "Linie",
+	"Coin_Value": "Wartość monet",
+	"Coins": "Monety",
+	"Bet": "Zakład",
+	"Total_Win": "Łączna wygrana",
+	"Bonus": "Premia",
+	"Date_Time": "Data i godzina",
+	"Game_Outcome": "Wynik gry",
+	"HISTORY": "HISTORIA",
+	"Multiplier": "Mnożnik",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

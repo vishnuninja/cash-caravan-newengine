@@ -1,0 +1,31 @@
+{
+	"Game_History": "Spelhistorik",
+	"Date": "Datum",
+	"Game_Name": "Spelnamn",
+	"Round_ID": "Omgångs-id",
+	"Bet_Amount": "Insatsbelopp",
+	"Win_Amount": "Vinstbelopp",
+	"Currency": "Valuta",
+	"IP_Address": "IP-adress",
+
+	"Lines": "Rader",
+	"Coin_Value": "Myntbelopp",
+	"Coins": "Mynt",
+	"Bet": "Insats",
+	"Total_Win": "Totalvinst",
+	"Bonus": "Bonus",
+	"Date_Time": "Datum och tid",
+	"Game_Outcome": "Spelresultat",
+	"HISTORY": "HISTORIK",
+	"Multiplier": "Multiplikator",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

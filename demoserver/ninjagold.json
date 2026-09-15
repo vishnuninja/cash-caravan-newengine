@@ -1,0 +1,1607 @@
+{
+	"init_1": {
+		"player": {
+			"first_name": "",
+			"user_name": "pg4",
+			"account_id": 45,
+			"balance": 109669.57,
+			"balance2": null,
+			"cash": "9669.57",
+			"cash2": 10,
+			"currency": "EUR",
+			"bonus_amount": "100000.00"
+		},
+		"game": {
+			"game_id": "7",
+			"game_name": "ninjagold",
+			"num_rows": "3",
+			"num_columns": "5",
+			"min_coins": "30",
+			"max_coins": "30",
+			"default_coins": "30",
+			"num_coins": "30",
+			"default_coin_value": "1",
+			"coin_values": "1;2;3;5;10;20",
+			"coin_values2": "1;2;3;5;10;20",
+			"fixed_coins": "1",
+			"paylines_type": "fixed",
+			"num_paylines": "30",
+			"num_paylines_fs": "30",
+			"rtp": "94.00",
+			"extra_coins": "",
+			"max_win": "",
+			"max_win_hit": "",
+			"extra_info": ""
+		},
+		"current_round": [],
+		"next_round": [],
+		"promo_details": [],
+		"misc": {
+			"rng": null
+		},
+		"previous_round": {
+			"round_id": 0,
+			"matrix": "",
+			"win_amount": 0,
+			"num_paylines": "",
+			"coin_value": 0,
+			"num_coins": "",
+			"sticky_win_details": "",
+			"other_feature_win_details": "",
+			"bonus_details": "",
+			"misc_bonus_details": [],
+			"misc_prizes": [],
+			"progress_bar": []
+		}
+	},
+	"init_unfini": {
+		"player": {
+			"first_name": "",
+			"user_name": "pg1",
+			"account_id": 42,
+			"balance": 123441.20999999999,
+			"balance2": null,
+			"cash": "23441.21",
+			"cash2": 10,
+			"currency": "EUR",
+			"bonus_amount": "100000.00"
+		},
+		"game": {
+			"game_id": "7",
+			"game_name": "ninjagold",
+			"num_rows": "3",
+			"num_columns": "5",
+			"min_coins": "30",
+			"max_coins": "30",
+			"default_coins": "30",
+			"num_coins": "30",
+			"default_coin_value": "1",
+			"coin_values": "1;2;3;5;10;20",
+			"coin_values2": "1;2;3;5;10;20",
+			"fixed_coins": "1",
+			"paylines_type": "fixed",
+			"num_paylines": "30",
+			"num_paylines_fs": "30",
+			"rtp": "94.00",
+			"extra_coins": "",
+			"max_win": "",
+			"max_win_hit": "",
+			"extra_info": ""
+		},
+		"current_round": [],
+		"next_round": {
+			"type": "bonus_game",
+			"bonus_game_id": "280001",
+			"num_picks": 10,
+			"num_prizes": 7,
+			"pick_positions": [],
+			"jackpotPool": {
+				"boost_jackpot_1": {
+					"element": "a",
+					"base": 1500,
+					"starting_count": -12,
+					"multiplier": 3
+				},
+				"boost_jackpot_2": {
+					"element": "b",
+					"base": 750,
+					"starting_count": -12,
+					"multiplier": 2
+				},
+				"boost_jackpot_3": {
+					"element": "c",
+					"base": 450,
+					"starting_count": -12,
+					"multiplier": 2
+				},
+				"boost_jackpot_4": {
+					"element": "d",
+					"base": 240,
+					"starting_count": -12,
+					"multiplier": 1
+				},
+				"boost_jackpot_5": {
+					"element": "e",
+					"base": 150,
+					"starting_count": -12,
+					"multiplier": 1
+				}
+			}
+		},
+		"promo_details": [],
+		"misc": {
+			"rng": null
+		},
+		"previous_round": {
+			"round_id": "409361",
+			"matrix": "asssf;jfgcd;bicjg",
+			"win_amount": 0,
+			"num_paylines": "30",
+			"coin_value": 1,
+			"num_coins": "30",
+			"sticky_win_details": "",
+			"other_feature_win_details": "",
+			"bonus_details": [
+				{
+					"type": "bonus_game",
+					"bonus_game_id": "280001",
+					"num_picks": 10,
+					"num_prizes": 7,
+					"pick_positions": [],
+					"jackpotPool": {
+						"boost_jackpot_1": {
+							"element": "a",
+							"base": 1500,
+							"starting_count": -12,
+							"multiplier": 3
+						},
+						"boost_jackpot_2": {
+							"element": "b",
+							"base": 750,
+							"starting_count": -12,
+							"multiplier": 2
+						},
+						"boost_jackpot_3": {
+							"element": "c",
+							"base": 450,
+							"starting_count": -12,
+							"multiplier": 2
+						},
+						"boost_jackpot_4": {
+							"element": "d",
+							"base": 240,
+							"starting_count": -12,
+							"multiplier": 1
+						},
+						"boost_jackpot_5": {
+							"element": "e",
+							"base": 150,
+							"starting_count": -12,
+							"multiplier": 1
+						}
+					}
+				}
+			],
+			"misc_bonus_details": [],
+			"misc_prizes": [],
+			"progress_bar": []
+		}
+	},
+	"init": {
+		"player": {
+			"first_name": "",
+			"user_name": "pg1",
+			"account_id": 42,
+			"balance": 123462.27,
+			"balance2": null,
+			"cash": "23462.27",
+			"cash2": 10,
+			"currency": "EUR",
+			"bonus_amount": "100000.00"
+		},
+		"game": {
+			"game_id": "7",
+			"game_name": "ninjagold",
+			"num_rows": "3",
+			"num_columns": "5",
+			"min_coins": "30",
+			"max_coins": "30",
+			"default_coins": "30",
+			"num_coins": "30",
+			"default_coin_value": "1",
+			"coin_values": "1;2;3;5;10;20",
+			"coin_values2": "1;2;3;5;10;20",
+			"fixed_coins": "1",
+			"paylines_type": "fixed",
+			"num_paylines": "30",
+			"num_paylines_fs": "30",
+			"rtp": "94.00",
+			"extra_coins": "",
+			"max_win": "",
+			"max_win_hit": "",
+			"extra_info": ""
+		},
+		"current_round": [],
+		"next_round": [],
+		"promo_details": [],
+		"misc": {
+			"rng": null
+		},
+		"previous_round": {
+			"round_id": "417547",
+			"matrix": "dcfgh;fggcg;jeaif",
+			"win_amount": 1200,
+			"num_paylines": "30",
+			"coin_value": 1,
+			"num_coins": "30",
+			"sticky_win_details": "",
+			"other_feature_win_details": "",
+			"bonus_details": "",
+			"misc_bonus_details": [],
+			"misc_prizes": [],
+			"progress_bar": []
+		}
+	},
+	"spin": [
+		{
+			"player": {
+				"first_name": "",
+				"user_name": "pg1",
+				"account_id": 42,
+				"balance": 123461.97,
+				"balance2": null,
+				"cash": "23461.97",
+				"cash2": 10,
+				"currency": "EUR",
+				"bonus_amount": "100000.00"
+			},
+			"game": {
+				"game_id": "7",
+				"game_name": "ninjagold"
+			},
+			"current_round": {
+				"round_id": "417550",
+				"matrix": "asess;jfjcb;bibjf",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "bonus_game",
+						"bonus_game_id": 280001,
+						"num_picks": 10,
+						"num_prizes": 7
+					}
+				],
+				"payline_win_amount": 0,
+				"spin_type": "normal",
+				"extra_info": null,
+				"misc_prizes": []
+			},
+			"next_round": {
+				"type": "bonus_game",
+				"bonus_game_id": 280001,
+				"num_picks": 10,
+				"num_prizes": 7
+			},
+			"promo_details": [],
+			"misc": {
+				"rng": null
+			}
+		},
+		{
+			"player": {
+				"first_name": "",
+				"user_name": "e101",
+				"account_id": 7,
+				"balance": 109998.5,
+				"balance2": null,
+				"cash": "9998.50",
+				"cash2": 10,
+				"currency": "EUR",
+				"bonus_amount": "100000.00"
+			},
+			"game": {
+				"game_id": "4",
+				"game_name": "indianroyals"
+			},
+			"current_round": {
+				"round_id": "363672",
+				"matrix": "dihdf;iegkc;shkbj",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"progressive_multiplier": 1
+					},
+					{
+						"type": "progressive_multiplier",
+						"multiplier": 1
+					}
+				],
+				"payline_win_amount": 0,
+				"spin_type": "normal"
+			},
+			"next_round": [],
+			"promo_details": [],
+			"misc": {
+				"rng": null
+			}
+		},
+		{
+			"player": {
+				"first_name": "",
+				"user_name": "e101",
+				"account_id": 7,
+				"balance": 109998.5,
+				"balance2": null,
+				"cash": "9998.50",
+				"cash2": 10,
+				"currency": "EUR",
+				"bonus_amount": "100000.00"
+			},
+			"game": {
+				"game_id": "4",
+				"game_name": "indianroyals"
+			},
+			"current_round": {
+				"round_id": "363672",
+				"matrix": "dihdf;iegkc;shkbj",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"progressive_multiplier": 1
+					},
+					{
+						"type": "progressive_multiplier",
+						"multiplier": 1
+					}
+				],
+				"payline_win_amount": 0,
+				"spin_type": "normal"
+			},
+			"next_round": [],
+			"promo_details": [],
+			"misc": {
+				"rng": null
+			}
+		},
+		{
+			"player": {
+				"first_name": "",
+				"user_name": "e101",
+				"account_id": 7,
+				"balance": 109998.5,
+				"balance2": null,
+				"cash": "9998.50",
+				"cash2": 10,
+				"currency": "EUR",
+				"bonus_amount": "100000.00"
+			},
+			"game": {
+				"game_id": "4",
+				"game_name": "indianroyals"
+			},
+			"current_round": {
+				"round_id": "363672",
+				"matrix": "dihdf;iegkc;shkbj",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"progressive_multiplier": 1
+					},
+					{
+						"type": "progressive_multiplier",
+						"multiplier": 1
+					}
+				],
+				"payline_win_amount": 0,
+				"spin_type": "normal"
+			},
+			"next_round": [],
+			"promo_details": [],
+			"misc": {
+				"rng": null
+			}
+		},
+		{
+			"player": {
+				"first_name": "",
+				"user_name": "e101",
+				"account_id": 7,
+				"balance": 109998.5,
+				"balance2": null,
+				"cash": "9998.50",
+				"cash2": 10,
+				"currency": "EUR",
+				"bonus_amount": "100000.00"
+			},
+			"game": {
+				"game_id": "4",
+				"game_name": "indianroyals"
+			},
+			"current_round": {
+				"round_id": "363672",
+				"matrix": "dihdf;iegkc;shkbj",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"progressive_multiplier": 1
+					},
+					{
+						"type": "progressive_multiplier",
+						"multiplier": 1
+					}
+				],
+				"payline_win_amount": 0,
+				"spin_type": "normal"
+			},
+			"next_round": [],
+			"promo_details": [],
+			"misc": {
+				"rng": null
+			}
+		},
+		{
+			"player": {
+				"first_name": "",
+				"user_name": "e101",
+				"account_id": 7,
+				"balance": 109998.5,
+				"balance2": null,
+				"cash": "9998.50",
+				"cash2": 10,
+				"currency": "EUR",
+				"bonus_amount": "100000.00"
+			},
+			"game": {
+				"game_id": "4",
+				"game_name": "indianroyals"
+			},
+			"current_round": {
+				"round_id": "363672",
+				"matrix": "dihdf;iegkc;shkbj",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"progressive_multiplier": 1
+					},
+					{
+						"type": "progressive_multiplier",
+						"multiplier": 1
+					}
+				],
+				"payline_win_amount": 0,
+				"spin_type": "normal"
+			},
+			"next_round": [],
+			"promo_details": [],
+			"misc": {
+				"rng": null
+			}
+		},
+		{
+			"player": {
+				"first_name": "",
+				"user_name": "e101",
+				"account_id": 7,
+				"balance": 109998.5,
+				"balance2": null,
+				"cash": "9998.50",
+				"cash2": 10,
+				"currency": "EUR",
+				"bonus_amount": "100000.00"
+			},
+			"game": {
+				"game_id": "4",
+				"game_name": "indianroyals"
+			},
+			"current_round": {
+				"round_id": "363672",
+				"matrix": "dihdf;iegkc;shkbj",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"progressive_multiplier": 1
+					},
+					{
+						"type": "progressive_multiplier",
+						"multiplier": 1
+					}
+				],
+				"payline_win_amount": 0,
+				"spin_type": "normal"
+			},
+			"next_round": [],
+			"promo_details": [],
+			"misc": {
+				"rng": null
+			}
+		},
+		{
+			"player": {
+				"first_name": "",
+				"user_name": "e101",
+				"account_id": 7,
+				"balance": 109998.5,
+				"balance2": null,
+				"cash": "9998.50",
+				"cash2": 10,
+				"currency": "EUR",
+				"bonus_amount": "100000.00"
+			},
+			"game": {
+				"game_id": "4",
+				"game_name": "indianroyals"
+			},
+			"current_round": {
+				"round_id": "363672",
+				"matrix": "dihdf;iegkc;shkbj",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"progressive_multiplier": 1
+					},
+					{
+						"type": "progressive_multiplier",
+						"multiplier": 1
+					}
+				],
+				"payline_win_amount": 0,
+				"spin_type": "normal"
+			},
+			"next_round": [],
+			"promo_details": [],
+			"misc": {
+				"rng": null
+			}
+		}
+	],
+	"fs": [
+		{
+			"player": {
+				"first_name": "avinash",
+				"user_name": "avinash",
+				"account_id": 5,
+				"balance": "669493.15",
+				"bank": "2.00",
+				"cash": "669493.15",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "341169",
+				"matrix": "wbadw;wcdfw;wgbew",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "8:200:00111:3:wgddw:4,3,7"
+				},
+				"win_amount": 200,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wbadw;wcdfw;wgbew"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 17,
+						"current_level": 4
+					}
+				],
+				"total_fs_win_amount": 2600
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "26",
+				"spins_left": "21",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 2600
+			}
+		},
+		{
+			"player": {
+				"first_name": "avinash",
+				"user_name": "avinash",
+				"account_id": 5,
+				"balance": "669495.15",
+				"bank": "2.00",
+				"cash": "669495.15",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "341170",
+				"matrix": "wbadw;wcdfw;wgbew",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "8:200:00111:3:wgddw:4,3,7"
+				},
+				"win_amount": 200,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wbadw;wcdfw;wgbew"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 17,
+						"current_level": 4
+					}
+				],
+				"total_fs_win_amount": 2800
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "26",
+				"spins_left": "20",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 2800
+			}
+		},
+		{
+			"player": {
+				"first_name": "avinash",
+				"user_name": "avinash",
+				"account_id": 5,
+				"balance": "669497.15",
+				"bank": "2.00",
+				"cash": "669497.15",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "341171",
+				"matrix": "wbadw;wcdfw;wgbew",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "8:200:00111:3:wgddw:4,3,7"
+				},
+				"win_amount": 200,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wbadw;wcdfw;wgbew"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 17,
+						"current_level": 4
+					}
+				],
+				"total_fs_win_amount": 3000
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "26",
+				"spins_left": "19",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 3000
+			}
+		},
+		{
+			"player": {
+				"first_name": "avinash",
+				"user_name": "avinash",
+				"account_id": 5,
+				"balance": "669499.15",
+				"bank": "2.00",
+				"cash": "669499.15",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "341172",
+				"matrix": "wbadw;wcdfw;wgbew",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "8:200:00111:3:wgddw:4,3,7"
+				},
+				"win_amount": 200,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wbadw;wcdfw;wgbew"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 17,
+						"current_level": 4
+					}
+				],
+				"total_fs_win_amount": 3200
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "26",
+				"spins_left": "18",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 3200
+			}
+		},
+		{
+			"player": {
+				"first_name": "avinash",
+				"user_name": "avinash",
+				"account_id": 5,
+				"balance": "669501.15",
+				"bank": "2.00",
+				"cash": "669501.15",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "341173",
+				"matrix": "wbadw;wcdfw;wgbew",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "8:200:00111:3:wgddw:4,3,7"
+				},
+				"win_amount": 200,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wbadw;wcdfw;wgbew"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 17,
+						"current_level": 4
+					}
+				],
+				"total_fs_win_amount": 3400
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "26",
+				"spins_left": "17",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 3400
+			}
+		},
+		{
+			"player": {
+				"first_name": "avinash",
+				"user_name": "avinash",
+				"account_id": 5,
+				"balance": "669503.15",
+				"bank": "2.00",
+				"cash": "669503.15",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "341174",
+				"matrix": "wbadw;wcdfw;wgbew",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "8:200:00111:3:wgddw:4,3,7"
+				},
+				"win_amount": 200,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wbadw;wcdfw;wgbew"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 17,
+						"current_level": 4
+					}
+				],
+				"total_fs_win_amount": 3600
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "26",
+				"spins_left": "16",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 3600
+			}
+		},
+		{
+			"player": {
+				"first_name": "avinash",
+				"user_name": "avinash",
+				"account_id": 5,
+				"balance": "669505.15",
+				"bank": "2.00",
+				"cash": "669505.15",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "341175",
+				"matrix": "wbadw;wcdfw;wgbew",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "8:200:00111:3:wgddw:4,3,7"
+				},
+				"win_amount": 200,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wbadw;wcdfw;wgbew"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 17,
+						"current_level": 4
+					}
+				],
+				"total_fs_win_amount": 3800
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "26",
+				"spins_left": "15",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 3800
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772709.27",
+				"bank": "2.00",
+				"cash": "4772709.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242349",
+				"matrix": "ebcec;sddbg;fagdf",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 1,
+						"current_level": 0
+					}
+				],
+				"total_fs_win_amount": 0
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "10",
+				"spins_left": "9",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 0
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772710.27",
+				"bank": "2.00",
+				"cash": "4772710.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242351",
+				"matrix": "fgcbd;dfegc;cefee",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "4:100:11100:3:fffgd:0,6,12"
+				},
+				"win_amount": 100,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 1,
+						"current_level": 0
+					}
+				],
+				"total_fs_win_amount": 100
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "10",
+				"spins_left": "8",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 100
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772711.27",
+				"bank": "2.00",
+				"cash": "4772711.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242352",
+				"matrix": "seddg;gggse;ddead",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "1:100:11100:3:gggse:5,6,7"
+				},
+				"win_amount": 100,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 3,
+						"current_level": 0
+					}
+				],
+				"total_fs_win_amount": 200
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "10",
+				"spins_left": "7",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 200
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772711.27",
+				"bank": "2.00",
+				"cash": "4772711.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242353",
+				"matrix": "dgafe;abdeb;aabfd",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 3,
+						"current_level": 0
+					}
+				],
+				"total_fs_win_amount": 200
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "10",
+				"spins_left": "6",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 200
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772716.27",
+				"bank": "2.00",
+				"cash": "4772716.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242354",
+				"matrix": "cfeef;ggggd;feffg",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "1:500:11110:4:ggggd:5,6,7,8"
+				},
+				"win_amount": 500,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": [],
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 3,
+						"current_level": 0
+					}
+				],
+				"total_fs_win_amount": 700
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "10",
+				"spins_left": "5",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 700
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772716.27",
+				"bank": "2.00",
+				"cash": "4772716.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242356",
+				"matrix": "fdfbc;dbcde;sgdef",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "fdfbc;dbcde;sgdef"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "sticky_wilds_reel",
+						"sticky_symbol": "w",
+						"freespins": 1,
+						"positions": [
+							0,
+							5,
+							10
+						]
+					},
+					{
+						"type": "progress_bar",
+						"bar_value": 4,
+						"current_level": 1
+					}
+				],
+				"total_fs_win_amount": 700
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "11",
+				"spins_left": "5",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 700
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772716.27",
+				"bank": "2.00",
+				"cash": "4772716.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242357",
+				"matrix": "wcgad;wbfdg;wacfe",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wcgad;wbfdg;wacfe"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 4,
+						"current_level": 1
+					}
+				],
+				"total_fs_win_amount": 700
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "11",
+				"spins_left": "4",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 700
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772724.27",
+				"bank": "2.00",
+				"cash": "4772724.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242358",
+				"matrix": "wfcba;wcdga;wbbeb",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "3:300:11100:3:wbbeb:10,11,12;5:200:11100:3:wccgb:10,6,2;6:300:11100:3:wbbea:5,11,12"
+				},
+				"win_amount": 800,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wfcba;wcdga;wbbeb"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 4,
+						"current_level": 1
+					}
+				],
+				"total_fs_win_amount": 1500
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "11",
+				"spins_left": "3",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 1500
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772728.27",
+				"bank": "2.00",
+				"cash": "4772728.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242359",
+				"matrix": "wggee;wefff;wfegc",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "2:100:11100:3:wggee:0,1,2;4:100:11100:3:weefe:0,6,12;7:100:11100:3:wggef:5,1,2;8:100:11100:3:wffee:10,11,7"
+				},
+				"win_amount": 400,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wggee;wefff;wfegc"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 4,
+						"current_level": 1
+					}
+				],
+				"total_fs_win_amount": 1900
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "11",
+				"spins_left": "2",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 1900
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772728.27",
+				"bank": "2.00",
+				"cash": "4772728.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242361",
+				"matrix": "wdbaf;wsede;wbffs",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wdbaf;wsede;wbffs"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 6,
+						"current_level": 1
+					}
+				],
+				"total_fs_win_amount": 1900
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "11",
+				"spins_left": "1",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 1900
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772728.27",
+				"bank": "2.00",
+				"cash": "4772728.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242362",
+				"matrix": "sbace;wdgss;wceef",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": ""
+				},
+				"win_amount": 0,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wbace;wdgss;wceef"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "multiplier",
+						"value": 2,
+						"freespins": 1
+					},
+					{
+						"type": "progress_bar",
+						"bar_value": 9,
+						"current_level": 2
+					}
+				],
+				"total_fs_win_amount": 1900
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": "12",
+				"spins_left": "1",
+				"multiplier": "1",
+				"parent_type": "",
+				"total_fs_win_amount": 1900
+			}
+		},
+		{
+			"player": {
+				"first_name": "siddarth",
+				"user_name": "siddarth",
+				"account_id": 2,
+				"balance": "4772732.27",
+				"bank": "2.00",
+				"cash": "4772732.27",
+				"bonus_bucks": "1000.00"
+			},
+			"game": {
+				"game_id": "1081",
+				"game_name": "cleopatrasfortune"
+			},
+			"current_round": {
+				"round_id": "242363",
+				"matrix": "wdfaf;seedd;wfbfg",
+				"payline_wins": {
+					"format": "betline_number;win;blink;num_repeats;betline;matrix_positions",
+					"details": "1:200:11100:3:weedd:5,6,7;10:200:11100:3:weedf:10,6,7"
+				},
+				"win_amount": 400,
+				"screen_wins": [],
+				"parent_type": null,
+				"post_matrix_info": {
+					"feature_name": "sticky_wild_reel",
+					"matrix": "wdfaf;weedd;wfbfg"
+				},
+				"multipliers": [],
+				"cluster_wins": null,
+				"bonus_games_won": [
+					{
+						"type": "progress_bar",
+						"bar_value": 10,
+						"current_level": 2
+					}
+				],
+				"total_fs_win_amount": 2300,
+				"freespin_state": 1
+			},
+			"next_round": []
+		}
+	],
+	"feature_280001": [
+		{
+			"player": {
+				"first_name": "",
+				"user_name": "pg1",
+				"account_id": 42,
+				"balance": 123441.20999999999,
+				"balance2": null,
+				"cash": "23441.21",
+				"cash2": 10,
+				"currency": "EUR",
+				"bonus_amount": "100000.00"
+			},
+			"game": {
+				"game_id": "7",
+				"game_name": "ninjagold"
+			},
+			"current_round": {
+				"prize": "start_free_games",
+				"num_spins": 10,
+				"jackpot_pool": {
+					"boost_jackpot_1": {
+						"element": "a",
+						"base": 1500,
+						"starting_count": -12,
+						"multiplier": 3
+					},
+					"boost_jackpot_2": {
+						"element": "b",
+						"base": 750,
+						"starting_count": -12,
+						"multiplier": 2
+					},
+					"boost_jackpot_3": {
+						"element": "c",
+						"base": 450,
+						"starting_count": -12,
+						"multiplier": 2
+					},
+					"boost_jackpot_4": {
+						"element": "d",
+						"base": 240,
+						"starting_count": -12,
+						"multiplier": 1
+					},
+					"boost_jackpot_5": {
+						"element": "e",
+						"base": 150,
+						"starting_count": -12,
+						"multiplier": 1
+					}
+				},
+				"fs_multiplier": 1,
+				"state": 1
+			},
+			"next_round": {
+				"type": "freespins",
+				"num_spins": 10,
+				"spins_left": 10,
+				"multiplier": 1,
+				"parent_type": "bonus"
+			},
+			"promo_details": [],
+			"misc": {
+				"rng": null
+			}
+		}
+	],
+	"feature_6002": [],
+	"respin": []
+}

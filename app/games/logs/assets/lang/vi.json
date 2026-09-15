@@ -1,0 +1,31 @@
+{
+	"Game_History": "Lịch sử Trò chơi",
+	"Date": "Ngày",
+	"Game_Name": "Tên trò chơi",
+	"Round_ID": "ID vòng chơi",
+	"Bet_Amount": "Tiền cược",
+	"Win_Amount": "Tiền thắng",
+	"Currency": "Loại tiền",
+	"IP_Address": "Địa chỉ IP",
+
+	"Lines": "Dòng",
+	"Coin_Value": "Giá trị Xu",
+	"Coins": "Xu",
+	"Bet": "Cược",
+	"Total_Win": "Tổng thắng",
+	"Bonus": "Bonus",
+	"Date_Time": "Ngày & Giờ",
+	"Game_Outcome": "Kết quả trò chơi",
+	"HISTORY": "LỊCH SỬ",
+	"Multiplier": "Số nhân",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

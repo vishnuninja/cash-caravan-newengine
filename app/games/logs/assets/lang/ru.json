@@ -1,0 +1,31 @@
+{
+	"Game_History": "Игровая история",
+	"Date": "Дата",
+	"Game_Name": "Название игры",
+	"Round_ID": "Идентификатор раунда",
+	"Bet_Amount": "Размер ставки",
+	"Win_Amount": "Размер выигрыша",
+	"Currency": "Валюта",
+	"IP_Address": "IP-адрес",
+
+	"Lines": "Линии",
+	"Coin_Value": "Значение монеты",
+	"Coins": "Монеты",
+	"Bet": "Ставка",
+	"Total_Win": "Общий выигрыш",
+	"Bonus": "Бонус",
+	"Date_Time": "Дата и время",
+	"Game_Outcome": "Результат игры",
+	"HISTORY": "ИСТОРИЯ",
+	"Multiplier": "Множитель",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

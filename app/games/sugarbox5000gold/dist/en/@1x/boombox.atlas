@@ -1,0 +1,157 @@
+boombox.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+Star
+bounds:2,2,35,101
+rotate:90
+b_bg_1x
+bounds:333,1150,325,149
+b_bg_2x
+bounds:347,1512,325,173
+b_bg_3x
+bounds:333,1301,325,209
+b_bg_4x
+bounds:2,381,325,255
+rotate:90
+b_bg_5x
+bounds:2,708,324,332
+b_bg_6x
+bounds:2,1042,329,487
+frame_1x
+bounds:2,39,340,213
+rotate:90
+frame_2x
+bounds:1378,1837,343,199
+frame_3x
+bounds:1034,1813,342,223
+frame_4x
+bounds:690,1763,342,273
+frame_5x
+bounds:347,1687,341,349
+frame_6x
+bounds:2,1531,343,505
+sound symbol
+bounds:622,969,43,53
+rotate:90
+stereo shadow
+bounds:1723,1837,294,199
+stereo-b
+bounds:942,1690,71,75
+rotate:90
+stereo-body
+bounds:333,969,287,179
+stereo-o
+bounds:942,1622,66,75
+rotate:90
+waveform/Layer 1
+bounds:328,862,250,105
+waveform/Layer 10
+bounds:328,755,250,105
+waveform/Layer 12
+bounds:690,1656,250,105
+waveform/Layer 14
+bounds:674,1549,250,105
+waveform/Layer 16
+bounds:259,456,250,105
+rotate:90
+waveform/Layer 18
+bounds:366,503,250,105
+rotate:90
+waveform/Layer 19
+bounds:473,503,250,105
+rotate:90
+waveform/Layer 21
+bounds:1034,1706,250,105
+waveform/Layer 23
+bounds:217,129,250,105
+rotate:90
+waveform/Layer 25
+bounds:580,717,250,105
+rotate:90
+waveform/Layer 27
+bounds:580,465,250,105
+rotate:90
+waveform/Layer 28
+bounds:674,1442,250,105
+waveform/Layer 3
+bounds:660,1335,250,105
+waveform/Layer 30
+bounds:660,1228,250,105
+waveform/Layer 32
+bounds:660,1121,250,105
+waveform/Layer 34
+bounds:622,1014,250,105
+waveform/Layer 36
+bounds:687,762,250,105
+rotate:90
+waveform/Layer 37
+bounds:687,510,250,105
+rotate:90
+waveform/Layer 39
+bounds:794,762,250,105
+rotate:90
+waveform/Layer 41
+bounds:794,510,250,105
+rotate:90
+waveform/Layer 43
+bounds:1378,1730,250,105
+waveform/Layer 45
+bounds:1630,1730,250,105
+waveform/Layer 46
+bounds:912,1190,250,105
+rotate:90
+waveform/Layer 48
+bounds:687,403,250,105
+waveform/Layer 5
+bounds:1019,1599,250,105
+waveform/Layer 50
+bounds:926,1492,250,105
+waveform/Layer 52
+bounds:1019,1240,250,105
+rotate:90
+waveform/Layer 54
+bounds:1126,1240,250,105
+rotate:90
+waveform/Layer 55
+bounds:1019,1133,250,105
+waveform/Layer 57
+bounds:1178,1492,250,105
+waveform/Layer 59
+bounds:1233,1240,250,105
+rotate:90
+waveform/Layer 61
+bounds:1340,1240,250,105
+rotate:90
+waveform/Layer 63
+bounds:1271,1133,250,105
+waveform/Layer 64
+bounds:1271,1599,250,105
+waveform/Layer 66
+bounds:1523,1623,250,105
+waveform/Layer 68
+bounds:1523,1516,250,105
+waveform/Layer 7
+bounds:1775,1478,250,105
+rotate:90
+waveform/Layer 70
+bounds:1882,1585,250,105
+rotate:90
+waveform/Layer 72
+bounds:1523,1409,250,105
+waveform/Layer 73
+bounds:1447,1302,250,105
+waveform/Layer 75
+bounds:912,938,250,105
+rotate:90
+waveform/Layer 77
+bounds:1019,1026,250,105
+waveform/Layer 79
+bounds:1271,1026,250,105
+waveform/Layer 81
+bounds:901,686,250,105
+rotate:90
+waveform/Layer 82
+bounds:1019,919,250,105
+waveform/Layer 9
+bounds:1271,919,250,105

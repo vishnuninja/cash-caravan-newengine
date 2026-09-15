@@ -1,0 +1,31 @@
+{
+	"Game_History": "ゲーム履歴",
+	"Date": "日付",
+	"Game_Name": "ゲーム名",
+	"Round_ID": "ラウンドID",
+	"Bet_Amount": "ベット額",
+	"Win_Amount": "賞金額",
+	"Currency": "通貨 ",
+	"IP_Address": "IPアドレス",
+
+	"Lines": "ライン",
+	"Coin_Value": "コインの種類",
+	"Coins": "コイン",
+	"Bet": "ベット",
+	"Total_Win": "賞金総額",
+	"Bonus": "ボーナス",
+	"Date_Time": "日付と時刻",
+	"Game_Outcome": "ゲームの結果",
+	"HISTORY": "履歴",
+	"Multiplier": "マルチプライヤー",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

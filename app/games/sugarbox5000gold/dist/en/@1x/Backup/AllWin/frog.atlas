@@ -1,0 +1,334 @@
+
+frog.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10
+  rotate: false
+  xy: 2, 2
+  size: 280, 328
+  orig: 282, 330
+  offset: 1, 1
+  index: -1
+11
+  rotate: false
+  xy: 284, 2
+  size: 279, 328
+  orig: 281, 330
+  offset: 1, 1
+  index: -1
+14
+  rotate: false
+  xy: 1379, 21
+  size: 301, 361
+  orig: 303, 363
+  offset: 1, 1
+  index: -1
+15
+  rotate: false
+  xy: 1094, 17
+  size: 283, 313
+  orig: 285, 315
+  offset: 1, 1
+  index: -1
+19
+  rotate: true
+  xy: 1803, 332
+  size: 478, 240
+  orig: 480, 242
+  offset: 1, 1
+  index: -1
+5
+  rotate: true
+  xy: 565, 11
+  size: 319, 262
+  orig: 321, 264
+  offset: 1, 1
+  index: -1
+8
+  rotate: true
+  xy: 1682, 2
+  size: 163, 345
+  orig: 165, 347
+  offset: 1, 1
+  index: -1
+9
+  rotate: true
+  xy: 829, 12
+  size: 318, 263
+  orig: 320, 265
+  offset: 1, 1
+  index: -1
+GlowDot
+  rotate: false
+  xy: 136, 340
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Green_Glares
+  rotate: false
+  xy: 2, 1005
+  size: 1929, 1040
+  orig: 1931, 1042
+  offset: 1, 1
+  index: -1
+Green_Grass
+  rotate: false
+  xy: 2, 384
+  size: 1799, 619
+  orig: 1815, 709
+  offset: 0, 0
+  index: -1
+arm_left1
+  rotate: false
+  xy: 1933, 2002
+  size: 104, 43
+  orig: 106, 45
+  offset: 1, 1
+  index: -1
+arm_left2
+  rotate: false
+  xy: 1933, 1256
+  size: 84, 62
+  orig: 86, 64
+  offset: 1, 1
+  index: -1
+arm_left3
+  rotate: true
+  xy: 1933, 1585
+  size: 44, 99
+  orig: 46, 101
+  offset: 1, 1
+  index: -1
+arm_right1
+  rotate: true
+  xy: 1933, 1320
+  size: 43, 92
+  orig: 45, 94
+  offset: 1, 1
+  index: -1
+arm_right2
+  rotate: true
+  xy: 1933, 1215
+  size: 39, 82
+  orig: 908, 905
+  offset: 326, 504
+  index: -1
+arm_right3
+  rotate: false
+  xy: 1933, 1555
+  size: 97, 28
+  orig: 107, 30
+  offset: 9, 1
+  index: -1
+extension/Head_Lower_Closed
+  rotate: false
+  xy: 1802, 184
+  size: 210, 146
+  orig: 212, 148
+  offset: 1, 1
+  index: -1
+extension/Head_Upper
+  rotate: true
+  xy: 1682, 167
+  size: 215, 118
+  orig: 217, 120
+  offset: 1, 1
+  index: -1
+extension/Mouth_Inside
+  rotate: true
+  xy: 1933, 812
+  size: 210, 71
+  orig: 212, 73
+  offset: 1, 1
+  index: -1
+extension/Tongue_Normal
+  rotate: false
+  xy: 1933, 1631
+  size: 102, 48
+  orig: 104, 50
+  offset: 1, 1
+  index: -1
+eye_close
+  rotate: true
+  xy: 1933, 1024
+  size: 189, 76
+  orig: 191, 78
+  offset: 1, 1
+  index: -1
+leg_left1
+  rotate: true
+  xy: 1933, 1365
+  size: 94, 95
+  orig: 96, 97
+  offset: 1, 1
+  index: -1
+leg_left2
+  rotate: false
+  xy: 2, 335
+  size: 132, 47
+  orig: 134, 49
+  offset: 1, 1
+  index: -1
+leg_left3
+  rotate: true
+  xy: 1933, 1461
+  size: 92, 96
+  orig: 94, 98
+  offset: 1, 1
+  index: -1
+neck
+  rotate: true
+  xy: 1803, 841
+  size: 162, 125
+  orig: 164, 127
+  offset: 1, 1
+  index: -1
+wigs
+  rotate: true
+  xy: 1933, 1681
+  size: 319, 102
+  orig: 372, 112
+  offset: 32, 5
+  index: -1
+
+frog2.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 871, 293
+  size: 306, 207
+  orig: 308, 209
+  offset: 1, 1
+  index: -1
+12
+  rotate: true
+  xy: 552, 531
+  size: 178, 346
+  orig: 180, 348
+  offset: 1, 1
+  index: -1
+13
+  rotate: false
+  xy: 2, 125
+  size: 343, 385
+  orig: 345, 387
+  offset: 1, 1
+  index: -1
+16
+  rotate: true
+  xy: 589, 29
+  size: 158, 262
+  orig: 160, 264
+  offset: 1, 1
+  index: -1
+17
+  rotate: false
+  xy: 589, 189
+  size: 280, 340
+  orig: 282, 342
+  offset: 1, 1
+  index: -1
+18
+  rotate: true
+  xy: 347, 150
+  size: 360, 240
+  orig: 362, 242
+  offset: 1, 1
+  index: -1
+2
+  rotate: false
+  xy: 900, 502
+  size: 308, 207
+  orig: 310, 209
+  offset: 1, 1
+  index: -1
+20
+  rotate: false
+  xy: 1587, 549
+  size: 270, 211
+  orig: 272, 213
+  offset: 1, 1
+  index: -1
+21
+  rotate: false
+  xy: 1277, 762
+  size: 478, 240
+  orig: 480, 242
+  offset: 1, 1
+  index: -1
+22
+  rotate: false
+  xy: 1180, 78
+  size: 238, 238
+  orig: 240, 240
+  offset: 1, 1
+  index: -1
+3
+  rotate: false
+  xy: 1859, 509
+  size: 165, 262
+  orig: 167, 264
+  offset: 1, 1
+  index: -1
+4
+  rotate: false
+  xy: 871, 100
+  size: 307, 191
+  orig: 309, 193
+  offset: 1, 1
+  index: -1
+6
+  rotate: false
+  xy: 1277, 570
+  size: 308, 190
+  orig: 310, 192
+  offset: 1, 1
+  index: -1
+7
+  rotate: false
+  xy: 1757, 773
+  size: 270, 229
+  orig: 272, 231
+  offset: 1, 1
+  index: -1
+Nice_Text_Green
+  rotate: false
+  xy: 2, 512
+  size: 548, 197
+  orig: 550, 199
+  offset: 1, 1
+  index: -1
+Text_Field
+  rotate: false
+  xy: 2, 711
+  size: 1273, 291
+  orig: 1275, 293
+  offset: 1, 1
+  index: -1
+body
+  rotate: false
+  xy: 1210, 318
+  size: 257, 250
+  orig: 259, 252
+  offset: 1, 1
+  index: -1
+extension/Head_Lower_Open
+  rotate: false
+  xy: 2, 2
+  size: 209, 121
+  orig: 211, 123
+  offset: 1, 1
+  index: -1
+head
+  rotate: false
+  xy: 1469, 337
+  size: 215, 210
+  orig: 217, 212
+  offset: 1, 1
+  index: -1

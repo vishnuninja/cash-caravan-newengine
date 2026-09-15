@@ -1,0 +1,100 @@
+{"frames": {
+
+"FreeSpin_btn_Blank":
+{
+	"frame": {"x":111,"y":857,"w":298,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":1,"w":298,"h":98},
+	"sourceSize": {"w":300,"h":100}
+},
+"Later_btn_disabled":
+{
+	"frame": {"x":415,"y":857,"w":216,"h":70},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":70},
+	"sourceSize": {"w":216,"h":70}
+},
+"Later_btn_hover":
+{
+	"frame": {"x":491,"y":857,"w":216,"h":70},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":70},
+	"sourceSize": {"w":216,"h":70}
+},
+"Later_btn_normal":
+{
+	"frame": {"x":111,"y":961,"w":216,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":70},
+	"sourceSize": {"w":216,"h":70}
+},
+"Later_btn_pressed":
+{
+	"frame": {"x":333,"y":961,"w":216,"h":70},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":70},
+	"sourceSize": {"w":216,"h":70}
+},
+"popup_bg":
+{
+	"frame": {"x":111,"y":1,"w":850,"h":511},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":850,"h":511},
+	"sourceSize": {"w":850,"h":511}
+},
+"Top_Strip":
+{
+	"frame": {"x":1,"y":1,"w":1565,"h":104},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":172,"y":0,"w":1565,"h":104},
+	"sourceSize": {"w":1920,"h":104}
+},
+"Yes_btn_disabled":
+{
+	"frame": {"x":111,"y":1037,"w":216,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":70},
+	"sourceSize": {"w":216,"h":70}
+},
+"Yes_btn_hover":
+{
+	"frame": {"x":111,"y":1113,"w":216,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":70},
+	"sourceSize": {"w":216,"h":70}
+},
+"Yes_btn_normal":
+{
+	"frame": {"x":333,"y":1183,"w":216,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":70},
+	"sourceSize": {"w":216,"h":70}
+},
+"Yes_btn_pressed":
+{
+	"frame": {"x":111,"y":1189,"w":216,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":216,"h":70},
+	"sourceSize": {"w":216,"h":70}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "promoFreeSpin.png",
+	"format": "RGBA8888",
+	"size": {"w":623,"h":1567},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:72525c51d2de8cdd3b024d0679c0e668:1af42841b6ed4fd59796acbb3229cf0b:4776d1d435d16d7140579d3b37e850c4$"
+}
+}

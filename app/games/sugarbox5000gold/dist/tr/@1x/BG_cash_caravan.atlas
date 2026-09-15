@@ -1,0 +1,625 @@
+BG_cash_caravan.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+BG BASE
+bounds:2,965,1928,1081
+ROCK1
+bounds:1932,1681,153,109
+rotate:90
+TIRES
+bounds:1353,137,596,155
+caravan_back
+bounds:1513,33,185,102
+caravan_windsheild
+bounds:1232,34,89,93
+girl/arm_left
+bounds:304,5,45,92
+rotate:90
+girl/girl_arm_right_1
+bounds:1983,1081,58,63
+rotate:90
+girl/girl_arm_right_2
+bounds:2002,260,44,79
+girl/girl_bangles
+bounds:1323,86,28,41
+girl/girl_eyeglasses_3 copy
+bounds:695,81,12,4
+rotate:90
+girl/girl_eyelid
+bounds:1232,14,39,18
+girl/girl_feather_main
+bounds:2002,224,34,37
+rotate:90
+girl/girl_feather_string
+bounds:2035,2029,11,17
+girl/girl_finger_1
+bounds:172,25,7,18
+rotate:90
+girl/girl_finger_2
+bounds:2,10,7,24
+rotate:90
+girl/girl_finger_3
+bounds:1343,59,8,25
+girl/girl_flower
+bounds:518,21,20,21
+girl/girl_glass_1
+bounds:1513,4,46,27
+girl/girl_glass_2
+bounds:467,2,12,5
+girl/girl_hair_1
+bounds:2,19,168,74
+girl/girl_hair_2
+bounds:1700,20,164,115
+girl/girl_hair_3
+bounds:1932,1552,127,110
+rotate:90
+girl/girl_hair_4
+bounds:1866,5,128,130
+girl/girl_hair_5
+bounds:1932,1141,56,108
+girl/girl_hair_front
+bounds:1932,1836,210,82
+rotate:90
+girl/girl_head
+bounds:1932,1358,63,70
+girl/girl_headband
+bounds:2016,1993,53,17
+rotate:90
+girl/girl_lowerbody
+bounds:1353,2,158,133
+girl/girl_pendant
+bounds:398,44,6,8
+rotate:90
+girl/girl_pendant_lace
+bounds:1996,15,23,22
+girl/girl_sleeve
+bounds:1323,45,18,39
+girl/girl_torso
+bounds:1932,1430,63,120
+guy_arm2_a
+bounds:647,11,82,46
+rotate:90
+guy_arm2_b
+bounds:1983,341,63,24
+guy_arm_a
+bounds:304,52,137,41
+guy_body
+bounds:172,34,59,130
+rotate:90
+guy_hair_back_1
+bounds:398,2,40,67
+rotate:90
+guy_hair_back_2
+bounds:467,9,33,49
+rotate:90
+guy_head
+bounds:1951,141,80,78
+rotate:90
+jetski
+bounds:1932,1251,105,62
+rotate:90
+light_2
+bounds:701,129,650,163
+light_3
+bounds:701,9,529,118
+light_combined
+bounds:2,95,697,197
+road
+bounds:2,294,1928,669
+sfx_smoke/1
+bounds:1997,1450,100,49
+rotate:90
+sfx_smoke/10
+bounds:1997,1348,100,49
+rotate:90
+sfx_smoke/11
+bounds:1932,1039,100,49
+rotate:90
+sfx_smoke/12
+bounds:1932,937,100,49
+rotate:90
+sfx_smoke/13
+bounds:1932,835,100,49
+rotate:90
+sfx_smoke/14
+bounds:1932,733,100,49
+rotate:90
+sfx_smoke/15
+bounds:1932,631,100,49
+rotate:90
+sfx_smoke/16
+bounds:1932,529,100,49
+rotate:90
+sfx_smoke/17
+bounds:1932,427,100,49
+rotate:90
+sfx_smoke/18
+bounds:1932,325,100,49
+rotate:90
+sfx_smoke/19
+bounds:1996,1246,100,49
+rotate:90
+sfx_smoke/2
+bounds:1990,1144,100,49
+rotate:90
+sfx_smoke/20
+bounds:443,44,100,49
+sfx_smoke/21
+bounds:545,44,100,49
+sfx_smoke/22
+bounds:1983,979,100,49
+rotate:90
+sfx_smoke/23
+bounds:1983,877,100,49
+rotate:90
+sfx_smoke/24
+bounds:1983,775,100,49
+rotate:90
+sfx_smoke/25
+bounds:1983,673,100,49
+rotate:90
+sfx_smoke/26
+bounds:1983,571,100,49
+rotate:90
+sfx_smoke/27
+bounds:1983,469,100,49
+rotate:90
+sfx_smoke/28
+bounds:1983,367,100,49
+rotate:90
+sfx_smoke/29
+bounds:1951,223,100,49
+rotate:90
+sfx_smoke/3
+bounds:1996,39,100,49
+rotate:90
+
+BG_cash_caravan_2.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+BG
+bounds:2,955,1922,1082
+CARAVAN
+bounds:2,108,725,375
+aurora/Layer 1
+bounds:1770,24,250,188
+rotate:90
+bgdunes
+bounds:2,485,1928,468
+caravan_body
+bounds:729,84,691,399
+caravan_wheel_1
+bounds:1880,297,186,158
+rotate:90
+dustsmke
+bounds:1422,276,456,207
+guy_hair_top
+bounds:1926,1673,77,58
+harness
+bounds:1422,2,272,346
+rotate:90
+sfx_smoke/30
+bounds:1926,1988,100,49
+sfx_smoke/31
+bounds:2,57,100,49
+sfx_smoke/32
+bounds:1926,1937,100,49
+sfx_smoke/33
+bounds:104,57,100,49
+sfx_smoke/34
+bounds:2,6,100,49
+sfx_smoke/35
+bounds:1926,1886,100,49
+sfx_smoke/36
+bounds:206,57,100,49
+sfx_smoke/37
+bounds:104,6,100,49
+sfx_smoke/38
+bounds:1926,1835,100,49
+sfx_smoke/4
+bounds:308,57,100,49
+sfx_smoke/5
+bounds:206,6,100,49
+sfx_smoke/6
+bounds:1926,1784,100,49
+sfx_smoke/7
+bounds:410,57,100,49
+sfx_smoke/8
+bounds:308,6,100,49
+sfx_smoke/9
+bounds:1926,1733,100,49
+tire/ 1
+bounds:1926,1606,65,65
+tire/ 10
+bounds:1926,1539,65,65
+tire/ 11
+bounds:1926,1472,65,65
+tire/ 12
+bounds:1926,1405,65,65
+tire/ 13
+bounds:1926,1338,65,65
+tire/ 2
+bounds:1926,1271,65,65
+tire/ 3
+bounds:1926,1204,65,65
+tire/ 4
+bounds:1926,1137,65,65
+tire/ 5
+bounds:1926,1070,65,65
+tire/ 6
+bounds:1926,1003,65,65
+tire/ 7
+bounds:512,41,65,65
+tire/ 8
+bounds:579,41,65,65
+tire/ 9
+bounds:646,41,65,65
+tire/tire_added_color
+bounds:1960,230,65,65
+
+BG_cash_caravan_3.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+Birds/1
+bounds:1084,2,244,330
+rotate:90
+Birds/10
+bounds:1416,2,244,330
+rotate:90
+Birds/2
+bounds:1626,292,244,330
+rotate:90
+WAVE2
+bounds:1084,248,1798,540
+rotate:90
+basemobilebg
+bounds:2,126,1080,1920
+light1/Layer 1
+bounds:1748,40,250,250
+stars/Layer 1
+bounds:1626,1746,300,300
+stars/Layer 17
+bounds:1626,1746,300,300
+stars/Layer 25
+bounds:1626,1746,300,300
+stars/Layer 9
+bounds:1626,1746,300,300
+stars/Layer 10
+bounds:1626,1444,300,300
+stars/Layer 18
+bounds:1626,1444,300,300
+stars/Layer 2
+bounds:1626,1444,300,300
+stars/Layer 11
+bounds:1626,1142,300,300
+stars/Layer 19
+bounds:1626,1142,300,300
+stars/Layer 3
+bounds:1626,1142,300,300
+stars/Layer 12
+bounds:1626,840,300,300
+stars/Layer 20
+bounds:1626,840,300,300
+stars/Layer 4
+bounds:1626,840,300,300
+stars/Layer 13
+bounds:1626,538,300,300
+stars/Layer 21
+bounds:1626,538,300,300
+stars/Layer 5
+bounds:1626,538,300,300
+
+BG_cash_caravan_4.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+Birds/3
+bounds:1626,764,244,330
+Birds/4
+bounds:1626,432,244,330
+Birds/5
+bounds:1084,2,244,330
+rotate:90
+Birds/6
+bounds:1416,2,244,330
+rotate:90
+WAVE
+bounds:1084,248,1752,540
+rotate:90
+aurora/Layer 10
+bounds:1748,9,250,188
+rotate:90
+bgfreemobile
+bounds:2,80,1080,1920
+light_1
+bounds:1872,463,157,165
+sand/Storm_dust_00000
+bounds:1626,261,300,169
+sand/Storm_dust_00001
+bounds:1872,630,300,169
+rotate:90
+stars/Layer 14
+bounds:1626,1700,300,300
+stars/Layer 22
+bounds:1626,1700,300,300
+stars/Layer 6
+bounds:1626,1700,300,300
+stars/Layer 15
+bounds:1626,1398,300,300
+stars/Layer 23
+bounds:1626,1398,300,300
+stars/Layer 7
+bounds:1626,1398,300,300
+stars/Layer 16
+bounds:1626,1096,300,300
+stars/Layer 24
+bounds:1626,1096,300,300
+stars/Layer 8
+bounds:1626,1096,300,300
+tumbleweed
+bounds:1872,932,174,162
+
+BG_cash_caravan_5.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+BGbright
+bounds:2,254,960,540
+rotate:90
+Birds/7
+bounds:2,8,244,330
+rotate:90
+Birds/8
+bounds:885,1259,244,330
+rotate:90
+Birds/9
+bounds:334,8,244,330
+rotate:90
+TREES
+bounds:2,1216,881,829
+aurora/Layer 11
+bounds:918,2,250,188
+rotate:90
+aurora/Layer 12
+bounds:1847,1493,250,188
+rotate:90
+aurora/Layer 13
+bounds:1257,333,250,188
+aurora/Layer 14
+bounds:1509,307,250,188
+aurora/Layer 15
+bounds:1761,295,250,188
+basebgmobilebright
+bounds:885,1505,540,960
+rotate:90
+bgfreelightmobile
+bounds:544,254,540,960
+caravan_door
+bounds:1217,1279,305,224
+light1/Layer 10
+bounds:666,2,250,250
+light1/Layer 11
+bounds:1524,1253,250,250
+light1/Layer 12
+bounds:1776,1241,250,250
+light1/Layer 13
+bounds:1257,1027,250,250
+light1/Layer 14
+bounds:1257,775,250,250
+light1/Layer 15
+bounds:1509,1001,250,250
+light1/Layer 16
+bounds:1509,749,250,250
+light1/Layer 17
+bounds:1761,989,250,250
+light1/Layer 18
+bounds:1761,737,250,250
+light1/Layer 19
+bounds:1257,523,250,250
+light1/Layer 2
+bounds:1509,497,250,250
+light1/Layer 20
+bounds:1761,485,250,250
+light1/Layer 21
+bounds:1108,81,250,250
+light1/Layer 22
+bounds:1360,55,250,250
+light1/Layer 23
+bounds:1612,43,250,250
+parasail
+bounds:1864,82,168,211
+sand/Storm_dust_00002
+bounds:1847,1745,300,169
+rotate:90
+sand/Storm_dust_00003
+bounds:1086,957,300,169
+rotate:90
+sand/Storm_dust_00004
+bounds:1086,655,300,169
+rotate:90
+sand/Storm_dust_00005
+bounds:1086,353,300,169
+rotate:90
+
+BG_cash_caravan_6.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+aurora/Layer 16
+bounds:1262,1352,250,188
+aurora/Layer 17
+bounds:1766,1856,250,188
+aurora/Layer 18
+bounds:254,92,250,188
+aurora/Layer 19
+bounds:758,596,250,188
+aurora/Layer 2
+bounds:758,406,250,188
+aurora/Layer 20
+bounds:1785,145,250,188
+caravan_wheel_2
+bounds:506,93,144,137
+light1/Layer 24
+bounds:2,1794,250,250
+light1/Layer 25
+bounds:2,1542,250,250
+light1/Layer 26
+bounds:254,1794,250,250
+light1/Layer 27
+bounds:2,1290,250,250
+light1/Layer 28
+bounds:254,1542,250,250
+light1/Layer 29
+bounds:506,1794,250,250
+light1/Layer 3
+bounds:2,1038,250,250
+light1/Layer 30
+bounds:254,1290,250,250
+light1/Layer 31
+bounds:506,1542,250,250
+light1/Layer 32
+bounds:758,1794,250,250
+light1/Layer 33
+bounds:2,786,250,250
+light1/Layer 34
+bounds:254,1038,250,250
+light1/Layer 35
+bounds:506,1290,250,250
+light1/Layer 36
+bounds:758,1542,250,250
+light1/Layer 37
+bounds:1010,1794,250,250
+light1/Layer 38
+bounds:2,534,250,250
+light1/Layer 39
+bounds:254,786,250,250
+light1/Layer 4
+bounds:506,1038,250,250
+light1/Layer 40
+bounds:758,1290,250,250
+light1/Layer 41
+bounds:1010,1542,250,250
+light1/Layer 42
+bounds:1262,1794,250,250
+light1/Layer 43
+bounds:2,282,250,250
+light1/Layer 44
+bounds:254,534,250,250
+light1/Layer 45
+bounds:506,786,250,250
+light1/Layer 46
+bounds:758,1038,250,250
+light1/Layer 47
+bounds:1010,1290,250,250
+light1/Layer 48
+bounds:1262,1542,250,250
+light1/Layer 5
+bounds:1514,1794,250,250
+light1/Layer 6
+bounds:2,30,250,250
+light1/Layer 7
+bounds:254,282,250,250
+light1/Layer 8
+bounds:506,534,250,250
+light1/Layer 9
+bounds:758,786,250,250
+meteorite
+bounds:1825,732,158,154
+sand/Storm_dust_00006
+bounds:1010,988,300,169
+rotate:90
+sand/Storm_dust_00007
+bounds:1514,1492,300,169
+rotate:90
+sand/Storm_dust_00008
+bounds:506,232,300,169
+rotate:90
+sand/Storm_dust_00009
+bounds:1010,686,300,169
+rotate:90
+sand/Storm_dust_00010
+bounds:1181,988,300,169
+rotate:90
+sand/Storm_dust_00011
+bounds:1181,686,300,169
+rotate:90
+sand/Storm_dust_00012
+bounds:1352,1050,300,169
+rotate:90
+sand/Storm_dust_00013
+bounds:1352,748,300,169
+rotate:90
+sand/Storm_dust_00014
+bounds:1010,515,300,169
+sand/Storm_dust_00015
+bounds:1010,344,300,169
+sand/Storm_dust_00016
+bounds:677,235,300,169
+sand/Storm_dust_00017
+bounds:1685,1492,300,169
+rotate:90
+sand/Storm_dust_00018
+bounds:1856,1554,300,169
+rotate:90
+sand/Storm_dust_00019
+bounds:979,173,300,169
+sand/Storm_dust_00020
+bounds:677,64,300,169
+sand/Storm_dust_00021
+bounds:979,2,300,169
+sand/Storm_dust_00022
+bounds:1312,384,300,169
+rotate:90
+sand/Storm_dust_00023
+bounds:1523,1321,300,169
+sand/Storm_dust_00024
+bounds:1523,1150,300,169
+sand/Storm_dust_00025
+bounds:1523,979,300,169
+sand/Storm_dust_00026
+bounds:1523,808,300,169
+sand/Storm_dust_00027
+bounds:1523,637,300,169
+sand/Storm_dust_00028
+bounds:1483,466,300,169
+sand/Storm_dust_00029
+bounds:1483,295,300,169
+sand/Storm_dust_00030
+bounds:1785,335,300,169
+rotate:90
+sand/Storm_dust_00031
+bounds:1281,42,300,169
+rotate:90
+sand/Storm_dust_00032
+bounds:1452,124,300,169
+sand/Storm_dust_00033
+bounds:1825,1190,300,169
+rotate:90
+sand/Storm_dust_00034
+bounds:1825,888,300,169
+rotate:90
+
+BG_cash_caravan_7.png
+size:2048,256
+filter:Linear,Linear
+pma:true
+aurora/Layer 3
+bounds:304,64,250,188
+aurora/Layer 4
+bounds:556,64,250,188
+aurora/Layer 5
+bounds:808,64,250,188
+aurora/Layer 6
+bounds:1060,64,250,188
+aurora/Layer 7
+bounds:1312,64,250,188
+aurora/Layer 8
+bounds:1564,64,250,188
+aurora/Layer 9
+bounds:1816,2,250,188
+rotate:90
+sand/Storm_dust_00035
+bounds:2,83,300,169

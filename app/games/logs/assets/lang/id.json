@@ -1,0 +1,31 @@
+{
+	"Game_History": "Riwayat Permainan",
+	"Date": "Tanggal",
+	"Game_Name": "Nama Permainan",
+	"Round_ID": "ID Babak",
+	"Bet_Amount": "Jumlah Taruhan",
+	"Win_Amount": "Jumlah Kemenangan",
+	"Currency": "Mata Uang",
+	"IP_Address": "Alamat IP",
+
+	"Lines": "Baris",
+	"Coin_Value": "Nilai Koin",
+	"Coins": "Koin",
+	"Bet": "Taruhan",
+	"Total_Win": "Total Kemenangan",
+	"Bonus": "Bonus",
+	"Date_Time": "Tanggal & Waktu",
+	"Game_Outcome": "Hasil Permainan",
+	"HISTORY": "RIWAYAT",
+	"Multiplier": "Pengganda",
+
+	"Pre_Balance": "Pra Saldo",
+	"Post_Balance": "Pasca Saldo",
+	"Win_Lines": "Garis Kemenangan",
+
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

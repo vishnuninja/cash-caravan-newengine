@@ -1,0 +1,44 @@
+{"frames": {
+
+"historyArrow_hover":
+{
+	"frame": {"x":1,"y":1,"w":228,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":228,"h":45},
+	"sourceSize": {"w":228,"h":45}
+},
+"historyArrow_disable":
+{
+	"frame": {"x":234,"y":1,"w":228,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":228,"h":45},
+	"sourceSize": {"w":228,"h":45}
+},
+"historyArrow_normal":
+{
+	"frame": {"x":467,"y":1,"w":228,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":228,"h":45},
+	"sourceSize": {"w":228,"h":45}
+},
+"historyArrow_press":
+{
+	"frame": {"x":700,"y":1,"w":228,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":228,"h":45},
+	"sourceSize": {"w":228,"h":45}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "historyArrow.png",
+	"format": "RGBA8888",
+	"size": {"w":929,"h":47},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7c523ced4ab39eb23a9de696d12d440c:31a7fe12c921c295990999acd02c8790:4eac6b8cd4d0848977dc6a1f14152774$"
+}
+}

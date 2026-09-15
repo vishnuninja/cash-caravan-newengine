@@ -1,0 +1,208 @@
+
+Congratulations_cashcaravan.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+10
+  rotate: false
+  xy: 629, 46
+  size: 280, 328
+  orig: 282, 330
+  offset: 1, 1
+  index: -1
+11
+  rotate: false
+  xy: 911, 46
+  size: 279, 328
+  orig: 281, 330
+  offset: 1, 1
+  index: -1
+12
+  rotate: false
+  xy: 2, 28
+  size: 178, 346
+  orig: 180, 348
+  offset: 1, 1
+  index: -1
+17
+  rotate: false
+  xy: 347, 34
+  size: 280, 340
+  orig: 282, 342
+  offset: 1, 1
+  index: -1
+18
+  rotate: true
+  xy: 1803, 22
+  size: 360, 240
+  orig: 362, 242
+  offset: 1, 1
+  index: -1
+19
+  rotate: true
+  xy: 1803, 384
+  size: 478, 240
+  orig: 480, 242
+  offset: 1, 1
+  index: -1
+5
+  rotate: true
+  xy: 1192, 55
+  size: 319, 262
+  orig: 321, 264
+  offset: 1, 1
+  index: -1
+8
+  rotate: false
+  xy: 182, 29
+  size: 163, 345
+  orig: 165, 347
+  offset: 1, 1
+  index: -1
+9
+  rotate: false
+  xy: 1456, 111
+  size: 318, 263
+  orig: 320, 265
+  offset: 1, 1
+  index: -1
+FreeSpins Text
+  rotate: true
+  xy: 1933, 1496
+  size: 459, 82
+  orig: 459, 82
+  offset: 0, 0
+  index: -1
+GlowDot
+  rotate: false
+  xy: 629, 2
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Green_Grass
+  rotate: false
+  xy: 2, 376
+  size: 1799, 619
+  orig: 1815, 709
+  offset: 0, 0
+  index: -1
+In
+  rotate: false
+  xy: 1933, 1957
+  size: 109, 80
+  orig: 109, 80
+  offset: 0, 0
+  index: -1
+Yellow_Glares
+  rotate: false
+  xy: 2, 997
+  size: 1929, 1040
+  orig: 1931, 1042
+  offset: 1, 1
+  index: -1
+You have won
+  rotate: true
+  xy: 1933, 864
+  size: 630, 80
+  orig: 630, 80
+  offset: 0, 0
+  index: -1
+
+Congratulations_cashcaravan2.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 597, 268
+  size: 306, 207
+  orig: 308, 209
+  offset: 1, 1
+  index: -1
+15
+  rotate: false
+  xy: 2, 162
+  size: 283, 313
+  orig: 285, 315
+  offset: 1, 1
+  index: -1
+16
+  rotate: true
+  xy: 2, 2
+  size: 158, 262
+  orig: 160, 264
+  offset: 1, 1
+  index: -1
+2
+  rotate: false
+  xy: 287, 268
+  size: 308, 207
+  orig: 310, 209
+  offset: 1, 1
+  index: -1
+20
+  rotate: false
+  xy: 568, 55
+  size: 270, 211
+  orig: 272, 213
+  offset: 1, 1
+  index: -1
+21
+  rotate: false
+  xy: 1277, 782
+  size: 478, 240
+  orig: 480, 242
+  offset: 1, 1
+  index: -1
+22
+  rotate: false
+  xy: 1541, 542
+  size: 238, 238
+  orig: 240, 240
+  offset: 1, 1
+  index: -1
+3
+  rotate: true
+  xy: 1277, 615
+  size: 165, 262
+  orig: 167, 264
+  offset: 1, 1
+  index: -1
+4
+  rotate: false
+  xy: 287, 74
+  size: 279, 192
+  orig: 309, 193
+  offset: 29, 0
+  index: -1
+6
+  rotate: false
+  xy: 905, 285
+  size: 290, 190
+  orig: 310, 192
+  offset: 1, 1
+  index: -1
+7
+  rotate: false
+  xy: 1757, 793
+  size: 270, 229
+  orig: 272, 231
+  offset: 1, 1
+  index: -1
+Text_Field
+  rotate: false
+  xy: 2, 731
+  size: 1273, 291
+  orig: 1275, 293
+  offset: 1, 1
+  index: -1
+congratulations
+  rotate: false
+  xy: 2, 477
+  size: 1216, 252
+  orig: 1216, 252
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,31 @@
+{
+	"Game_History": "게임 내역",
+	"Date": "날짜",
+	"Game_Name": "게임 이름",
+	"Round_ID": "라운드 ID",
+	"Bet_Amount": "베팅 금액",
+	"Win_Amount": "당첨 금액",
+	"Currency": "통화",
+	"IP_Address": "IP 주소",
+
+	"Lines": "라인",
+	"Coin_Value": "코인 값",
+	"Coins": "코인",
+	"Bet": "베팅",
+	"Total_Win": "총 당첨",
+	"Bonus": "보너스",
+	"Date_Time": "날짜 및 시간",
+	"Game_Outcome": "게임 결과",
+	"HISTORY": "내역",
+	"Multiplier": "승수",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

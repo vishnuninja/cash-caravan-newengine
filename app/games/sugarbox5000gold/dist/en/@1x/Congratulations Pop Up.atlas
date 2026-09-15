@@ -1,0 +1,32 @@
+Congratulations Pop Up.png
+size:2048,512
+filter:Linear,Linear
+pma:true
+$100
+bounds:247,2,127,56
+rotate:90
+12
+bounds:870,237,55,53
+Base 1
+bounds:942,110,570,392
+Base 2
+bounds:1514,185,496,317
+Congratulations text
+bounds:2,292,938,210
+FREE SPINS!
+bounds:627,224,241,66
+IN        FREE SPINS
+bounds:2,225,337,65
+PRESS ANYWHERE TO CONTINUE
+bounds:341,254,284,36
+YOU HAVE WON
+bounds:1514,114,327,69
+amount box
+bounds:2,131,308,92
+amount box 2
+bounds:341,177,209,75
+daisy gift box copy
+bounds:1843,71,123,112
+shine
+bounds:2,21,108,243
+rotate:90

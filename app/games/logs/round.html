@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Avinash Pabba">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Round Details</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/styles.css?cb=20012024">
+
+    <script type="text/javascript" src="js/currency.min.js?cb=20012026"></script>
+    <script type="text/javascript" src="js/lib.js?cb=20012026"></script>
+</head>
+
+<body>
+
+    <a onclick="goToLogs()" id="myBtn" title="Go to top">
+        <img id="backButton" src="assets/images/backArrow.png" />
+    </a>
+
+    <div id="root" class="mainCard">
+
+        <table id="keywords" class="tableView" cellspacing="0" cellpadding="0" border='1'>
+            <thead id="theadLogs">
+                <tr id="tableTitle">
+                    <th>Game_Name</th>
+                    <th>Round_ID</th>
+                    <th>Lines</th>
+                    <th>Coin_Value</th>
+                    <th>Coins</th>
+                    <th>Pre_Balance</th>
+                    <th>Bet</th>
+                    <th>Total_Win</th>
+                    <th>Post_Balance</th>
+                    <th>Win_Lines</th>
+                    <th>Currency</th>
+                    <th id="optional">Bonus</th>
+                    <th>Date_Time</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyLogs"></tbody>
+        </table>
+
+
+
+
+        <div id="container">
+            <h3 id="matrixHead">Game_Outcome</h3>
+            <div id="matrixView"></div>
+        </div>
+        <!-- <div id="dataCtn"></div> -->
+
+        <div id="gamble">
+            <div id="container">
+                <h3 id="gambleHead">Gamble</h3>
+                <div id="matrixView"></div>
+            </div>
+
+            <table id="keywords2" class="tableView" cellspacing="0" cellpadding="0" border='1'>
+                <thead id="theadLogs">
+                    <tr id="tableTitle">
+                        <th>Bet Amount</th>
+                        <th>Win Amount</th>
+                        <th>Player Choice</th>
+                        <th>Final Result</th>
+                    </tr>
+                </thead>
+                <tbody id="gamble-tbodyLogs"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/round.js?cb=20012024"></script>
+
+</body>
+
+</html>

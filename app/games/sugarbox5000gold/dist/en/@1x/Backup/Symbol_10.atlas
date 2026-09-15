@@ -1,0 +1,13 @@
+
+Symbol_10.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+symbols_letters_ten
+  rotate: false
+  xy: 2, 2
+  size: 326, 239
+  orig: 328, 241
+  offset: 1, 1
+  index: -1

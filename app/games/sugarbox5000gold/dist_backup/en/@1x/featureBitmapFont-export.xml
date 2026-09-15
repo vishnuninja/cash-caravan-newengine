@@ -1,0 +1,24 @@
+<font>
+	<info face="featureBitmapFont-export" size="80" />
+	<common lineHeight="80" scaleW="280" scaleH="280" pages="1" />
+	<pages>
+		<page id="0" file="featureBitmapFont-export.png" />
+	</pages>
+	<chars count="13">
+		<char id="48" x="0" y="91" width="72" height="93" xoffset="0" yoffset="-13" xadvance="73" page="0" chnl="0" letter="0"/><!-- 0 -->
+		<char id="49" x="211" y="187" width="66" height="92" xoffset="0" yoffset="-12" xadvance="67" page="0" chnl="0" letter="1"/><!-- 1 -->
+		<char id="50" x="213" y="0" width="66" height="93" xoffset="0" yoffset="-13" xadvance="67" page="0" chnl="0" letter="2"/><!-- 2 -->
+		<char id="51" x="144" y="0" width="68" height="93" xoffset="0" yoffset="-13" xadvance="69" page="0" chnl="0" letter="3"/><!-- 3 -->
+		<char id="52" x="0" y="0" width="72" height="90" xoffset="0" yoffset="-11" xadvance="73" page="0" chnl="0" letter="4"/><!-- 4 -->
+		<char id="53" x="143" y="187" width="67" height="92" xoffset="0" yoffset="-12" xadvance="68" page="0" chnl="0" letter="5"/><!-- 5 -->
+		<char id="54" x="0" y="185" width="71" height="93" xoffset="0" yoffset="-13" xadvance="72" page="0" chnl="0" letter="6"/><!-- 6 -->
+		<char id="55" x="143" y="94" width="69" height="92" xoffset="0" yoffset="-12" xadvance="70" page="0" chnl="0" letter="7"/><!-- 7 -->
+		<char id="56" x="73" y="0" width="70" height="93" xoffset="0" yoffset="-13" xadvance="71" page="0" chnl="0" letter="8"/><!-- 8 -->
+		<char id="57" x="72" y="185" width="70" height="93" xoffset="0" yoffset="-13" xadvance="71" page="0" chnl="0" letter="9"/><!-- 9 -->
+		<char id="120" x="73" y="94" width="68" height="75" xoffset="0" yoffset="-4" xadvance="69" page="0" chnl="0" letter="x"/><!-- x -->
+		<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="20" page="0" chnl="0" letter=" "/><!--   -->
+		<char id="9" x="0" y="0" width="0" height="0" xoffset="0" yoffset="0" xadvance="160" page="0" chnl="0" letter="	"/><!-- 	 -->
+	</chars>
+	<kernings count="0">
+	</kernings>
+</font>

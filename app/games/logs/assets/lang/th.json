@@ -1,0 +1,31 @@
+{
+	"Game_History": "ประวัติเกม",
+	"Date": "วันที่",
+	"Game_Name": "ชื่อเกม",
+	"Round_ID": "ID รอบ",
+	"Bet_Amount": "จำนวนการเดิมพัน",
+	"Win_Amount": "จำนวนที่ชนะ",
+	"Currency": "สกุลเงิน ",
+	"IP_Address": "ที่อยู่ IP",
+
+	"Lines": "แถว",
+	"Coin_Value": "มูลค่าเหรียญ",
+	"Coins": "เหรียญ",
+	"Bet": "เดิมพัน",
+	"Total_Win": "รางวัลทั้งหมด",
+	"Bonus": "โบนัส",
+	"Date_Time": "วันที่ & เวลา",
+	"Game_Outcome": "ผลลัพธ์ของเกม",
+	"HISTORY": "ประวัติ",
+	"Multiplier": "ตัวคูณ",	
+	
+	"Pre_Balance": "ยอดคงเหลือก่อนหน้า",
+	"Post_Balance": "ยอดคงเหลือปัจุบัน",
+	"Win_Lines": "เส้นชนะ",
+
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

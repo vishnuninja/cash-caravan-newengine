@@ -1,0 +1,125 @@
+
+Symbol_Bonus_allSizes.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B
+  rotate: false
+  xy: 838, 66
+  size: 79, 90
+  orig: 81, 92
+  offset: 1, 1
+  index: -1
+Background
+  rotate: true
+  xy: 1032, 689
+  size: 321, 498
+  orig: 323, 500
+  offset: 1, 1
+  index: -1
+BonusFrame_X1
+  rotate: true
+  xy: 1872, 672
+  size: 338, 148
+  orig: 338, 148
+  offset: 0, 0
+  index: -1
+BonusFrame_X2
+  rotate: false
+  xy: 516, 498
+  size: 338, 172
+  orig: 338, 172
+  offset: 0, 0
+  index: -1
+BonusFrame_X3
+  rotate: false
+  xy: 498, 30
+  size: 338, 206
+  orig: 338, 206
+  offset: 0, 0
+  index: -1
+BonusFrame_X4
+  rotate: false
+  xy: 498, 238
+  size: 338, 258
+  orig: 338, 258
+  offset: 0, 0
+  index: -1
+BonusFrame_X5
+  rotate: false
+  xy: 1532, 672
+  size: 338, 338
+  orig: 338, 338
+  offset: 0, 0
+  index: -1
+BonusFrame_X6
+  rotate: true
+  xy: 516, 672
+  size: 338, 514
+  orig: 338, 514
+  offset: 0, 0
+  index: -1
+Coin Front
+  rotate: false
+  xy: 956, 347
+  size: 286, 286
+  orig: 288, 288
+  offset: 1, 1
+  index: -1
+Coin Side
+  rotate: true
+  xy: 1032, 635
+  size: 52, 289
+  orig: 52, 289
+  offset: 0, 0
+  index: -1
+CoinGlow_bg
+  rotate: false
+  xy: 2, 2
+  size: 494, 494
+  orig: 512, 512
+  offset: 9, 9
+  index: -1
+N
+  rotate: false
+  xy: 956, 162
+  size: 58, 90
+  orig: 60, 92
+  offset: 1, 1
+  index: -1
+O
+  rotate: false
+  xy: 856, 579
+  size: 77, 91
+  orig: 79, 93
+  offset: 1, 1
+  index: -1
+S
+  rotate: false
+  xy: 956, 254
+  size: 76, 91
+  orig: 78, 93
+  offset: 1, 1
+  index: -1
+Shine-01
+  rotate: false
+  xy: 2, 498
+  size: 512, 512
+  orig: 512, 512
+  offset: 0, 0
+  index: -1
+U
+  rotate: false
+  xy: 1244, 543
+  size: 70, 90
+  orig: 72, 92
+  offset: 1, 1
+  index: -1
+bonus_txt_p
+  rotate: true
+  xy: 838, 158
+  size: 338, 116
+  orig: 340, 118
+  offset: 1, 1
+  index: -1

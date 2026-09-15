@@ -1,0 +1,44 @@
+{"frames": {
+
+"autospin_disable":
+{
+	"frame": {"x":1,"y":1,"w":101,"h":101},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":101,"h":101},
+	"sourceSize": {"w":101,"h":101}
+},
+"autospin_hover":
+{
+	"frame": {"x":107,"y":1,"w":101,"h":101},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":101,"h":101},
+	"sourceSize": {"w":101,"h":101}
+},
+"autospin_normal":
+{
+	"frame": {"x":213,"y":1,"w":101,"h":101},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":101,"h":101},
+	"sourceSize": {"w":101,"h":101}
+},
+"autospin_press":
+{
+	"frame": {"x":319,"y":1,"w":101,"h":101},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":101,"h":101},
+	"sourceSize": {"w":101,"h":101}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "autoSpin.png",
+	"format": "RGBA8888",
+	"size": {"w":421,"h":103},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9780aca6a25bd4eba1c853809425f6f1:b4980c1c2899dd2c99ca35dfe10572c0:c28d426b52c37fac19e1c4fb9c26cf26$"
+}
+}

@@ -1,0 +1,48 @@
+{"frames": {
+
+"back_button_normal":
+{
+	"frame": {"x":0,"y":0,"w":47,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":47,"h":52},
+	"sourceSize": {"w":47,"h":52},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"cross_button_normal":
+{
+	"frame": {"x":47,"y":0,"w":53,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":53,"h":53},
+	"sourceSize": {"w":53,"h":53},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"game_rule":
+{
+	"frame": {"x":100,"y":0,"w":1229,"h":303},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1229,"h":303},
+	"sourceSize": {"w":1229,"h":303},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"next_button_normal":
+{
+	"frame": {"x":1329,"y":0,"w":47,"h":52},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":47,"h":52},
+	"sourceSize": {"w":47,"h":52},
+	"anchor": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "paytableAssets.png",
+	"format": "RGBA8888",
+	"size": {"w":1376,"h":303},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:ec6919088acf66eb0a76aee672d54869:aecaef2523d667fadeebe5519ec57339:90ddc01209c124509328bf1783d97e4a$"
+}
+}

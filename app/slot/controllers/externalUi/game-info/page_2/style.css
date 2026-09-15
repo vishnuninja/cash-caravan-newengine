@@ -1,0 +1,163 @@
+.page_2_main{
+    /* margin-right: 50px; */
+}
+
+.page_2_title {
+    font-size: 50px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.page_2_items {
+    padding: 0 110px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+
+.page_2_items img {
+    width: 205px;
+    height: 190px;
+    object-fit: contain;
+}
+
+.page_2_texts {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: "Montserrat";
+}
+
+.page_2_text_item {
+    display: flex;
+    gap: 10px;
+}
+
+.page_2_text_amount {
+    color: #FFB200;
+}
+
+.page_2_text_coeficient {
+    color: #ffffff;
+}
+
+/* Container for the last item to align children horizontally */
+.page_2_scatter_row {
+    display: flex;
+    align-items: center;
+    gap: 30px;          
+    width: 100%;         
+    justify-content: center;
+}
+
+/* Styling the new description */
+.page_2_scatter_description {
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 20px;
+    max-width: 300px;   
+    text-align: left;
+    line-height: 1.4;
+}
+
+
+/* ==================================================== PORTRAIT ========================================================= */
+
+
+.ui-wrapper.portrait .page_2_scatter_row {
+    flex-direction: column; /* Stacks them on mobile so it doesn't get squashed */
+    text-align: center;
+}
+
+.ui-wrapper.portrait .page_2_scatter_description {
+    font-size: calc(var(--game-ui-percent) * 1.2);
+    text-align: center;
+}
+
+.ui-wrapper.landscape .page_2_scatter_row {
+    flex-direction: row;       /* Keep it side-by-side */
+    justify-content: center;   /* Center the whole group */
+    gap: calc(var(--game-ui-percent) * 3); /* Responsive gap */
+    width: auto;               /* Don't force 100% width if not needed */
+}
+
+.ui-wrapper.landscape .page_2_scatter_description {
+    /* Limits the text width to about 25% of the screen width */
+    max-width: calc(var(--game-ui-percent) * 20); 
+    font-size: calc(var(--game-ui-percent) * 1);
+    text-align: left;
+    line-height: 1.2;
+}
+.ui-wrapper.landscape .page_2_item.page_2_scatter_row {
+    flex-basis: 100%; /* Forces this item to take its own row at the bottom */
+    margin-top: 20px; /* Adds a bit of separation from the symbols above */
+}
+
+
+
+
+.ui-wrapper.portrait .page_2_title {
+    font-size: calc(var(--game-ui-percent) * 3);
+    
+}
+
+.ui-wrapper.portrait .page_2_items {
+    padding: 0 calc(var(--game-ui-percent) * 0);
+    margin-top: calc(var(--game-ui-percent) * 3);
+    gap: calc(var(--game-ui-percent) * 3);
+}
+
+.ui-wrapper.portrait .page_2_item {
+    padding: 0 calc(var(--game-ui-percent) * 2) calc(var(--game-ui-percent) * 2) calc(var(--game-ui-percent) * 2);
+}
+
+.ui-wrapper.portrait .page_2_items img {
+    width: calc(var(--game-ui-percent) * 12);
+    height: calc(var(--game-ui-percent) * 12);
+}
+
+.ui-wrapper.portrait .page_2_texts {
+    margin-top: calc(var(--game-ui-percent) * 0.3);
+    margin-left: calc(var(--game-ui-percent) * 0.3);
+    font-size: calc(var(--game-ui-percent) * 1.4);
+}
+
+.ui-wrapper.portrait .page_2_text_item {
+    gap: calc(var(--game-ui-percent) * 1);
+}
+
+/* ==================================================== LANDCAPE ========================================================= */
+.ui-wrapper.landscape .page_2_title {
+    font-size: calc(var(--game-ui-percent) * 3);
+    
+}
+
+.ui-wrapper.landscape .page_2_items {
+    padding: 0 calc(var(--game-ui-percent) * 9);
+    margin-top: calc(var(--game-ui-percent) * 2);
+    gap: calc(var(--game-ui-percent) * 2);
+}
+
+.ui-wrapper.landscape .page_2_item {
+    padding: 0 calc(var(--game-ui-percent) * 2) calc(var(--game-ui-percent) * 2) calc(var(--game-ui-percent) * 2);
+}
+
+.ui-wrapper.landscape .page_2_items img {
+    width: calc(var(--game-ui-percent) * 8);
+    height: calc(var(--game-ui-percent) * 8);
+}
+
+.ui-wrapper.landscape .page_2_texts {
+    margin-top: calc(var(--game-ui-percent) * 0.3);
+    margin-left: calc(var(--game-ui-percent) * 0.3);
+    font-size: calc(var(--game-ui-percent) * 1.1);
+}
+
+.ui-wrapper.landscape .page_2_text_item {
+    gap: calc(var(--game-ui-percent) * 1);
+}

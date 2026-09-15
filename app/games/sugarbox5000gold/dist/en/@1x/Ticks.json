@@ -1,0 +1,28 @@
+{"frames": {
+
+"Tick":
+{
+	"frame": {"x":0,"y":0,"w":40,"h":35},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":40,"h":35},
+	"sourceSize": {"w":40,"h":35}
+},
+"Tick_box":
+{
+	"frame": {"x":0,"y":35,"w":51,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":51},
+	"sourceSize": {"w":51,"h":51}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "Ticks.png",
+	"format": "RGBA8888",
+	"size": {"w":51,"h":86},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:28741857f7bd7f8e5a710c90a5b48807:c1da5bf77c967a6bb5fc5d1a8dfee322:a2186abbb693a1541899d92d2ab55fb4$"
+}
+}

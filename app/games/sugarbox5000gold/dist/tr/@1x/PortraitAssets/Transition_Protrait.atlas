@@ -1,0 +1,208 @@
+
+Transition_Protrait.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Comp 1_00003
+  rotate: false
+  xy: 2, 1648
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00004
+  rotate: false
+  xy: 644, 1648
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00005
+  rotate: false
+  xy: 1286, 1648
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00007
+  rotate: true
+  xy: 2, 1006
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00008
+  rotate: true
+  xy: 2, 364
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00010
+  rotate: false
+  xy: 2, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00011
+  rotate: true
+  xy: 364, 1006
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00013
+  rotate: true
+  xy: 364, 364
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00014
+  rotate: false
+  xy: 644, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00015
+  rotate: false
+  xy: 1286, 1286
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00016
+  rotate: true
+  xy: 726, 1006
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00018
+  rotate: true
+  xy: 726, 364
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00019
+  rotate: true
+  xy: 1088, 644
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00020
+  rotate: true
+  xy: 1286, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00021
+  rotate: true
+  xy: 1450, 644
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00023
+  rotate: true
+  xy: 1648, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+
+Transition_Protrait2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Comp 1_00002
+  rotate: false
+  xy: 1286, 806
+  size: 640, 280
+  orig: 640, 360
+  offset: 0, 57
+  index: -1
+Comp 1_00024
+  rotate: false
+  xy: 2, 1450
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00025
+  rotate: false
+  xy: 2, 1088
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00026
+  rotate: false
+  xy: 644, 1450
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00027
+  rotate: false
+  xy: 2, 726
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00028
+  rotate: false
+  xy: 644, 1088
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00029
+  rotate: false
+  xy: 1286, 1450
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00031
+  rotate: false
+  xy: 2, 364
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00033
+  rotate: false
+  xy: 644, 726
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00034
+  rotate: false
+  xy: 1286, 1088
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00035
+  rotate: false
+  xy: 2, 2
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1
+Comp 1_00036
+  rotate: false
+  xy: 644, 364
+  size: 640, 360
+  orig: 640, 360
+  offset: 0, 0
+  index: -1

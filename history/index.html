@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>SUGARBOX 5000 GOLD History</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="history.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <img id="loadingLogo" class="loading-logo" src="" alt="SUGARBOX 5000 GOLD Logo">
+    </div>
+
+    <!-- Main Container -->
+    <div id="mainContainer" class="main-container">
+        <!-- Header -->
+        <header class="history-header">
+            <div class="header-left">
+                <img id="gameLogo" src="" alt="SUGARBOX 5000 GOLD Logo" class="game-logo">
+            </div>
+            <h1 id="gameTitle" class="game-title">History</h1>
+            <div class="header-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">
+                    <span id="themeIcon">🌙</span>
+                </button>
+                <button id="closeBtn" class="close-btn" aria-label="Close">×</button>
+            </div>
+        </header>
+
+        <!-- History Table Container (Desktop) -->
+        <div id="historyTableContainer" class="history-table-container">
+            <table id="historyTable" class="history-table">
+                <thead>
+                    <tr>
+                        <th id="thSessionId">Round ID</th>
+                        <th id="thDate">Tarih</th>
+                        <th id="thBalance">Yeni Bakiye</th>
+                        <th id="thBet">Bahis</th>
+                        <th id="thWinX">KazançX</th>
+                        <th id="thWin">Kazanılan Tutar</th>
+                        <th id="thType">Type</th>
+                        <th id="thGenerate">Link</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTableBody">
+                    <!-- History rows will be inserted here -->
+                </tbody>
+            </table>
+
+            <!-- Pagination -->
+            <div id="paginationContainer" class="pagination-container">
+                <button id="prevBtn" class="pagination-btn" disabled>Previous</button>
+                <div id="pageNumbers" class="page-numbers"></div>
+                <button id="nextBtn" class="pagination-btn">Next</button>
+            </div>
+        </div>
+
+        <!-- History Cards Container (Mobile) -->
+        <div id="historyCardsContainer" class="history-cards-container">
+            <div id="historyCards" class="history-cards">
+                <!-- History cards will be inserted here -->
+            </div>
+
+            <!-- Mobile Pagination -->
+            <div id="mobilePaginationContainer" class="pagination-container mobile">
+                <button id="mobilePrevBtn" class="pagination-btn" disabled>Previous</button>
+                <div id="mobilePageNumbers" class="page-numbers"></div>
+                <button id="mobileNextBtn" class="pagination-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="history-api.js"></script>
+    <script src="history-locale.js"></script>
+    <script src="history-theme.js"></script>
+    <script src="history-replay.js"></script>
+    <script src="history-desktop.js"></script>
+    <script src="history-mobile.js"></script>
+    <script>
+        // Set logo path based on environment (local vs build)
+        (function() {
+            const gameLogo = document.getElementById('gameLogo');
+            const loadingLogo = document.getElementById('loadingLogo');
+            const logoPath = "assets/historyLogo.png";
+            
+            if (gameLogo) {
+                gameLogo.src = logoPath;
+            }
+            if (loadingLogo) {
+                loadingLogo.src = logoPath;
+            }
+        })();
+
+        // Initialize theme first
+        if (typeof HistoryTheme !== 'undefined') {
+            HistoryTheme.init();
+
+            // Setup theme toggle button
+            const themeToggle = document.getElementById('themeToggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('click', () => {
+                    HistoryTheme.toggle();
+                });
+            }
+        }
+
+        // Initialize locale
+        if (typeof HistoryLocale !== 'undefined') {
+            HistoryLocale.init();
+
+            // Update page title
+            const gameTitle = document.getElementById('gameTitle');
+            if (gameTitle) {
+                gameTitle.textContent = HistoryLocale.t('pageTitle');
+            }
+
+            // Update table headers
+            const thSessionId = document.getElementById('thSessionId');
+            const thDate = document.getElementById('thDate');
+            const thBalance = document.getElementById('thBalance');
+            const thBet = document.getElementById('thBet');
+            const thWinX = document.getElementById('thWinX');
+            const thWin = document.getElementById('thWin');
+            const thType = document.getElementById('thType');
+            const thGenerate = document.getElementById('thGenerate');
+
+            if (thSessionId) thSessionId.textContent = HistoryLocale.t('sessionId');
+            if (thDate) thDate.textContent = HistoryLocale.t('date');
+            if (thBalance) thBalance.textContent = HistoryLocale.t('balance');
+            if (thBet) thBet.textContent = HistoryLocale.t('bet');
+            if (thWinX) thWinX.textContent = HistoryLocale.t('winX');
+            if (thWin) thWin.textContent = HistoryLocale.t('win');
+            if (thType) thType.textContent = HistoryLocale.t('type');
+            if (thGenerate) thGenerate.textContent = HistoryLocale.t('link');
+
+            // Update buttons
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const mobilePrevBtn = document.getElementById('mobilePrevBtn');
+            const mobileNextBtn = document.getElementById('mobileNextBtn');
+            const closeBtn = document.getElementById('closeBtn');
+            // Loading text removed - only animated logo is shown
+
+            if (prevBtn) prevBtn.textContent = HistoryLocale.t('previous');
+            if (nextBtn) nextBtn.textContent = HistoryLocale.t('next');
+            if (mobilePrevBtn) mobilePrevBtn.textContent = HistoryLocale.t('previous');
+            if (mobileNextBtn) mobileNextBtn.textContent = HistoryLocale.t('next');
+            if (closeBtn) closeBtn.setAttribute('aria-label', HistoryLocale.t('close'));
+        }
+
+        // Initialize based on device with orientation change handling
+        (function () {
+            let currentHistoryInstance = null;
+            let currentIsMobile = null;
+
+            function initializeHistory() {
+                const windowWidth = window.innerWidth || 1280;
+                const windowHeight = window.innerHeight || 720;
+                const isPortrait = windowWidth <= windowHeight;
+                const isMobile = windowWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                
+                console.log('📱 initializeHistory called:', {
+                    windowWidth,
+                    windowHeight,
+                    isPortrait,
+                    isMobile,
+                    currentIsMobile,
+                    hasInstance: !!currentHistoryInstance
+                });
+                
+                // Only re-initialize if the mobile/desktop state has changed
+                if (currentIsMobile === isMobile && currentHistoryInstance) {
+                    console.log('📱 Orientation changed but view type unchanged, skipping reload to prevent excessive API calls');
+                    // Don't reload data on every resize/orientation change - only reload if explicitly needed
+                    // This prevents loader from showing on every scroll
+                    return;
+                }
+
+                // Clear previous instance if switching between mobile/desktop
+                if (currentHistoryInstance) {
+                    console.log('📱 Switching between mobile/desktop views...');
+                    // Clear both containers to prevent stale data
+                    const cardsContainer = document.getElementById('historyCards');
+                    const tableBody = document.getElementById('historyTableBody');
+                    if (cardsContainer) cardsContainer.innerHTML = '';
+                    if (tableBody) tableBody.innerHTML = '';
+                    currentHistoryInstance = null;
+                }
+
+                currentIsMobile = isMobile;
+
+                // Ensure correct containers are visible
+                const tableContainer = document.getElementById('historyTableContainer');
+                const cardsContainer = document.getElementById('historyCardsContainer');
+                
+                if (isMobile) {
+                    // Show mobile cards container, hide desktop table
+                    if (tableContainer) tableContainer.style.display = 'none';
+                    if (cardsContainer) cardsContainer.style.display = 'block';
+                    
+                    // Initialize mobile version
+                    if (typeof HistoryMobile !== 'undefined') {
+                        console.log('📱 Initializing Mobile History');
+                        currentHistoryInstance = new HistoryMobile();
+                    }
+                } else {
+                    // Show desktop table container, hide mobile cards
+                    if (tableContainer) tableContainer.style.display = 'block';
+                    if (cardsContainer) cardsContainer.style.display = 'none';
+                    
+                    // Initialize desktop version
+                    if (typeof HistoryDesktop !== 'undefined') {
+                        currentHistoryInstance = new HistoryDesktop();
+                    }
+                }
+            }
+
+            // Initial initialization
+            initializeHistory();
+
+            // Handle resize and orientation changes with better debouncing
+            let resizeTimeout;
+            let lastResizeWidth = window.innerWidth;
+            let lastResizeHeight = window.innerHeight;
+            
+            window.addEventListener('resize', function() {
+                const currentWidth = window.innerWidth;
+                const currentHeight = window.innerHeight;
+                
+                // Only trigger if there's a significant size change (more than 50px difference)
+                // This prevents triggering on scroll events that might cause minor resize
+                const widthDiff = Math.abs(currentWidth - lastResizeWidth);
+                const heightDiff = Math.abs(currentHeight - lastResizeHeight);
+                
+                if (widthDiff < 50 && heightDiff < 50) {
+                    // Small change, likely just scroll - ignore
+                    return;
+                }
+                
+                lastResizeWidth = currentWidth;
+                lastResizeHeight = currentHeight;
+                
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(function() {
+                    console.log('📱 Window resized significantly, checking if view needs to switch...');
+                    initializeHistory();
+                }, 500); // Increased debounce to 500ms to prevent excessive calls
+            });
+
+            // Handle orientation change specifically with debouncing
+            let orientationTimeout;
+            window.addEventListener('orientationchange', function() {
+                console.log('📱 Orientation changed');
+                clearTimeout(orientationTimeout);
+                // Wait for orientation change to complete and debounce
+                orientationTimeout = setTimeout(function() {
+                    initializeHistory();
+                }, 300); // Increased delay to ensure orientation change is complete
+            });
+        })();
+    </script>
+</body>
+
+</html>

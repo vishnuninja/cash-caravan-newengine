@@ -1,0 +1,76 @@
+{"frames": {
+
+"Buy Freespin panel":
+{
+	"frame": {"x":0,"y":0,"w":418,"h":969},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":418,"h":969},
+	"sourceSize": {"w":418,"h":969}
+},
+"DOUBLE CHANCE TO WIN FEATURE Box":
+{
+	"frame": {"x":0,"y":972,"w":275,"h":299},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":275,"h":299},
+	"sourceSize": {"w":275,"h":299}
+},
+"DOUBLE CHANCE TO WIN FEATURE Off":
+{
+	"frame": {"x":278,"y":972,"w":132,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":51},
+	"sourceSize": {"w":132,"h":51}
+},
+"DOUBLE CHANCE TO WIN FEATURE On":
+{
+	"frame": {"x":0,"y":1274,"w":132,"h":51},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":51},
+	"sourceSize": {"w":132,"h":51}
+},
+"FREE SPINS":
+{
+	"frame": {"x":135,"y":1274,"w":277,"h":45},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":277,"h":45},
+	"sourceSize": {"w":277,"h":45}
+},
+"Group 11":
+{
+	"frame": {"x":0,"y":1328,"w":221,"h":87},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":87},
+	"sourceSize": {"w":221,"h":87}
+},
+"Rectangle 5":
+{
+	"frame": {"x":224,"y":1328,"w":275,"h":60},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":275,"h":60},
+	"sourceSize": {"w":275,"h":60}
+},
+"X counter":
+{
+	"frame": {"x":0,"y":1418,"w":346,"h":54},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":346,"h":54},
+	"sourceSize": {"w":346,"h":54}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "BuyFreespinPanel.png",
+	"format": "RGBA8888",
+	"size": {"w":499,"h":1472},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f7a0607cadcbf07593e1b590e4ef0d4a:8a419f6e0122a6d7086a1c822e6f3f82:ad7b8c653ef46aa1d6960d1f09b974ef$"
+}
+}

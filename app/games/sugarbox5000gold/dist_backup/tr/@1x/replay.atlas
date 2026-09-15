@@ -1,0 +1,20 @@
+
+replay.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+REPLAY
+  rotate: false
+  xy: 2, 2
+  size: 185, 44
+  orig: 185, 44
+  offset: 0, 0
+  index: -1
+Rectangle 1
+  rotate: false
+  xy: 2, 48
+  size: 243, 76
+  orig: 243, 76
+  offset: 0, 0
+  index: -1

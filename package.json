@@ -1,0 +1,42 @@
+{
+    "scripts": {
+        "test": "node webserver.js",
+        "local": "node webserver.js",
+        "dev": "lite-server",
+        "build": "gulp --task --gamename=\"sugarbox5000gold\" -f gulpfile.js"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.28.4",
+        "@babel/preset-env": "^7.28.3",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-preset-es2015": "^6.24.1",
+        "browser-sync": "^3.0.4",
+        "del": "^8.0.1",
+        "eslint": "^9.36.0",
+        "express": "^5.1.0",
+        "graceful-fs": "^4.2.11",
+        "gulp": "^5.0.1",
+        "gulp-babel": "^8.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-js-import": "^1.0.6",
+        "gulp-minify": "^3.1.0",
+        "gulp-rename": "^2.1.0",
+        "gulp-replace": "^1.1.4",
+        "gulp-version-number": "^0.2.4",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "yargs": "17.7.2"
+    },
+    "dependencies": {
+        "audiospritler": "^0.1.3",
+        "gulp-terser": "^2.1.0",
+        "howler": "^2.2.4",
+        "howler-sound-controller": "^1.1.0",
+        "jquery": "^3.7.1",
+        "merge-stream": "^2.0.0",
+        "node": "^24.9.0",
+        "open": "^10.2.0",
+        "pixi-sound": "^3.0.5",
+        "time-stamp": "^2.2.0"
+    }
+}

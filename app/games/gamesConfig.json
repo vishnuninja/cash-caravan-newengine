@@ -1,0 +1,50 @@
+{
+    "slotPath": "app/slot/",
+    "gamePath": "app/games/",
+    "gameFiles": {
+        "sugarbox5000gold": [
+            "libs/pixi-spine3.7v5.js",
+            "configs/BGUIConfig.js",
+            "configs/SuperMeterConfig.js",
+            "controllers/GSlotController.js",
+            "controllers/GWinController.js",
+            "controllers/GPanelController.js",
+            "configs/ReelViewUIConfig.js",
+            "configs/PaytableViewUIConfig.js",
+            "views/GReelSymbol.js",
+            "views/GHistoryPanelView.js",
+            "views/GView.js",
+            "views/GReelView.js",
+            "views/GPanelView.js",
+            "views/GWinView.js",
+            "model/gSpinData.js",
+            "model/GCoreApp.js",
+            "model/GPanelModel.js",
+            "model/GfsModel.js",
+            "model/GCSpinData.js",
+            "views/GInfoPopupView.js",
+            "views/GBGView.js",
+            "views/GSoundLib.js",
+            "views/GBigWinView.js",
+            "views/GIntroView.js",
+            "views/GSettingView.js",
+            "views/GTickerBox.js",
+            "views/GSlider.js",
+            "controllers/GTickerViewController.js",
+            "controllers/GHistoryPanelController.js",
+            "model/GSlotModel.js",
+            "controllers/GreelController.js"
+        ],
+        "desktop": [
+            "views/GPanelDesktopView.js",
+            "views/GPaytableDesktopView.js",
+            "views/GSettingsDesktopView.js"
+        ],
+        "mobile": [
+            "views/GPanelMobileView.js",
+            "views/GSettingsMobileView.js",
+            "views/GPaytableMobileView.js",
+            "views/GHistoryPanelMobileView.js"
+        ]
+    }
+}

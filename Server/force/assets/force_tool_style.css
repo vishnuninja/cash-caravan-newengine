@@ -1,0 +1,184 @@
+body {
+    background: #c9d7e8;
+}
+
+a, option, select, button {
+	cursor: pointer;
+	font-family: georgia;
+}
+
+div {
+	font-family: georgia;
+}
+
+td {
+	font-family: georgia;
+	font-size: 10px;
+	color: white;
+}
+
+.reel_symbol {
+    width: 45px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.reel_display {
+    width: 50px;
+    height: auto;
+    float: left;
+    padding: 2px;
+    border: 1px solid #b67116;
+    border-collapse: collapse;
+    border-radius: 30px;
+}
+
+div.symbol {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	/* background: #021a0c; */
+	background: #021a0c;
+	text-align: center;
+}
+
+.outcome_reel_str {
+    height: 45px;
+    width: 45px;
+    background: #021a0c;
+    padding: 4px 4px;
+    border-radius: 50%;
+}
+
+div.forced_position {
+	float: left;
+	font-weight: bold;
+	border: 1px solid #282828;
+	width: 54px;
+    background: #021a0c;
+	border-radius: 2px;
+	font-size: 12px;
+	color: white;
+}
+
+div.forced_outcome {
+	width: auto;
+	float: left;
+	border: 1px solid #b67116;
+	margin-top: 5px;
+    border-radius: 30px;
+}
+
+#status_message {
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    background: #021a0c;
+    width: 235px;
+    height: auto;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    float: left;
+    font-size: 10px;
+}
+
+#submit_button {
+    width: 250px;
+    height: 25px;
+    color: white;
+    background: #021a0c;
+    border: 2px solid #282828;
+    border-radius: 6px;
+	font-size: 6px;
+	font-weight: bold;
+    position: fixed;
+    margin-top: 75px;
+    padding: 2px;
+}
+
+#post_data_form {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin-top: auto;
+}
+
+#symbol_positions {
+    position: relative;
+    width: 100%;
+	height: auto;
+    margin-top: 5px;
+}
+
+#forcing_player_id {
+    border: 2px solid #021a0c;
+    border-radius: 6px;
+    position: fixed;
+    background: #021a0c;
+    color: white;
+    font-size: 12px;
+    padding: 2px 1px;
+    width: 250px;
+    margin-top: 40px;
+}
+
+#games_list {
+	float: left;
+	border: 5px solid #021a0c;
+	background: #021a0c;
+	width: 250px;
+	height: auto;
+	border-radius: 6px;
+	font-weight: bold;
+	font-family: georgia;
+	margin-top: 1px;
+}
+
+#choosen_game_reels {
+    width: auto;
+    height: 98%;
+    float: left;
+    position: absolute;
+    left: 270px;
+    font-size: 9px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    box-shadow: -2px 2px 10px darkgreen;
+}
+
+div.output_zone {
+    float: right;
+	border: 2px solid #282828;
+	position: absolute;
+    left: 700px;
+	z-index: 10000!important;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: georgia;
+	box-shadow: 1px 1px 3px darkgreen;
+}
+
+.symbol_number {
+	font-weight: bold;
+	font-family: georgia;
+    color: darkgreen;
+    text-align: center;
+}
+
+#tool_title {
+    border: 2px solid #021a0c;
+    border-radius: 6px;
+    position: fixed;
+    background: #021a0c;
+    color: white;
+    font-size: 12px;
+    padding: 2px 1px;
+    width: 250px;
+    margin-top: 40px;
+}
+
+#reels_area {
+    float: right;
+}

@@ -1,0 +1,31 @@
+{
+	"Game_History": "Хронология на играта",
+	"Date": "Дата",
+	"Game_Name": "Име на играта",
+	"Round_ID": "Идентификатор (ID) на рунда",
+	"Bet_Amount": "Сума на залога",
+	"Win_Amount": "Сума на печалбата",
+	"Currency": "Валута",
+	"IP_Address": "IP адрес",
+
+	"Lines": "Линии",
+	"Coin_Value": "Стойност на жетоните",
+	"Coins": "Жетони",
+	"Bet": "Залог",
+	"Total_Win": "Обща печалба",
+	"Bonus": "Бонус",
+	"Date_Time": "Дата и час",
+	"Game_Outcome": "Резултат от играта",
+	"HISTORY": "ХРОНОЛОГИЯ",
+	"Multiplier": "Множител",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

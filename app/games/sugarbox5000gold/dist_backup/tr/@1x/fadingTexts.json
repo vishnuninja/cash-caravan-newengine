@@ -1,0 +1,39 @@
+{"frames": {
+
+"text1":
+{
+	"frame": {"x":0,"y":0,"w":604,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":604,"h":56},
+	"sourceSize": {"w":604,"h":56}
+},
+"text2":
+{
+	"frame": {"x":604,"y":0,"w":539,"h":93},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":539,"h":93},
+	"sourceSize": {"w":539,"h":93}
+},
+"text3":
+{
+	"frame": {"x":0,"y":93,"w":1115,"h":47},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1115,"h":47},
+	"sourceSize": {"w":1115,"h":47}
+}},
+"animations": {
+	"text": ["text1","text2","text3"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "fadingTexts.png",
+	"format": "RGBA8888",
+	"size": {"w":1143,"h":140},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:323a0143e580f214be0d78850ca51693:015d79b0f4d67ec2ef40a50bbba7f271:fbaf9e382312832a74de92d0c4c5ff0d$"
+}
+}

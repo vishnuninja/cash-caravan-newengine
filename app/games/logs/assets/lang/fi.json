@@ -1,0 +1,31 @@
+{
+	"Game_History": "Pelihistoria",
+	"Date": "Päivämäärä",
+	"Game_Name": "Pelin nimi",
+	"Round_ID": "Kierrostunnus",
+	"Bet_Amount": "Panossumma",
+	"Win_Amount": "Voittosumma",
+	"Currency": "Valuutta",
+	"IP_Address": "IP-osoite",
+
+	"Lines": "Rivit",
+	"Coin_Value": "Kolikon arvo",
+	"Coins": "Kolikot",
+	"Bet": "Panos",
+	"Total_Win": "Kokonaisvoitto",
+	"Bonus": "Bonus",
+	"Date_Time": "Päivä ja aika",
+	"Game_Outcome": "Pelin lopputulos",
+	"HISTORY": "HISTORIA",
+	"Multiplier": "Kerroin",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

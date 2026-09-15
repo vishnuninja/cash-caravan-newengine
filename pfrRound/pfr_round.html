@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>SugarBox-5000-Gold PFR Rounds</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../history.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+</head>
+
+<body>
+    <div id="loadingOverlay" class="loading-overlay">
+        <img id="loadingLogo" class="loading-logo" src="" alt="SugarBox-5000-Gold Logo">
+    </div>
+
+    <div id="mainContainer" class="main-container">
+        <header class="history-header">
+            <div class="header-left">
+                <img id="gameLogo" src="" alt="SugarBox-5000-Gold Logo" class="game-logo">
+            </div>
+            <h1 id="gameTitle" class="game-title">PFR Rounds</h1>
+            <div class="header-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">
+                    <span id="themeIcon">🌙</span>
+                </button>
+                <button id="closeBtn" class="close-btn" aria-label="Close">×</button>
+            </div>
+        </header>
+
+        <div id="historyTableContainer" class="history-table-container">
+            <table id="historyTable" class="history-table">
+                <thead>
+                    <tr>
+                        <th id="thSessionId">Round ID</th>
+                        <th id="thDate">Date</th>
+                        <th id="thBalance">Balance</th>
+                        <th id="thBet">Bet</th>
+                        <th id="thWinX">WinX</th>
+                        <th id="thWin">Win</th>
+                        <th id="thType">Type</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <div id="historyCardsContainer" class="history-cards-container">
+            <div id="historyCards" class="history-cards">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.HISTORY_PFR_ROUNDS = true;
+    </script>
+    <script src="../history-api.js"></script>
+    <script src="../history-locale.js"></script>
+    <script src="../history-theme.js"></script>
+    <script src="../history-replay.js"></script>
+    <script src="../history-desktop.js"></script>
+    <script src="../history-mobile.js"></script>
+    <script src="pfr_round.js"></script>
+</body>
+
+</html>

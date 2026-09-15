@@ -1,0 +1,5 @@
+28 May 2020
+    pixi-multistyle-text.js
+    Line No: 167
+    Text was clipping in length when we use letterSpacing for multistyle text
+    @Kaushik

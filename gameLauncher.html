@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- <base id="myBase" href="/games/slots/" target="_blank"> -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-transulent" />
+	
+	
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<title>Slot Game</title>	
+	<link rel="stylesheet" href="./style.css">	
+
+	<script src="config.js?v=20210311094135"></script>
+	<script src="js/libs/pixi.min.js?v=20210311094135"></script>
+	<script src="js/libs/pixi-legacy.min.js?v=20210311094135"></script>
+	<script src="js/libs/howler-2.2.1-min.js?v=20210311094135"></script>
+	<script src="js/libs/pixi-spine3.7v5.js?v=20210121170359"></script>	
+</head>
+
+<body onunload="" onload="onPageLoad()" oncontextmenu="return false;">
+	
+	<img id="containerbg">
+	
+	<div id="gameRules">
+		<div id="grContent" class="disable-select"></div>
+		<div id="grCloseBtn" onclick="onGameRulesToggle(false)">
+			<img id="closeBtn" src="" alt="" srcset="" width="25px" , height="25px">
+		</div>
+	</div>
+	
+	<!-- <div id="gamePaytable">
+		<div id="ptContent" class="wrapper text-center">
+		</div>
+		<div id="ptInfoBtn"> -->
+			<!-- <img id="infoBtn" src="" alt="" srcset="" width="48px" height="48px"> -->
+			<!-- <span class="paytableText"></span> -->
+		<!-- </div>
+		<div id="paytableCloseBtn" onclick="onGamePaytableToggle(false)"> -->
+			<!-- <img id="paytableCloseBtn" src="" alt="" srcset="" width="48px" height="48px"> -->
+		<!-- </div>
+	</div> -->
+
+	<div id="preloaderWrapper"></div>	
+
+	<script src="main.js?v=20210311094135" id="mainJS"></script>
+	<!-- <script src="js/preloaderComp.js"></script> -->
+	<script src="js/Preloader.js?v=20210311094135"></script>
+	
+</body>
+</html>

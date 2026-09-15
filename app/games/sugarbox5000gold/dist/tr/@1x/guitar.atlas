@@ -1,0 +1,177 @@
+guitar.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+frame_1x
+bounds:347,1498,341,202
+frame_2x
+bounds:1440,1839,340,206
+frame_3x
+bounds:1098,1819,340,226
+frame_4x
+bounds:2,392,343,275
+rotate:90
+frame_5x
+bounds:347,1702,342,343
+frame_6x
+bounds:2,1549,343,496
+g_bg-5x
+bounds:2,737,322,329
+g_bg_1x
+bounds:691,1668,319,147
+g_bg_2x
+bounds:690,1497,318,169
+g_bg_3x
+bounds:620,1292,317,203
+g_bg_4x
+bounds:2,70,320,252
+rotate:90
+g_bg_6x
+bounds:2,1068,324,479
+glass fx - 1x
+bounds:617,939,288,119
+glass fx - 2x
+bounds:614,797,285,140
+glass fx - 3x
+bounds:326,808,286,173
+glass fx - 4x
+bounds:328,983,287,220
+glass fx - 5x
+bounds:328,1205,290,291
+guitar-based
+bounds:691,1817,228,405
+rotate:90
+note 1
+bounds:1012,1761,60,54
+note 2
+bounds:256,71,46,51
+note_
+bounds:2,2,66,86
+rotate:90
+rotating /0
+bounds:1782,1876,169,258
+rotate:90
+rotating /1
+bounds:939,1237,169,258
+rotating /10
+bounds:326,637,169,258
+rotate:90
+rotating /11
+bounds:586,626,169,258
+rotate:90
+rotating /12
+bounds:279,466,169,258
+rotate:90
+rotating /13
+bounds:539,455,169,258
+rotate:90
+rotating /14
+bounds:279,295,169,258
+rotate:90
+rotating /15
+bounds:539,284,169,258
+rotate:90
+rotating /16
+bounds:256,124,169,258
+rotate:90
+rotating /17
+bounds:516,113,169,258
+rotate:90
+rotating /18
+bounds:799,366,169,258
+rotating /19
+bounds:846,626,169,258
+rotate:90
+rotating /2
+bounds:970,366,169,258
+rotating /20
+bounds:799,195,169,258
+rotate:90
+rotating /21
+bounds:776,24,169,258
+rotate:90
+rotating /22
+bounds:1782,1705,169,258
+rotate:90
+rotating /23
+bounds:1440,1668,169,258
+rotate:90
+rotating /24
+bounds:1010,1497,169,258
+rotate:90
+rotating /25
+bounds:1110,1237,169,258
+rotating /26
+bounds:939,1066,169,258
+rotate:90
+rotating /27
+bounds:1270,1497,169,258
+rotate:90
+rotating /28
+bounds:1281,1237,169,258
+rotating /29
+bounds:1199,1066,169,258
+rotate:90
+rotating /3
+bounds:1452,1237,169,258
+rotating /30
+bounds:1530,1497,169,258
+rotate:90
+rotating /31
+bounds:1623,1237,169,258
+rotating /32
+bounds:1459,1066,169,258
+rotate:90
+rotating /33
+bounds:1794,1328,169,258
+rotating /34
+bounds:935,895,169,258
+rotate:90
+rotating /35
+bounds:1195,895,169,258
+rotate:90
+rotating /36
+bounds:1455,895,169,258
+rotate:90
+rotating /37
+bounds:1106,635,169,258
+rotating /38
+bounds:1277,635,169,258
+rotating /39
+bounds:1448,635,169,258
+rotating /4
+bounds:1141,375,169,258
+rotating /40
+bounds:1312,375,169,258
+rotating /41
+bounds:1483,375,169,258
+rotating /42
+bounds:1619,635,169,258
+rotating /43
+bounds:1654,375,169,258
+rotating /44
+bounds:1141,204,169,258
+rotate:90
+rotating /45
+bounds:1401,204,169,258
+rotate:90
+rotating /5
+bounds:1661,115,169,258
+rotating /6
+bounds:1794,1068,169,258
+rotating /7
+bounds:1790,808,169,258
+rotating /8
+bounds:1825,548,169,258
+rotating /9
+bounds:1832,288,169,258
+string
+bounds:617,1060,114,316
+rotate:90
+string shadow
+bounds:620,1176,114,317
+rotate:90
+tag
+bounds:1700,1733,80,104
+ukelele shadow
+bounds:1790,1588,214,115

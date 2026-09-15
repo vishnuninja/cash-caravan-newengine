@@ -1,0 +1,141 @@
+.page_8_main {
+    padding: 0 93px;
+}
+
+.page_8_title {
+    font-size: 50px;
+    font-family: "Montserrat";
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.page_8_item {
+    display: flex;
+    color: #ffffff;
+    font-size: 28px;
+    font-family: "Roboto";
+    margin-top: 20px;
+    gap: 30px;
+    align-items: center;
+}
+
+.page_8_item img {
+    width: 180px;
+    align-items: right;
+
+}
+
+/* This targets the specific item container */
+.page_8_item.centered-item {
+    display: flex;
+    flex-direction: column; /* Stacks image on top, text below */
+    align-items: center;    /* Centers the image horizontally */
+    justify-content: center;
+}
+
+/* This targets the image inside that container */
+.page_8_item.centered-item img {
+    margin-bottom: 10px;    /* Adds space between image and text */
+    max-width: 100%;        /* Prevents image from overflowing */
+}
+
+/* This targets the text container to ensure it stays left-aligned */
+.page_8_item.centered-item .page_4_text {
+    width: 100%;            /* Ensures the text box spans the full width */
+    text-align: left;       /* Aligns the text inside to the left */
+}
+
+.desc-line {
+    margin-bottom: 20px; /* Adjust this value for more or less space */
+    line-height: 1.4;    /* Improves readability within the lines */
+}
+
+/* Remove margin from the very last line so it doesn't add extra bottom space */
+.desc-line:last-child {
+    margin-bottom: 0;
+}
+
+.desc-line1 {
+    margin-bottom: 10px; /* Smaller space than desc-line */
+    line-height: 1.2;    /* Slightly tighter for lists */
+    text-align: left;    /* Standard for rule lists */
+}
+
+/* Remove margin from the very last rule */
+.desc-line1:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==================================================== PORTRAIT ========================================================= */
+.ui-wrapper.portrait .page_8_main {
+    padding: 0 calc(var(--game-ui-percent) * 0);
+}
+
+.ui-wrapper.portrait .page_8_title {
+    font-size: calc(var(--game-ui-percent) * 3);
+    
+}
+
+.ui-wrapper.portrait .page_8_item {
+    font-size: calc(var(--game-ui-percent) * 1.8);
+    margin-top: calc(var(--game-ui-percent) * 4);
+    gap: calc(var(--game-ui-percent) * 1.5);
+}
+
+.ui-wrapper.portrait .page_8_item img {
+    width: calc(var(--game-ui-percent) * 10);
+}
+
+.ui-wrapper.portrait .desc-line {
+    margin-bottom: calc(var(--game-ui-percent) * 2);
+    text-align: center; /* Usually looks better centered on mobile */
+}
+
+/* Inside .ui-wrapper.portrait */
+.ui-wrapper.portrait .desc-line1 {
+    margin-bottom: calc(var(--game-ui-percent) * 0.8); /* Responsive small gap */
+    text-align: center; /* Center on mobile to match your title style */
+    padding: 0 calc(var(--game-ui-percent) * 2);
+}
+
+
+
+
+/* ==================================================== LANDCAPE ========================================================= */
+
+.ui-wrapper.landscape .page_8_main {
+    padding: 0 calc(var(--game-ui-percent) * 0);
+    margin-top: calc(var(--game-ui-percent) * -2); 
+}
+
+.ui-wrapper.landscape .page_8_title {
+    font-size: calc(var(--game-ui-percent) * 3);
+    padding-right: calc(var(--game-ui-percent) * 6);
+    
+}
+
+.ui-wrapper.landscape .page_8_item {
+    font-size: calc(var(--game-ui-percent) * 1.5);
+    margin-top: calc(var(--game-ui-percent) * 0.7);
+    gap: calc(var(--game-ui-percent) * 1);
+    padding-right: calc(var(--game-ui-percent) * 6);
+}
+
+.ui-wrapper.landscape .page_8_item img {
+    width: calc(var(--game-ui-percent) * 8);
+}
+
+.ui-wrapper.landscape .desc-line {
+    margin-bottom: calc(var(--game-ui-percent) * 1.5);
+    text-align: left;
+}
+
+/* Inside .ui-wrapper.landscape */
+.ui-wrapper.landscape .desc-line1 {
+    margin-bottom: calc(var(--game-ui-percent) * 0.5); /* Very small gap for lists */
+    text-align: left;
+    /* padding-left: calc(var(--game-ui-percent) * 2); Optional: indent the rules slightly */
+}

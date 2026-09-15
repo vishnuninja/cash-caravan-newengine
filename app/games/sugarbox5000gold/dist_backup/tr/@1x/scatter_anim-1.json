@@ -1,0 +1,93 @@
+{"frames": {
+
+"scatterAnim_00":
+{
+	"frame": {"x":528,"y":1,"w":258,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":111,"w":258,"h":258},
+	"sourceSize": {"w":377,"h":369}
+},
+"scatterAnim_01":
+{
+	"frame": {"x":528,"y":1,"w":258,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":111,"w":258,"h":258},
+	"sourceSize": {"w":377,"h":369}
+},
+"scatterAnim_02":
+{
+	"frame": {"x":789,"y":1,"w":258,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":111,"w":258,"h":258},
+	"sourceSize": {"w":377,"h":369}
+},
+"scatterAnim_03":
+{
+	"frame": {"x":1050,"y":1,"w":258,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":111,"w":258,"h":258},
+	"sourceSize": {"w":377,"h":369}
+},
+"scatterAnim_05":
+{
+	"frame": {"x":1311,"y":1,"w":258,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":111,"w":258,"h":258},
+	"sourceSize": {"w":377,"h":369}
+},
+"scatterAnim_06":
+{
+	"frame": {"x":1311,"y":1,"w":258,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":111,"w":258,"h":258},
+	"sourceSize": {"w":377,"h":369}
+},
+"scatterAnim_04":
+{
+	"frame": {"x":1311,"y":1,"w":258,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":111,"w":258,"h":258},
+	"sourceSize": {"w":377,"h":369}
+},
+"scatterAnim_07":
+{
+	"frame": {"x":1572,"y":1,"w":258,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":46,"y":111,"w":258,"h":258},
+	"sourceSize": {"w":377,"h":369}
+},
+"scatterAnim_35":
+{
+	"frame": {"x":265,"y":1,"w":260,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":44,"y":111,"w":260,"h":258},
+	"sourceSize": {"w":377,"h":369}
+},
+"scatterAnim_36":
+{
+	"frame": {"x":1,"y":1,"w":261,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":43,"y":111,"w":261,"h":258},
+	"sourceSize": {"w":377,"h":369}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "scatter_anim-1.png",
+	"format": "RGBA8888",
+	"size": {"w":1831,"h":260},
+	"scale": "1",
+	"related_multi_packs": [ "scatter_anim-0.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:6dc72d6da78d595ab6fe9f7f2f7578f6:afc52aa1553296f56e3c2bf0d008f074:f8b10f20c7db152ae6289e537c62a675$"
+}
+}

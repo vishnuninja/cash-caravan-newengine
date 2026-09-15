@@ -1,0 +1,216 @@
+
+Reel_FX.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Gameplay_Real_HD_00000
+  rotate: true
+  xy: 2, 847
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00001
+  rotate: true
+  xy: 364, 847
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00002
+  rotate: true
+  xy: 726, 847
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00003
+  rotate: true
+  xy: 1088, 847
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00004
+  rotate: true
+  xy: 1450, 847
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00005
+  rotate: true
+  xy: 2, 678
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00006
+  rotate: true
+  xy: 364, 678
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00007
+  rotate: true
+  xy: 726, 678
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00008
+  rotate: true
+  xy: 1088, 678
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00009
+  rotate: true
+  xy: 1450, 678
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00010
+  rotate: false
+  xy: 1812, 654
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00011
+  rotate: true
+  xy: 2, 509
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00012
+  rotate: true
+  xy: 364, 509
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00013
+  rotate: true
+  xy: 726, 509
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00014
+  rotate: true
+  xy: 1088, 509
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00015
+  rotate: true
+  xy: 1450, 509
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00016
+  rotate: true
+  xy: 2, 340
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00017
+  rotate: true
+  xy: 364, 340
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00018
+  rotate: true
+  xy: 726, 340
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00019
+  rotate: true
+  xy: 1088, 340
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00020
+  rotate: true
+  xy: 1450, 340
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00021
+  rotate: false
+  xy: 1812, 292
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00022
+  rotate: true
+  xy: 2, 171
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00023
+  rotate: true
+  xy: 364, 171
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00024
+  rotate: true
+  xy: 726, 171
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00025
+  rotate: true
+  xy: 1088, 171
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00026
+  rotate: true
+  xy: 1450, 171
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00027
+  rotate: true
+  xy: 2, 2
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00028
+  rotate: true
+  xy: 364, 2
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1
+Gameplay_Real_HD_00029
+  rotate: true
+  xy: 726, 2
+  size: 167, 360
+  orig: 167, 360
+  offset: 0, 0
+  index: -1

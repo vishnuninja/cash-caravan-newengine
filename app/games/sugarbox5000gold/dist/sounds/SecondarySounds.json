@@ -1,0 +1,114 @@
+{
+  "urls": [
+    "SecondarySounds.ac3",
+    "SecondarySounds.mp3",
+    "SecondarySounds.m4a",
+    "SecondarySounds.ogg"
+  ],
+  "sprite": {
+    "Bonus_Active": [
+      0,
+      2900
+    ],
+    "Bonus_Land": [
+      4000,
+      1985
+    ],
+    "Boom_Box": [
+      7000,
+      2691
+    ],
+    "Btn_BuySpin": [
+      11000,
+      549
+    ],
+    "Btn_PopUp": [
+      13000,
+      549
+    ],
+    "Btn_Switch": [
+      15000,
+      549
+    ],
+    "Congratulations_In": [
+      17000,
+      1071
+    ],
+    "Congratulations_Loop": [
+      20000,
+      11416
+    ],
+    "Congratulations_Out": [
+      33000,
+      784
+    ],
+    "GAwarded_In": [
+      35000,
+      1933
+    ],
+    "GAwarded_Out": [
+      38000,
+      1933
+    ],
+    "GRewarded_In": [
+      41000,
+      1933
+    ],
+    "GRewarded_Out": [
+      44000,
+      1933
+    ],
+    "Guitar": [
+      47000,
+      2691
+    ],
+    "Lava_Lamp": [
+      51000,
+      1881
+    ],
+    "LetterNums": [
+      54000,
+      1776
+    ],
+    "Mouth": [
+      57000,
+      1881
+    ],
+    "OMG": [
+      60000,
+      10710
+    ],
+    "Roller_Skates": [
+      72000,
+      2194
+    ],
+    "Special_Fantastic_In": [
+      76000,
+      862
+    ],
+    "Special_MAXWin_In": [
+      78000,
+      862
+    ],
+    "Special_NiceOMG_In": [
+      80000,
+      862
+    ],
+    "Special_Super_In": [
+      82000,
+      862
+    ],
+    "Symbol_Disappear": [
+      84000,
+      731
+    ],
+    "Wild_Active": [
+      86000,
+      2691
+    ],
+    "Wild_Land": [
+      90000,
+      1176
+    ]
+  }
+}

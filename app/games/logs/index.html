@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Avinash Pabba">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Game Logs</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/styles.css?cb=20012022">
+
+    <script type="text/javascript" src="js/currency.min.js?cb=20012028"></script>
+    <script type="text/javascript" src="js/lib.js?cb=20012029"></script>
+</head>
+
+<body>
+    <div id="root">
+
+        <table id="keywords" class="tableView" style="margin: 0 auto;" cellspacing="0" cellpadding="0" border='1'>
+            <thead>
+                <tr id="tableTitle">
+                    <th>Date</th>
+                    <th>Game_Name</th>
+                    <th>Round_ID</th>
+                    <th>Bet_Amount</th>
+					<th>Lose_Amount</th>
+                    <th>Win_Amount</th>
+                    <th>Currency</th>
+                    <th>IP_Address</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyLogs"></tbody>
+        </table>
+
+        <div class="pagination" id="pagination">
+            <div id="previousBtn" onclick="previousPage()">&laquo;</div>
+            <div id="nextBtn" onclick="nextPage()">&raquo;</div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/main.js?cb=20012028"></script>
+
+</body>
+
+</html>

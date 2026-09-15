@@ -1,0 +1,31 @@
+{
+	"Game_History": "Spēļu vēsture",
+	"Date": "Datums",
+	"Game_Name": "Spēles nosaukums",
+	"Round_ID": "Raunda ID",
+	"Bet_Amount": "Likmes summa",
+	"Win_Amount": "Laimesta summa",
+	"Currency": "Valūta",
+	"IP_Address": "IP adrese",
+
+	"Lines": "Līnijas",
+	"Coin_Value": "Monētas vērtība",
+	"Coins": "Monētas",
+	"Bet": "Likme",
+	"Total_Win": "Kopējais laimests",
+	"Bonus": "Bonuss",
+	"Date_Time": "Datums un laiks",
+	"Game_Outcome": "Spēles iznākums",
+	"HISTORY": "VĒSTURE",
+	"Multiplier": "Reizinātājs",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

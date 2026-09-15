@@ -1,0 +1,169 @@
+bonus_cash_caravan.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+bonus/bonus_bg
+bounds:2,239,299,579
+bonus/bonus_bg sfx
+bounds:899,1411,428,258
+bonus/bonus_text
+bounds:1357,28,326,126
+bonus_base_x3
+bounds:559,864,318,202
+bonus_base_x4
+bounds:1741,211,320,253
+rotate:90
+bonus_base_x5
+bounds:1329,1350,319,327
+rotate:90
+bonus_base_x6
+bounds:559,1068,326,484
+bonus_disco_ball/ 1
+bounds:899,1671,382,375
+bonus_disco_ball/ 10
+bounds:1283,1671,382,375
+bonus_disco_ball/ 11
+bounds:1667,1664,382,375
+rotate:90
+bonus_disco_ball/ 12
+bounds:887,1034,382,375
+bonus_disco_ball/ 13
+bounds:1658,1287,382,375
+bonus_disco_ball/ 14
+bounds:1271,973,382,375
+bonus_disco_ball/ 15
+bounds:1655,910,382,375
+bonus_disco_ball/ 16
+bounds:596,480,382,375
+rotate:90
+bonus_disco_ball/ 17
+bounds:973,485,382,375
+rotate:90
+bonus_disco_ball/ 18
+bounds:1624,533,382,375
+bonus_disco_ball/ 19
+bounds:596,103,382,375
+bonus_disco_ball/ 2
+bounds:980,101,382,375
+rotate:90
+bonus_disco_ball/ 20
+bounds:1357,156,382,375
+bonus_frame_x1
+bounds:879,869,338,163
+bonus_frame_x2
+bounds:342,36,337,187
+rotate:90
+bonus_frame_x3
+bounds:2,20,338,217
+bonus_frame_x4
+bounds:1350,633,338,272
+rotate:90
+bonus_frame_x6
+bounds:559,1554,338,492
+guy_body
+bounds:2,820,555,1226
+guy_brow
+bounds:2,2,41,16
+guy_hair_1
+bounds:342,2,32,92
+rotate:90
+guy_hair_top
+bounds:1741,71,260,138
+guy_headband
+bounds:814,25,165,74
+guy_nose
+bounds:303,310,37,63
+guy_pearl
+bounds:1685,82,72,51
+rotate:90
+guy_shade_1
+bounds:531,304,69,60
+rotate:90
+guy_shade_2
+bounds:1271,1395,26,14
+guy_vest_R
+bounds:1350,554,77,260
+rotate:90
+guy_vest_back
+bounds:2008,843,65,38
+rotate:90
+wild_shine_1
+bounds:303,375,291,443
+wild_shine_2
+bounds:531,21,281,80
+
+bonus_cash_caravan_2.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+bonus/bonus_disco_glow
+bounds:1154,665,267,267
+bonus/bonus_discoball_base
+bounds:1857,1334,139,139
+bonus/bonus_star_sfx
+bounds:1857,1475,182,182
+bonus/design_1_sfx
+bounds:619,9,140,140
+bonus/shine_sfx2
+bounds:1538,1340,317,317
+bonus_base_x1
+bounds:2,4,318,145
+bonus_base_x2
+bounds:1154,496,316,167
+bonus_disco_ball/ 21
+bounds:2,1659,382,375
+bonus_disco_ball/ 22
+bounds:2,1282,382,375
+bonus_disco_ball/ 23
+bounds:386,1659,382,375
+bonus_disco_ball/ 24
+bounds:2,905,382,375
+bonus_disco_ball/ 25
+bounds:386,1282,382,375
+bonus_disco_ball/ 26
+bounds:770,1659,382,375
+bonus_disco_ball/ 27
+bounds:2,528,382,375
+bonus_disco_ball/ 28
+bounds:386,905,382,375
+bonus_disco_ball/ 29
+bounds:770,1282,382,375
+bonus_disco_ball/ 3
+bounds:1154,1659,382,375
+bonus_disco_ball/ 30
+bounds:2,151,382,375
+bonus_disco_ball/ 4
+bounds:386,528,382,375
+bonus_disco_ball/ 5
+bounds:770,905,382,375
+bonus_disco_ball/ 6
+bounds:1154,1282,382,375
+bonus_disco_ball/ 7
+bounds:1538,1659,382,375
+bonus_disco_ball/ 8
+bounds:386,151,382,375
+bonus_disco_ball/ 9
+bounds:770,528,382,375
+bonus_frame_x5
+bounds:1154,934,338,346
+guy_face
+bounds:1334,87,155,221
+rotate:90
+guy_hair_back
+bounds:1068,25,244,264
+rotate:90
+guy_vest_L
+bounds:1423,665,115,267
+sun_bg_sfx
+bounds:1361,244,250,250
+wild_shine_x1
+bounds:1922,1740,294,124
+rotate:90
+wild_shine_x2
+bounds:322,2,295,147
+wild_shine_x3
+bounds:770,50,296,181
+wild_shine_x4
+bounds:1066,271,293,223
+wild_shine_x5
+bounds:770,233,294,293

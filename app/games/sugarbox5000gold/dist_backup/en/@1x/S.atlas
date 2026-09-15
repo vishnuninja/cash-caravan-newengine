@@ -1,0 +1,458 @@
+
+S.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+new_particle/glowDust_0
+  rotate: false
+  xy: 1448, 273
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+scatter_Glow
+  rotate: false
+  xy: 2, 1557
+  size: 482, 482
+  orig: 482, 482
+  offset: 0, 0
+  index: -1
+scatter_symbol
+  rotate: true
+  xy: 1448, 2
+  size: 269, 287
+  orig: 269, 287
+  offset: 0, 0
+  index: -1
+scatter_text
+  rotate: false
+  xy: 2, 3
+  size: 266, 106
+  orig: 266, 106
+  offset: 0, 0
+  index: -1
+shine/shine_effect_0
+  rotate: false
+  xy: 2, 1075
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_1
+  rotate: false
+  xy: 2, 593
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_10
+  rotate: false
+  xy: 1450, 1559
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_11
+  rotate: false
+  xy: 966, 595
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_12
+  rotate: false
+  xy: 966, 113
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_13
+  rotate: false
+  xy: 1448, 595
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_2
+  rotate: false
+  xy: 2, 111
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_3
+  rotate: false
+  xy: 484, 1075
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_4
+  rotate: false
+  xy: 486, 1559
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_5
+  rotate: false
+  xy: 484, 593
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_6
+  rotate: false
+  xy: 484, 111
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_7
+  rotate: false
+  xy: 966, 1077
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_8
+  rotate: false
+  xy: 968, 1559
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+shine/shine_effect_9
+  rotate: false
+  xy: 1448, 1077
+  size: 480, 480
+  orig: 480, 480
+  offset: 0, 0
+  index: -1
+text_shadow
+  rotate: false
+  xy: 1737, 149
+  size: 282, 122
+  orig: 282, 122
+  offset: 0, 0
+  index: -1
+
+S2.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/toon-dust_353
+  rotate: false
+  xy: 2, 1612
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_354
+  rotate: false
+  xy: 2, 1290
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_355
+  rotate: false
+  xy: 644, 1612
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_356
+  rotate: false
+  xy: 2, 968
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_357
+  rotate: false
+  xy: 644, 1290
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_358
+  rotate: false
+  xy: 1286, 1612
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_359
+  rotate: false
+  xy: 2, 646
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_360
+  rotate: false
+  xy: 644, 968
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_361
+  rotate: false
+  xy: 1286, 1290
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_362
+  rotate: false
+  xy: 2, 324
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_363
+  rotate: false
+  xy: 644, 646
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_364
+  rotate: false
+  xy: 1286, 968
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_365
+  rotate: false
+  xy: 2, 2
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_366
+  rotate: false
+  xy: 644, 324
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_367
+  rotate: false
+  xy: 1286, 646
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_368
+  rotate: false
+  xy: 644, 2
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_369
+  rotate: false
+  xy: 1286, 324
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+effect/toon-dust_370
+  rotate: false
+  xy: 1286, 2
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+
+S3.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/toon-dust_371
+  rotate: false
+  xy: 307, 1612
+  size: 640, 320
+  orig: 640, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_1
+  rotate: false
+  xy: 949, 1612
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_10
+  rotate: false
+  xy: 1448, 968
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_11
+  rotate: false
+  xy: 2, 646
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_12
+  rotate: false
+  xy: 484, 646
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_13
+  rotate: false
+  xy: 966, 646
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_14
+  rotate: false
+  xy: 1448, 646
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_15
+  rotate: false
+  xy: 2, 324
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_16
+  rotate: false
+  xy: 484, 324
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_17
+  rotate: false
+  xy: 966, 324
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_18
+  rotate: false
+  xy: 1448, 324
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_19
+  rotate: false
+  xy: 2, 2
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_2
+  rotate: false
+  xy: 1431, 1612
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_20
+  rotate: false
+  xy: 484, 2
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_21
+  rotate: false
+  xy: 966, 2
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_22
+  rotate: false
+  xy: 1448, 2
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_3
+  rotate: false
+  xy: 2, 1290
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_4
+  rotate: false
+  xy: 484, 1290
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_5
+  rotate: false
+  xy: 966, 1290
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_6
+  rotate: false
+  xy: 1448, 1290
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_7
+  rotate: false
+  xy: 2, 968
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_8
+  rotate: false
+  xy: 484, 968
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+new_particle/glowDust_9
+  rotate: false
+  xy: 966, 968
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1
+scatter_shadow
+  rotate: true
+  xy: 2, 1647
+  size: 285, 303
+  orig: 285, 303
+  offset: 0, 0
+  index: -1
+
+S4.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+new_particle/glowDust_23
+  rotate: false
+  xy: 2, 2
+  size: 480, 320
+  orig: 480, 320
+  offset: 0, 0
+  index: -1

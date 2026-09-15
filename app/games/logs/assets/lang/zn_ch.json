@@ -1,0 +1,31 @@
+{
+	"Game_History": "游戏历史记录",
+	"Date": "日期",
+	"Game_Name": "游戏名称",
+	"Round_ID": "回合ID",
+	"Bet_Amount": "投注额",
+	"Win_Amount": "奖金额",
+	"Currency": "货币",
+	"IP_Address": "IP地址",
+
+	"Lines": "赔付线",
+	"Coin_Value": "硬币值",
+	"Coins": "硬币",
+	"Bet": "赌注",
+	"Total_Win": "总奖金",
+	"Bonus": "奖励",
+	"Date_Time": "日期和时间",
+	"Game_Outcome": "游戏结果",
+	"HISTORY": "历史记录",
+	"Multiplier": "翻倍乘数",
+	
+	"Pre_Balance": "注前余额",
+	"Post_Balance": "注后余额",
+	"Win_Lines": "盈利赔付线",
+
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

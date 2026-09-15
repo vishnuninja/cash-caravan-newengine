@@ -1,0 +1,13 @@
+
+Win_line.png
+size: 719,291
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Line_01_00_00
+  rotate: false
+  xy: 2, 2
+  size: 715, 287
+  orig: 715, 287
+  offset: 0, 0
+  index: -1

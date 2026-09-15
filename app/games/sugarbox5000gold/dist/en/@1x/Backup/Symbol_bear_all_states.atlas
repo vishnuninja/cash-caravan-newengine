@@ -1,0 +1,132 @@
+
+Symbol_bear_all_states.png
+size: 2048,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Background
+  rotate: false
+  xy: 592, 484
+  size: 321, 498
+  orig: 323, 500
+  offset: 1, 1
+  index: -1
+BearFrame_X1
+  rotate: true
+  xy: 519, 76
+  size: 338, 148
+  orig: 338, 148
+  offset: 0, 0
+  index: -1
+BearFrame_X2
+  rotate: false
+  xy: 915, 470
+  size: 338, 172
+  orig: 338, 172
+  offset: 0, 0
+  index: -1
+BearFrame_X3
+  rotate: false
+  xy: 1255, 516
+  size: 338, 206
+  orig: 338, 206
+  offset: 0, 0
+  index: -1
+BearFrame_X4
+  rotate: false
+  xy: 1255, 724
+  size: 338, 258
+  orig: 338, 258
+  offset: 0, 0
+  index: -1
+BearFrame_X5
+  rotate: false
+  xy: 915, 644
+  size: 338, 338
+  orig: 338, 338
+  offset: 0, 0
+  index: -1
+BearFrame_X6
+  rotate: true
+  xy: 2, 76
+  size: 338, 515
+  orig: 338, 515
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 138, 31
+  size: 57, 43
+  orig: 59, 45
+  offset: 1, 1
+  index: -1
+Layer 2
+  rotate: false
+  xy: 2, 2
+  size: 87, 72
+  orig: 89, 74
+  offset: 1, 1
+  index: -1
+body
+  rotate: false
+  xy: 2, 416
+  size: 588, 566
+  orig: 602, 605
+  offset: 6, 39
+  index: -1
+eyes_close
+  rotate: false
+  xy: 1255, 480
+  size: 111, 34
+  orig: 113, 36
+  offset: 1, 1
+  index: -1
+head
+  rotate: false
+  xy: 1595, 501
+  size: 297, 203
+  orig: 300, 205
+  offset: 2, 1
+  index: -1
+left_ear
+  rotate: false
+  xy: 653, 428
+  size: 56, 54
+  orig: 58, 56
+  offset: 1, 1
+  index: -1
+leftwind
+  rotate: true
+  xy: 1891, 718
+  size: 44, 74
+  orig: 46, 76
+  offset: 1, 1
+  index: -1
+mouth
+  rotate: true
+  xy: 1891, 764
+  size: 218, 114
+  orig: 220, 116
+  offset: 1, 1
+  index: -1
+neck
+  rotate: true
+  xy: 1595, 706
+  size: 276, 294
+  orig: 278, 296
+  offset: 1, 1
+  index: -1
+right_ear
+  rotate: false
+  xy: 592, 421
+  size: 59, 61
+  orig: 61, 63
+  offset: 1, 1
+  index: -1
+rightwind
+  rotate: false
+  xy: 91, 2
+  size: 45, 72
+  orig: 47, 74
+  offset: 1, 1
+  index: -1

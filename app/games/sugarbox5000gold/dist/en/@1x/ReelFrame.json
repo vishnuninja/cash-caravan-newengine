@@ -1,0 +1,20 @@
+{"frames": {
+
+"frame":
+{
+	"frame": {"x":0,"y":0,"w":964,"h":672},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":964,"h":672},
+	"sourceSize": {"w":964,"h":672}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "ReelFrame.png",
+	"format": "RGBA8888",
+	"size": {"w":964,"h":672},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d37d71ee4befa5d9d1207553c7eaca8e:82303cb65bf61fe9da29ef613b17ccd9:65d0d95c530d015c8d7b827323dd55cd$"
+}
+}

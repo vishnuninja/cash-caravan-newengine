@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!-- <base id="myBase" href="/games/slots/" target="_blank"> -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, minimal-ui">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-transulent" />
+	
+	
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<title>Slot Game</title>	
+	<link rel="stylesheet" href="style.css">	
+
+	<script src="config.js?v=__version__"></script>
+	<script src="js/libs/pixi.min.js?v=__version__"></script>
+	<script src="js/libs/pixi-legacy.min.js?v=__version__"></script>
+	<script src="js/libs/howler-2.2.1-min.js?v=__version__"></script>
+	<script src="js/libs/pixi-spine3.7v5.js?v=__version__"></script>	
+</head>
+
+<body onunload="" onload="onPageLoad()" oncontextmenu="return false;">
+	<img id="containerbg">
+	
+	<div id="gameRules">
+		<div id="grContent" class="disable-select"></div>
+		<div id="grCloseBtn" onclick="onGameRulesToggle(false)">
+			<img id="closeBtn" src="" alt="" srcset="" width="25px" , height="25px">
+		</div>
+	</div>
+	
+	<!-- <div id="gamePaytable">
+		<div id="ptContent" class="wrapper text-center">
+		</div>
+		<div id="ptInfoBtn"> -->
+			<!-- <img id="infoBtn" src="" alt="" srcset="" width="48px" height="48px"> -->
+			<!-- <span class="paytableText"></span> -->
+		<!-- </div>
+		<div id="paytableCloseBtn" onclick="onGamePaytableToggle(false)"> -->
+			<!-- <img id="paytableCloseBtn" src="" alt="" srcset="" width="48px" height="48px"> -->
+		<!-- </div>
+	</div> -->
+
+	<div id="preloaderWrapper"></div>	
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="main.js?v=__version__" id="mainJS"></script>
+	<!-- <script src="js/preloaderComp.js"></script> -->
+	<script src="js/Preloader.js?v=__version__"></script>
+
+	<script>
+		(function () {
+			const devUrl = 'https://demo.ninjagaming.com/ui-plugin/';
+			const isLocalhost = ['localhost', '127.0.0.1', '0.0.0.0', '::1'].includes(location.hostname);
+			const isDev = location.href.startsWith('https://dev-h3-games.ninjagaming.com/');
+
+			const base = (isLocalhost || isDev) ? devUrl : getUIPluginBase();
+
+			function appendCss(src) {
+				const link = document.createElement('link');
+				link.rel = 'stylesheet';
+				link.href = base + src;
+				document.head.appendChild(link);
+			}
+
+			function appendJs(src) {
+				const script = document.createElement('script');
+				script.src = base + src;
+				script.defer = true;
+				document.body.appendChild(script);
+			}
+
+			appendCss('game-ui.css');
+			appendJs('game-ui.js');
+		})();
+
+
+	function getUIPluginBase() {
+		const ORIGIN = window.location.origin; 
+		const UI_PLUGIN_BASE = new URL("/ui-plugin/", ORIGIN).toString();
+		return UI_PLUGIN_BASE
+	}
+	</script>
+	
+</body>
+</html>

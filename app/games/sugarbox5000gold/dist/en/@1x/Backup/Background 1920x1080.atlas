@@ -1,0 +1,213 @@
+
+Background 1920x1080.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Butterfly Turn Right/ButterflyTurn_1
+  rotate: false
+  xy: 2, 69
+  size: 44, 68
+  orig: 96, 92
+  offset: 26, 12
+  index: -1
+Butterfly Turn Right/ButterflyTurn_10
+  rotate: true
+  xy: 341, 409
+  size: 42, 68
+  orig: 96, 92
+  offset: 27, 12
+  index: -1
+Butterfly Turn Right/ButterflyTurn_2
+  rotate: true
+  xy: 202, 405
+  size: 46, 68
+  orig: 96, 92
+  offset: 26, 12
+  index: -1
+Butterfly Turn Right/ButterflyTurn_3
+  rotate: false
+  xy: 1925, 1215
+  size: 48, 65
+  orig: 96, 92
+  offset: 25, 14
+  index: -1
+Butterfly Turn Right/ButterflyTurn_4
+  rotate: false
+  xy: 1925, 1414
+  size: 58, 62
+  orig: 96, 92
+  offset: 20, 15
+  index: -1
+Butterfly Turn Right/ButterflyTurn_5
+  rotate: false
+  xy: 2, 394
+  size: 67, 57
+  orig: 96, 92
+  offset: 15, 18
+  index: -1
+Butterfly Turn Right/ButterflyTurn_6
+  rotate: false
+  xy: 1925, 1478
+  size: 69, 55
+  orig: 96, 92
+  offset: 14, 19
+  index: -1
+Butterfly Turn Right/ButterflyTurn_7
+  rotate: false
+  xy: 2, 335
+  size: 64, 57
+  orig: 96, 92
+  offset: 17, 18
+  index: -1
+Butterfly Turn Right/ButterflyTurn_8
+  rotate: false
+  xy: 2, 271
+  size: 57, 62
+  orig: 96, 92
+  offset: 20, 15
+  index: -1
+Butterfly Turn Right/ButterflyTurn_9
+  rotate: false
+  xy: 2, 2
+  size: 43, 65
+  orig: 96, 92
+  offset: 27, 14
+  index: -1
+Butterfly_Loop/Butterlfly-1
+  rotate: false
+  xy: 1925, 1145
+  size: 44, 68
+  orig: 96, 92
+  offset: 26, 12
+  index: -1
+Butterfly_Loop/Butterlfly-10
+  rotate: true
+  xy: 272, 405
+  size: 46, 67
+  orig: 96, 92
+  offset: 26, 13
+  index: -1
+Butterfly_Loop/Butterlfly-2
+  rotate: false
+  xy: 2, 139
+  size: 47, 67
+  orig: 96, 92
+  offset: 25, 13
+  index: -1
+Butterfly_Loop/Butterlfly-3
+  rotate: false
+  xy: 1996, 1467
+  size: 50, 66
+  orig: 96, 92
+  offset: 25, 12
+  index: -1
+Butterfly_Loop/Butterlfly-4
+  rotate: true
+  xy: 139, 396
+  size: 55, 61
+  orig: 96, 92
+  offset: 21, 14
+  index: -1
+Butterfly_Loop/Butterlfly-5
+  rotate: true
+  xy: 1925, 1350
+  size: 62, 57
+  orig: 96, 92
+  offset: 13, 16
+  index: -1
+Butterfly_Loop/Butterlfly-6
+  rotate: false
+  xy: 71, 396
+  size: 66, 55
+  orig: 96, 92
+  offset: 10, 18
+  index: -1
+Butterfly_Loop/Butterlfly-7
+  rotate: false
+  xy: 1985, 1408
+  size: 61, 57
+  orig: 96, 92
+  offset: 14, 16
+  index: -1
+Butterfly_Loop/Butterlfly-8
+  rotate: false
+  xy: 2, 208
+  size: 55, 61
+  orig: 96, 92
+  offset: 20, 15
+  index: -1
+Butterfly_Loop/Butterlfly-9
+  rotate: false
+  xy: 1925, 1282
+  size: 50, 66
+  orig: 96, 92
+  offset: 26, 12
+  index: -1
+Layer 1
+  rotate: false
+  xy: 2, 453
+  size: 1921, 1080
+  orig: 1923, 1082
+  offset: 1, 1
+  index: -1
+Leaf-1
+  rotate: true
+  xy: 1925, 1075
+  size: 68, 31
+  orig: 72, 72
+  offset: 2, 21
+  index: -1
+Leaf-2
+  rotate: false
+  xy: 1984, 1360
+  size: 58, 46
+  orig: 72, 72
+  offset: 9, 17
+  index: -1
+Leaf-3
+  rotate: false
+  xy: 411, 416
+  size: 42, 35
+  orig: 72, 72
+  offset: 15, 19
+  index: -1
+
+Background 1920x10802.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 2
+  rotate: false
+  xy: 2, 2
+  size: 1921, 1080
+  orig: 1923, 1082
+  offset: 1, 1
+  index: -1
+
+Background 1920x10803.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BaseGame_ Portrait
+  rotate: false
+  xy: 2, 2
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+
+Background 1920x10804.png
+size: 2048,2048
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FreeGame_ Portrait
+  rotate: false
+  xy: 2, 2
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1

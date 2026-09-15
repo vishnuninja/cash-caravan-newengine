@@ -1,0 +1,46 @@
+{
+  "urls": [
+    "PrimarySounds.ac3",
+    "PrimarySounds.mp3",
+    "PrimarySounds.m4a",
+    "PrimarySounds.ogg"
+  ],
+  "sprite": {
+    "Cash_Caravan_BaseGame": [
+      0,
+      41509
+    ],
+    "Cash_Caravan_FreeGame": [
+      43000,
+      35239
+    ],
+    "Character_Idle": [
+      80000,
+      2299
+    ],
+    "Character_Win": [
+      84000,
+      2508
+    ],
+    "SR_Loop": [
+      88000,
+      1045
+    ],
+    "SR_Start": [
+      91000,
+      261
+    ],
+    "SR_Stop": [
+      93000,
+      261
+    ],
+    "Scene_Transition": [
+      95000,
+      1907
+    ],
+    "commonBtn": [
+      98000,
+      313
+    ]
+  }
+}

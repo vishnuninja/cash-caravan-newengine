@@ -1,0 +1,52 @@
+{"frames": {
+
+"bar":
+{
+	"frame": {"x":770,"y":1183,"w":1009,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1009,"h":8},
+	"sourceSize": {"w":1009,"h":8}
+},
+"Bg":
+{
+	"frame": {"x":1,"y":1,"w":1920,"h":1080},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":1080},
+	"sourceSize": {"w":1920,"h":1080}
+},
+"fill":
+{
+	"frame": {"x":770,"y":1196,"w":1009,"h":8},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1009,"h":8},
+	"sourceSize": {"w":1009,"h":8}
+},
+"Logo2":
+{
+	"frame": {"x":770,"y":1086,"w":438,"h":92},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":438,"h":92},
+	"sourceSize": {"w":438,"h":92}
+},
+"ninjaLogo":
+{
+	"frame": {"x":1,"y":1086,"w":764,"h":205},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":764,"h":205},
+	"sourceSize": {"w":764,"h":205}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "loading.png",
+	"format": "RGBA8888",
+	"size": {"w":1922,"h":1292},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:29fc506f5a2320f17edc9118e00f6a7a:41287393e2bd6ba59804b282d29edbf3:5294b8b30e478db5089d68a09bebcee6$"
+}
+}

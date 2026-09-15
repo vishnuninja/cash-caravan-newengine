@@ -1,0 +1,31 @@
+{
+	"Game_History": "History",
+	"Date": "Date",
+	"Game_Name": "Game Name",
+	"Round_ID": "Round ID",
+	"Bet_Amount": "Bet Amount",
+	"Win_Amount": "Win Amount",
+	"Currency": "Currency",
+	"IP_Address": "IP Address",
+
+	"Lines": "Lines",
+	"Coin_Value": "Coin Value",
+	"Coins": "Coins",
+	"Bet": "Bet",
+	"Total_Win": "Total Win",
+	"Bonus": "Bonus",
+	"Date_Time": "Date & Time",
+	"Game_Outcome": "Game Outcome",
+	"HISTORY": "HISTORY",
+	"Multiplier": "Multiplier",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

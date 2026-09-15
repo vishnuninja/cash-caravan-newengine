@@ -1,0 +1,103 @@
+{"frames": {
+
+"Base_circle":
+{
+	"frame": {"x":1700,"y":796,"w":35,"h":35},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":35,"h":35},
+	"sourceSize": {"w":35,"h":35}
+},
+"Fill_circle":
+{
+	"frame": {"x":1700,"y":866,"w":23,"h":23},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":23,"h":23},
+	"sourceSize": {"w":23,"h":23}
+},
+"Layer 6":
+{
+	"frame": {"x":839,"y":1,"w":911,"h":738},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":26,"w":911,"h":738},
+	"sourceSize": {"w":1023,"h":840}
+},
+"Layer 7":
+{
+	"frame": {"x":1,"y":1,"w":1015,"h":833},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":7,"w":1015,"h":833},
+	"sourceSize": {"w":1023,"h":840}
+},
+"Layer 8":
+{
+	"frame": {"x":839,"y":744,"w":856,"h":738},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":26,"w":856,"h":738},
+	"sourceSize": {"w":1023,"h":840}
+},
+"Play_disable":
+{
+	"frame": {"x":1,"y":1021,"w":221,"h":99},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":99},
+	"sourceSize": {"w":221,"h":99}
+},
+"Play_hover":
+{
+	"frame": {"x":1,"y":1247,"w":221,"h":99},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":99},
+	"sourceSize": {"w":221,"h":99}
+},
+"Play_normal":
+{
+	"frame": {"x":105,"y":1021,"w":221,"h":99},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":99},
+	"sourceSize": {"w":221,"h":99}
+},
+"Play_pressed":
+{
+	"frame": {"x":105,"y":1247,"w":221,"h":99},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":221,"h":99},
+	"sourceSize": {"w":221,"h":99}
+},
+"Tick":
+{
+	"frame": {"x":1700,"y":836,"w":28,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":25},
+	"sourceSize": {"w":28,"h":25}
+},
+"Tick_box":
+{
+	"frame": {"x":1700,"y":744,"w":47,"h":48},
+	"rotated": true,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":47,"h":48},
+	"sourceSize": {"w":47,"h":48}
+}},
+"animations": {
+	"Layer ": ["Layer 6","Layer 7","Layer 8"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "introscreen5000Gold.png",
+	"format": "RGBA8888",
+	"size": {"w":1751,"h":1483},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:78c7e1df9c27dd8e66140c10358c9766:4d26a699957abae248ab9fa2fdb2cc4c:fb2796a3014ec813b3b2feb0d65a3c5e$"
+}
+}

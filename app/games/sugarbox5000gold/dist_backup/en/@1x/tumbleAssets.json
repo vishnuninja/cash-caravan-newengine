@@ -1,0 +1,28 @@
+{"frames": {
+
+"tumble_box":
+{
+	"frame": {"x":1,"y":1,"w":485,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":485,"h":75},
+	"sourceSize": {"w":485,"h":75}
+},
+"tumble_text":
+{
+	"frame": {"x":490,"y":1,"w":261,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":261,"h":56},
+	"sourceSize": {"w":261,"h":56}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "tumbleAssets.png",
+	"format": "RGBA8888",
+	"size": {"w":752,"h":77},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:22423f38570e1c2fb8be0962fe216d5f:52bc75190f034d84de08320fb4b583ca:136523d0747ac6dbb8c6aa6abc1a7227$"
+}
+}

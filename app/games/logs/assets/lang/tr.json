@@ -1,0 +1,31 @@
+{
+	"Game_History": "Oyun geçmişi",
+	"Date": "Tarih",
+	"Game_Name": "Oyun Adı",
+	"Round_ID": "Tur Kimliği",
+	"Bet_Amount": "Bahis Tutarı",
+	"Win_Amount": "Kazanç Tutarı",
+	"Currency": "Para birimi",
+	"IP_Address": "IP Adresi",
+
+	"Lines": "Satırlar",
+	"Coin_Value": "Para değeri",
+	"Coins": "Jeton",
+	"Bet": "Bahis",
+	"Total_Win": "Toplam Kazanç",
+	"Bonus": "Bonus",
+	"Date_Time": "Tarih & Saat",
+	"Game_Outcome": "Oyun Sonucu",
+	"HISTORY": "GEÇMİŞ",
+	"Multiplier": "Çarpan",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

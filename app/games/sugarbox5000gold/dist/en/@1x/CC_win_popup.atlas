@@ -1,0 +1,258 @@
+CC_win_popup.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+CARAVAN
+bounds:2,1671,725,375
+FANTASTICWIN
+bounds:567,1049,620,148
+rotate:90
+FANTASTICWIN_BLUE
+bounds:729,1850,669,196
+FANTASTICWIN_ORANGE
+bounds:411,1041,628,154
+rotate:90
+FANTASTICWIN_PURPLE
+bounds:729,1682,639,166
+FANTASTICWIN_RED
+bounds:1400,1887,634,159
+Layer 2
+bounds:2,488,565,271
+rotate:90
+MAXWIN
+bounds:1882,1131,448,114
+rotate:90
+MAXWIN_BLUE
+bounds:407,544,495,161
+rotate:90
+MAXWIN_ORANGE
+bounds:1629,804,454,119
+rotate:90
+MAXWIN_PURPLE
+bounds:1750,1114,465,130
+rotate:90
+MAXWIN_RED
+bounds:749,2,460,125
+NICE_BLUE
+bounds:1750,809,303,190
+rotate:90
+OMG_BLUE
+bounds:559,99,402,188
+rotate:90
+OMG_ORANGE
+bounds:1903,83,358,142
+rotate:90
+OMG_RED
+bounds:1896,443,364,149
+rotate:90
+SUPERWIN
+bounds:275,558,495,130
+rotate:90
+SUPERWIN_BLUE
+bounds:570,503,544,179
+rotate:90
+SUPERWIN_ORANGE
+bounds:1245,1260,503,136
+SUPERWIN_PURPLE
+bounds:1370,1581,514,147
+SUPERWIN_RED
+bounds:717,1160,509,142
+rotate:90
+TIRES
+bounds:1400,1730,596,155
+b_1 copy 2
+bounds:1886,1581,147,134
+rotate:90
+bonus_disco_ball/ 1
+bounds:861,1305,382,375
+bonus_disco_ball/ 10
+bounds:861,928,382,375
+bonus_disco_ball/ 11
+bounds:1245,883,382,375
+bonus_disco_ball/ 12
+bounds:751,551,382,375
+bonus_disco_ball/ 13
+bounds:1135,506,382,375
+bonus_disco_ball/ 14
+bounds:751,174,382,375
+bonus_disco_ball/ 15
+bounds:1135,129,382,375
+bonus_disco_ball/ 16
+bounds:1519,420,382,375
+rotate:90
+bonus_disco_ball/ 17
+bounds:1519,43,382,375
+elements/A3
+bounds:1942,1032,97,97
+elements/A4
+bounds:1401,11,116,116
+elements/A5
+bounds:1245,1584,112,96
+elements/A6
+bounds:717,1051,121,107
+g_1 copy 2
+bounds:751,933,101,116
+girl_back
+bounds:2,77,337,409
+girl_bangles
+bounds:1370,1807,28,41
+girl_body
+bounds:2,1055,407,614
+girl_eyeglasses_1
+bounds:2,18,113,57
+girl_eyeglasses_2
+bounds:2036,2019,27,10
+rotate:90
+girl_eyeglasses_3
+bounds:275,488,29,5
+rotate:90
+girl_feather_main
+bounds:275,519,34,37
+girl_feather_string
+bounds:341,81,11,17
+rotate:90
+girl_flower
+bounds:1519,2,39,40
+rotate:90
+girl_garment
+bounds:1135,891,35,76
+rotate:90
+girl_hand
+bounds:1211,16,111,188
+rotate:90
+p_1 copy 2
+bounds:341,94,448,216
+rotate:90
+shineee
+bounds:1245,1398,480,181
+
+CC_win_popup_2.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+NICE
+bounds:1868,1039,252,139
+rotate:90
+NICE_ORANGE
+bounds:914,15,258,145
+NICE_PURPLE
+bounds:374,2,271,158
+NICE_RED
+bounds:647,9,265,151
+OMG
+bounds:1154,218,351,136
+OMG_PURPLE
+bounds:2,5,370,155
+bonus_disco_ball/ 18
+bounds:2,1670,382,375
+bonus_disco_ball/ 19
+bounds:2,1293,382,375
+bonus_disco_ball/ 2
+bounds:386,1670,382,375
+bonus_disco_ball/ 20
+bounds:2,916,382,375
+bonus_disco_ball/ 21
+bounds:386,1293,382,375
+bonus_disco_ball/ 22
+bounds:770,1670,382,375
+bonus_disco_ball/ 23
+bounds:2,539,382,375
+bonus_disco_ball/ 24
+bounds:386,916,382,375
+bonus_disco_ball/ 25
+bounds:770,1293,382,375
+bonus_disco_ball/ 26
+bounds:1154,1670,382,375
+bonus_disco_ball/ 27
+bounds:2,162,382,375
+bonus_disco_ball/ 28
+bounds:386,539,382,375
+bonus_disco_ball/ 29
+bounds:770,916,382,375
+bonus_disco_ball/ 3
+bounds:1154,1293,382,375
+bonus_disco_ball/ 30
+bounds:1538,1670,382,375
+bonus_disco_ball/ 4
+bounds:386,162,382,375
+bonus_disco_ball/ 5
+bounds:770,539,382,375
+bonus_disco_ball/ 6
+bounds:1154,916,382,375
+bonus_disco_ball/ 7
+bounds:1538,1293,382,375
+bonus_disco_ball/ 8
+bounds:770,162,382,375
+bonus_disco_ball/ 9
+bounds:1154,539,382,375
+dballline
+bounds:1799,449,229,184
+rotate:90
+elements/A2
+bounds:1791,182,127,127
+elements/A7
+bounds:1922,1921,124,124
+fire_works_sfx1/ 1
+bounds:1538,700,259,272
+fire_works_sfx1/ 10
+bounds:1538,426,259,272
+fire_works_sfx1/ 11
+bounds:1517,165,259,272
+rotate:90
+girl_face
+bounds:1799,311,136,161
+rotate:90
+girl_foot
+bounds:1174,48,168,237
+rotate:90
+girl_hair_front
+bounds:1538,974,328,317
+rainbow
+bounds:1154,356,361,181
+shine_flare2
+bounds:1799,680,224,292
+shroom copy 5
+bounds:1922,1804,120,115
+
+CC_win_popup_3.png
+size:2048,1024
+filter:Linear,Linear
+pma:true
+fire_works_sfx1/ 12
+bounds:2,550,259,272
+fire_works_sfx1/ 13
+bounds:2,276,259,272
+fire_works_sfx1/ 14
+bounds:263,550,259,272
+fire_works_sfx1/ 15
+bounds:2,2,259,272
+fire_works_sfx1/ 16
+bounds:263,276,259,272
+fire_works_sfx1/ 17
+bounds:524,550,259,272
+fire_works_sfx1/ 18
+bounds:263,2,259,272
+fire_works_sfx1/ 19
+bounds:524,276,259,272
+fire_works_sfx1/ 2
+bounds:785,550,259,272
+fire_works_sfx1/ 20
+bounds:524,2,259,272
+fire_works_sfx1/ 21
+bounds:785,276,259,272
+fire_works_sfx1/ 22
+bounds:1046,550,259,272
+fire_works_sfx1/ 3
+bounds:785,2,259,272
+fire_works_sfx1/ 4
+bounds:1046,276,259,272
+fire_works_sfx1/ 5
+bounds:1307,550,259,272
+fire_works_sfx1/ 6
+bounds:1046,2,259,272
+fire_works_sfx1/ 7
+bounds:1307,276,259,272
+fire_works_sfx1/ 8
+bounds:1568,550,259,272
+fire_works_sfx1/ 9
+bounds:1307,2,259,272

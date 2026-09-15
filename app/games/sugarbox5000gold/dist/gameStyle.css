@@ -1,0 +1,483 @@
+/* game css  fiel */
+
+.test{
+	color : red;
+}
+spText{
+color:blue;
+}
+
+
+/*  HTML Paytable  */
+
+/*@font-face {
+  font-family: 'CarnevaleeFreakshow';
+  src: url('app/games/goldheist/html/assets/fonts/Carnevalee Freakshow.ttf');
+}
+
+@font-face {
+  font-family: 'NeutonRegular';
+  src: url('app/games/goldheist/html/assets/fonts/Neuton-Regular.ttf');
+}*/
+
+spText{
+	color:red;
+}
+
+.imgTextStyleSingle{
+	color : orange;
+	width: 470px;
+	height: 236px;
+}
+
+
+.imgTextStyleSingle span{
+	position: relative;
+	top: 20px;
+}
+
+.parentClass{
+	display: inline-block;
+}
+
+.imgTextStyle {
+	color : red;
+	width: 470px;
+	height: 236px;
+	float: left;
+}
+
+.imgTextStyle span{
+	position: relative;
+	top: 20px;
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #paytableCloseBtn {
+    width: 25px;
+    height: 25px;
+  }
+  #infoBtn {
+    width: 25px;
+    height: 25px;
+  }
+  .paytableText {
+    position: absolute;
+    left: 13%;
+    top: 5.5%;
+    font-size: 16px;
+  }
+  #gamePaytable {
+    display: none;
+    color: white;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+  }
+  #grCloseBtn {
+    display: block;
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    top: 5%;
+    right: 6%;
+  }
+  #ptInfoBtn {
+    display: block;
+    position: absolute;
+    float: left;
+    cursor: pointer;
+    top: 5%;
+    left: 6%;
+  }
+  .wrapper {
+    overflow-y: scroll;
+    width: 92%;
+    height: 95%;
+    margin: 4%;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 10px;
+  }
+  p {
+    font-size: 15px;
+    margin: 20px;;
+  }
+  .text1 {
+    font-size: 45px;
+  }
+  .text2 {
+    font-size: 38px;
+  }
+  .text3 {
+    font-size: 30px;
+  }
+  .text4 {
+    font-size: 26px;
+  }
+  .text5 {
+    font-size: 22px;
+  }
+  .text6 {
+    font-size: 18px;
+  }
+  .gap {
+    padding-top: 45px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #paytableCloseBtn {
+    width: 25px;
+    height: 25px;
+  }
+  #infoBtn {
+    width: 25px;
+    height: 25px;
+  }
+  .paytableText {
+    position: absolute;
+    left: 6%;
+    top: 5%;
+    font-size: 18px;
+  }
+  #gamePaytable {
+    display: none;
+    color: white;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+  }
+  #grCloseBtn {
+    display: block;
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    top: 5%;
+    right: 3%;
+  }
+  #ptInfoBtn {
+    display: block;
+    position: absolute;
+    float: left;
+    cursor: pointer;
+    top: 5%;
+    left: 3%;
+  }
+  .wrapper {
+    overflow-y: scroll;
+    width: 92%;
+    height: 94%;
+    margin: 4%;
+  }
+  p {
+    font-size: 15px;
+    margin: 20px;;
+  }
+  .text1 {
+    font-size: 40px;
+  }
+  .text2 {
+    font-size: 34px;
+  }
+  .text3 {
+    font-size: 28px;
+  }
+  .text4 {
+    font-size: 24px;
+  }
+  .text5 {
+    font-size: 22px;
+  }
+  .text6 {
+    font-size: 18px;
+  }
+  .gap {
+    padding-top: 45px;
+  }
+}
+
+
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #paytableCloseBtn {
+    width: 42px;
+    height: 42px;
+  }
+  #infoBtn {
+    width: 42px;
+    height: 42px;
+  }
+  .paytableText {
+    position: absolute;
+    left: 6%;
+    top: 5%;
+    font-size: 20px;
+  }
+  #gamePaytable {
+    display: none;
+    color: white;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+  }
+  #grCloseBtn {
+    display: block;
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    top: 5%;
+    right: 3%;
+  }
+  #ptInfoBtn {
+    display: block;
+    position: absolute;
+    float: left;
+    cursor: pointer;
+    top: 5%;
+    left: 3%;
+  }
+  .wrapper {
+    overflow-y: scroll;
+    width: 92%;
+    height: 94%;
+    margin: 4%;
+  }
+  p {
+    font-size: 20px;
+    margin: 20px;;
+  }
+  .text1 {
+    font-size: 60px;
+  }
+  .text2 {
+    font-size: 50px;
+  }
+  .text3 {
+    font-size: 40px;
+  }
+  .text4 {
+    font-size: 34px;
+  }
+  .text5 {
+    font-size: 28px;
+  }
+  .text6 {
+    font-size: 25px;
+  }
+  .gap {
+    padding-top: 45px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #paytableCloseBtn {
+    width: 42px;
+    height: 42px;
+  }
+  #infoBtn {
+    width: 42px;
+    height: 42px;
+  }
+  .paytableText {
+    position: absolute;
+    left: 6%;
+    top: 5%;
+    font-size: 22px;
+  }
+  #gamePaytable {
+    display: none;
+    color: white;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+  }
+  #grCloseBtn {
+    display: block;
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    top: 5%;
+    right: 3%;
+  }
+  #ptInfoBtn {
+    display: block;
+    position: absolute;
+    float: left;
+    cursor: pointer;
+    top: 5%;
+    left: 3%;
+  }
+  .wrapper {
+    overflow-y: scroll;
+    width: 97%;
+    height: 93%;
+    margin: 2%;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin: 10px;
+  }
+  p {
+    font-size: 20px;
+    margin: 20px;;
+  }
+  .text1 {
+    font-size: 80px;
+  }
+  .text2 {
+    font-size: 50px;
+  }
+  .text3 {
+    font-size: 40px;
+  }
+  .text4 {
+    font-size: 34px;
+  }
+  .text5 {
+    font-size: 28px;
+  }
+  .text6 {
+    font-size: 25px;
+  }
+  .gap {
+    padding-top: 45px;
+  }
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #paytableCloseBtn {
+    width: 42px;
+    height: 42px;
+  }
+  #infoBtn {
+    width: 42px;
+    height: 42px;
+  }
+  .paytableText {
+    position: absolute;
+    left: 7%;
+    top: 6%;
+    font-size: 1.5em;
+  }
+  #gamePaytable {
+    display: none;
+    color: white;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+  }
+  #grCloseBtn {
+    display: block;
+    position: absolute;
+    float: right;
+    cursor: pointer;
+    top: 5%;
+    right: 3%;
+  }
+  #ptInfoBtn {
+    display: block;
+    position: absolute;
+    float: left;
+    cursor: pointer;
+    top: 5%;
+    left: 3%;
+  }
+  .wrapper {
+    overflow-y: scroll;
+    width: 97%;
+    height: 93%;
+    margin: 2%;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 10px;
+  }
+  p {
+    font-size: 20px;
+    margin: 20px;;
+  }
+  .text1 {
+    font-size: 80px;
+  }
+  .text2 {
+    font-size: 50px;
+  }
+  .text3 {
+    font-size: 40px;
+  }
+  .text4 {
+    font-size: 34px;
+  }
+  .text5 {
+    font-size: 28px;
+  }
+  .text6 {
+    font-size: 25px;
+  }
+  .gap {
+    padding-top: 50px;
+  }
+}
+
+
+#gamePaytable {
+	display: none;
+	width: 1190px;
+	height: 630px;
+	position: relative;
+	background-image: url('app/games/goldheist/html/assets/images/BGFrameL.png');
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-color: #291f23;
+	color: white;
+	font-size: 25px;
+	z-index: 999;
+  overflow: hidden;
+  padding: 45px;
+} 
+
+.eorTextColor{
+  color: #FFFF66;
+  font-size: 35px;
+  font-family: lilita;
+}
+
+.wwTextColor{
+  color: #FFFF66;
+  font-size: 30px;
+  font-family: lilita;
+}
+
+ @media screen and (min-width: 800px) {
+			#grContent{
+				height: 640px;
+				padding: 40px;
+			}
+		} 

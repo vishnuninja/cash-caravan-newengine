@@ -1,0 +1,20 @@
+{"frames": {
+
+"Dragon_Load":
+{
+	"frame": {"x":0,"y":0,"w":420,"h":420},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":420,"h":420},
+	"sourceSize": {"w":420,"h":420}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "Loading_Circle.png",
+	"format": "RGBA8888",
+	"size": {"w":420,"h":420},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:0c4b0ae836c52a777378b41049cd6fdf:c62fd2afb29163cc4e7154975108b998:8a6a8d2aff08f69a3fe655d456280464$"
+}
+}

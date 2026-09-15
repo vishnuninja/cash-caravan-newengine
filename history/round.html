@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>SUGARBOX 5000 GOLD Round History</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="history.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <img id="loadingLogo" class="loading-logo" src="" alt="SUGARBOX 5000 GOLD Logo">
+    </div>
+
+    <!-- Main Container -->
+    <div id="mainContainer" class="main-container">
+        <!-- Header -->
+        <header class="history-header">
+            <div class="header-left">
+                <img id="gameLogo" src="" alt="SUGARBOX 5000 GOLD Logo" class="game-logo">
+            </div>
+            <h1 id="gameTitle" class="game-title">Round History</h1>
+            <div class="header-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme" title="Toggle Theme">
+                    <span id="themeIcon">🌙</span>
+                </button>
+                <button id="closeBtn" class="close-btn" aria-label="Close">×</button>
+            </div>
+        </header>
+
+        <!-- History Table Container (Desktop) -->
+        <div id="historyTableContainer" class="history-table-container">
+            <table id="historyTable" class="history-table">
+                <thead>
+                    <tr>
+                        <th id="thSessionId">Round ID</th>
+                        <th id="thDate">Date</th>
+                        <th id="thBalance">Balance</th>
+                        <th id="thBet">Bet</th>
+                        <th id="thWinX">WinX</th>
+                        <th id="thWin">Win</th>
+                        <th id="thType">Type</th>
+                         <th id="thType">Replay</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTableBody">
+                    <!-- History rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- History Cards Container (Mobile) -->
+        <div id="historyCardsContainer" class="history-cards-container">
+            <div id="historyCards" class="history-cards">
+                <!-- History cards will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Enable single-record mode for the shared JS files
+        window.HISTORY_SINGLE_RECORD = true;
+    </script>
+    <script src="history-api.js"></script>
+    <script src="history-locale.js"></script>
+    <script src="history-theme.js"></script>
+    <script src="history-replay.js"></script>
+    <script src="history-desktop.js"></script>
+    <script src="history-mobile.js"></script>
+    <script src="history-single.js"></script>
+</body>
+
+</html>
+
+

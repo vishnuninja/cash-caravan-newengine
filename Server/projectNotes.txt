@@ -1,0 +1,157 @@
+mysqldump -u root -p --routines --skip-extended-insert --databases game gamelog player round_id serialize > all_dbs.sql
+
+mysqldump -u casino -p --routines --skip-extended-insert --databases --no-create-db --no-create-info game > /tmp/game_config.sql
+
+mysqldump --routines --no-create-info --no-data --no-create-db --databases game gamelog player round_id serialize > /tmp/rt.sql
+
+mysqldump -u root --routines --skip-extended-insert --databases game gamelog player round_id serialize temp > all_dbs.sql
+
+mysqldump -u root --routines --skip-extended-insert --databases slots game gamelog temp player serialize round_id > all_dbs2.sql
+
+sudo mysqldump --routines --skip-extended-insert --databases slots gamelog temp player serialize round_id game > all_dbs.sql
+
+Game Notes:
+	Multiple Reels sets
+		BaseGame:
+			Based on Bet Range
+			Based on weight
+		FreeSpins:
+			Base of weight or pre determined
+
+	Base Game Bonus:
+		On Matrix
+
+- rng.lib.php needs to be chnaged
+- PHP Naming convention and PHP coding standards
+	https://softwareengineering.stackexchange.com/questions/149303/naming-classes-methods-functions-and-variables
+- @todo: Need to update primary key of game.slots to have game_name in primary key
+
+
+- Wrath todo
+	- Yet to work on re-spins coding and configuration insertion into DB
+	- Need to handle awarding freespins during freespins
+	- Validations of game client request parameters
+	- Total Bet is 10 coins. How ??
+	- Forcing
+	- Simulation
+
+	Questions to ask:
+		- 3, 4, 5 bonus symbols award 8, 10 or 12 Freespins respectively during main game.
+		- Druing freespins also, based on number of bonus symbols, freespins are awarede as mentioned above.
+		- 3, 4, 5 bonus symbols award 5 total bets, 20 total bets and 40 total bets are awarded.
+		- Druing freespins also, based on number of bonus symbols, total bets are awarded as mentioned above.
+		- Walking Wild:
+			- How many wilds are generated randomly. Is it possible for wild to appear more than once on same reel ?
+			- There 5 reels. Hence, max only 5 wilds can be generated ? one wild per reel ? what are the weights to
+			  generate random number of wilds from 1 to 5 ?
+			- For example there 3 lines which award payline wins as below
+				- payline 1: aaadc -> win amount z -> WILL NOT be multiplied
+				- payline 2: aaawc -> win amount z -> Will be multiplied
+				- payline 3: awadc -> win amount z -> Will be multiplied
+
+				Payline 2(wild on reel4) and pylaine 3(wild on reel3), are having wilds. Now, for palyline 2 and 3, do we need to
+				use the highest multiplier(4) for both payline 2 and 3 ?
+			- Multipliers do not stack or add ? Kindly explain
+
+		- Spawning Wild
+			- What does spawning wild mean ? What is the symbol in math spreadsheet which represents spawning wild
+			- When does it appear on game screen ?
+			- How many re-spins need to be awarded ? During respins, wagering should happen or should not ?
+			- During re-spins, spawning wild just moves to left till it reaches the first reel ?
+			- Probabilities are given in the doc.
+				- For main probabilities are given only for 1,2, and wild reels. How about 4 and 5 ?
+				- It is mentioned that reels are chosen reandomly, one reel can NOT be chosen more than once. Just expalin about the statement "in case of mutliple reels, the highest reel set is used."
+
+1. Bonus symbols award free spins during both main and free spins.
+2. Bonus symbols award mutlipliers which will be multiplied with total bet during both main and free spins.
+3. Bonus symbols do not appear during re-spins
+4. Re-spins:
+	4.1. Criteria: There must be less than 3 bonus symbols. Then, there is a chance of getting Span Wild Reels
+	4.2. Probabilites to get number of spawning wild reels can be found in the given document.
+	4.3. Wild Reels / Spawning wild reels (reel is completely occupied by wild) will trigger re-spins.
+	4.4. Can happen the same during free-spins also
+	4.5. Scenario: reel1 and reel3 are spawning wild reels. In this, case 4 re-spins would be awarded since wild reel is on reel1
+5. Walking Multiplier Wild:
+	5.1. During re-spins, wild reel moves towards right till last reel
+	5.2. All winnings containing WILD will be multiplied with the reel number on which wild part of. Highest multiplier
+	     is used in case of mutliple wilds. Example: Wild is present on both reel 2 and reel 5. Here wins will be multiplied with 5.
+
+1. Main (Base) game: Done
+2. FreeSpins: Done
+3. Bonus symbol Multiplier: Done
+4. Bonus symbols should not appear during re-spins: Done
+5. Re-Spins: In Progress.
+6. Walking Multipler Wild: Yet to do
+
+
+- Wrath todo Ameer
+	next_round:
+	bonus_games_won: rename from 'name' to 'type'
+	screen_wins: rename to 'feature_wins' or 'special_wins'
+
+	Yet to Do:
+		- Walking Wild
+		- ReSpins
+		- Multiplier
+
+	- Questions and seeking clarification
+		0. Expanding
+		1. Walking wild
+		2. Respin
+		3. Multiplier
+
+		Questions :
+		1. expanding wild ?
+		2. Spawning wild symbol ?
+		3. walking wild movement : left to right or right to left ?
+		4. if there more then 1 wild on screen both should walk or only one/which one ?  as we can see in doc only hightest one multipler will be applicable
+		5. how many max wild may come on screen at a time ?
+
+
+
+
+
+
+**************************************
+MySQL
+	https://linuxconfig.org/install-mysql-on-ubuntu-18-04-bionic-beaver-linux
+	https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04
+
+Mysql Installation in 18.04
+	sudo apt-get install mysql-server mysql-common mysql-client
+	sudo mysql_secure_installation
+
+	CREATE USER 'sammy'@'localhost' IDENTIFIED BY '123456';
+	GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'localhost' WITH GRANT OPTION;
+
+	CREATE USER 'bala'@'localhost' IDENTIFIED BY '123456';
+	GRANT ALL PRIVILEGES ON *.* TO 'bala'@'localhost' WITH GRANT OPTION;
+
+	CREATE USER 'casino'@'localhost' IDENTIFIED BY '123456';
+	GRANT ALL PRIVILEGES ON *.* TO 'casino'@'localhost' WITH GRANT OPTION;
+
+	#SELECT user,authentication_string,plugin,host FROM mysql.user;
+	#ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
+	FLUSH PRIVILEGES;
+
+	sudo vim /etc/mysql/conf.d/disable_strict_mode.cnf
+	In the above add the following lines
+	[mysqld]
+	sql_mode=NO_ENGINE_SUBSTITUTION
+
+	drop database gamelog; drop database player; drop database sequences; drop database serialize; drop database slots; drop database temp;
+
+	mysqldump --routines --skip-extended-insert --databases slots gamelog temp player serialize sequences game > all_dbs.sql
+	mysql -u root -p < all_dbs.sql
+
+MySQL remove in ubuntu 18.04
+	sudo apt-get remove mysql*
+	sudo apt-get purge mysql*
+	sudo apt-get autoremove
+	sudo apt-get autoclean
+
+PHP Naming convention
+	https://softwareengineering.stackexchange.com/questions/149303/naming-classes-methods-functions-and-variables
+
+
+'{"5a":400,"4a":200,"3a":100,"5b":200,"4b": 100 ,"3b": 50,"5c": 160 ,"4c": 80  ,"3c": 40,"5d": 120  ,"4d": 60  ,"3d": 30,"5e": 80  ,"4e": 40  ,"3e": 20,"5f": 40  ,"4f": 20  ,"3f": 10,"5g": 40  ,"4g": 20  ,"3g": 10,"5h": 40  ,"4h": 20  ,"3h": 10,"5i": 20  ,"4i": 10  ,"3i": 5,"5j":20, "4j":10,"3j":5,"5k":20,"4k":10,"3k":5,"5s":100,"4s":10,"3s":2}'

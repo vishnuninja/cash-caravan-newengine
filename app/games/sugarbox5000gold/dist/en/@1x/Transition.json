@@ -1,0 +1,269 @@
+{
+    "skeleton": {
+        "hash": "EvUMSpMJT50",
+        "spine": "4.1.24",
+        "x": -971.67,
+        "y": -544.72,
+        "width": 1943.34,
+        "height": 1092.39,
+        "images": "./images/",
+        "audio": "/Users/lj/Desktop/LJ/NinjaGaming Slot/Cash Caravan/Cash Caravan Animation/Transition"
+    },
+    "bones": [
+        {
+            "name": "root"
+        },
+        {
+            "name": "bone",
+            "parent": "root",
+            "scaleX": 2.9444,
+            "scaleY": 2.9444
+        }
+    ],
+    "slots": [
+        {
+            "name": "transition",
+            "bone": "bone",
+            "attachment": "transition/9"
+        }
+    ],
+    "skins": [
+        {
+            "name": "default",
+            "attachments": {
+                "transition": {
+                    "transition/2": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/3": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/4": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/5": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/6": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/7": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/8": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/9": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/10": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/11": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/12": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/13": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/14": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/15": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/16": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/17": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/18": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/19": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/20": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/21": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/22": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/23": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/24": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/25": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    },
+                    "transition/26": {
+                        "y": 0.5,
+                        "width": 660,
+                        "height": 371
+                    }
+                }
+            }
+        }
+    ],
+    "animations": {
+        "animation": {
+            "slots": {
+                "transition": {
+                    "attachment": [
+                        {
+                            "name": "transition/3"
+                        },
+                        {
+                            "time": 0.0333,
+                            "name": "transition/4"
+                        },
+                        {
+                            "time": 0.0667,
+                            "name": "transition/5"
+                        },
+                        {
+                            "time": 0.1,
+                            "name": "transition/6"
+                        },
+                        {
+                            "time": 0.1333,
+                            "name": "transition/7"
+                        },
+                        {
+                            "time": 0.1667,
+                            "name": "transition/8"
+                        },
+                        {
+                            "time": 0.2,
+                            "name": "transition/9"
+                        },
+                        {
+                            "time": 0.2333,
+                            "name": "transition/10"
+                        },
+                        {
+                            "time": 0.2667,
+                            "name": "transition/11"
+                        },
+                        {
+                            "time": 0.3,
+                            "name": "transition/12"
+                        },
+                        {
+                            "time": 0.3333,
+                            "name": "transition/13"
+                        },
+                        {
+                            "time": 0.3667,
+                            "name": "transition/14"
+                        },
+                        {
+                            "time": 0.4,
+                            "name": "transition/15"
+                        },
+                        {
+                            "time": 0.4333,
+                            "name": "transition/16"
+                        },
+                        {
+                            "time": 0.4667,
+                            "name": "transition/17"
+                        },
+                        {
+                            "time": 0.5,
+                            "name": "transition/18"
+                        },
+                        {
+                            "time": 0.5333,
+                            "name": "transition/19"
+                        },
+                        {
+                            "time": 0.5667,
+                            "name": "transition/20"
+                        },
+                        {
+                            "time": 0.6,
+                            "name": "transition/21"
+                        },
+                        {
+                            "time": 0.6333,
+                            "name": "transition/22"
+                        },
+                        {
+                            "time": 0.6667,
+                            "name": "transition/23"
+                        },
+                        {
+                            "time": 0.7,
+                            "name": "transition/24"
+                        },
+                        {
+                            "time": 0.7333,
+                            "name": "transition/25"
+                        },
+                        {
+                            "time": 0.7667,
+                            "name": "transition/26"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

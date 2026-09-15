@@ -1,0 +1,66 @@
+{
+  "urls": [
+    "PrimarySounds.ac3",
+    "PrimarySounds.mp3",
+    "PrimarySounds.m4a",
+    "PrimarySounds.ogg"
+  ],
+  "sprite": {
+    "background": [
+      0,
+      90000
+    ],
+    "burst_1": [
+      91000,
+      780
+    ],
+    "burst_2": [
+      93000,
+      747
+    ],
+    "burst_3": [
+      95000,
+      1020
+    ],
+    "burst_4": [
+      98000,
+      936
+    ],
+    "burst_5": [
+      100000,
+      1173
+    ],
+    "commonBtn": [
+      103000,
+      247
+    ],
+    "notification": [
+      105000,
+      436
+    ],
+    "reelSpinning": [
+      107000,
+      2134
+    ],
+    "reelhit": [
+      111000,
+      252
+    ],
+    "scatter_landing": [
+      113000,
+      1499
+    ],
+    "spinStart": [
+      116000,
+      292
+    ],
+    "spinStopBtn": [
+      118000,
+      891
+    ],
+    "symbolAnim1": [
+      120000,
+      115
+    ]
+  }
+}

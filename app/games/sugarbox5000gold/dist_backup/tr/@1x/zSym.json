@@ -1,0 +1,20 @@
+{"frames": {
+
+"z":
+{
+	"frame": {"x":1,"y":1,"w":188,"h":183},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":138,"y":139,"w":188,"h":183},
+	"sourceSize": {"w":460,"h":460}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "zSym.png",
+	"format": "RGBA8888",
+	"size": {"w":190,"h":185},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:2e4a23d77afbdffa91e16eab6b6ccda2:bc3f3fcba9b730e138554f8e796a7707:afeb7116480bb7b7d097e447f247d8e9$"
+}
+}

@@ -1,0 +1,31 @@
+{
+	"Game_History": "Istorija igre",
+	"Date": "Datum",
+	"Game_Name": "Naziv igre",
+	"Round_ID": "ID runde",
+	"Bet_Amount": "Iznos opklade",
+	"Win_Amount": "Iznos dobitka",
+	"Currency": "Valuta",
+	"IP_Address": "IP adresa",
+
+	"Lines": "Linije",
+	"Coin_Value": "Vrednost žetona",
+	"Coins": "Žetoni",
+	"Bet": "Opklada",
+	"Total_Win": "Ukupan dobitak",
+	"Bonus": "Bonus",
+	"Date_Time": "Datum i vreme",
+	"Game_Outcome": "Rezultat igre",
+	"HISTORY": "ISTORIJA",
+	"Multiplier": "Multiplikator",
+
+	"Pre_Balance": "Pre Balance",
+	"Post_Balance": "Post Balance",
+	"Win_Lines": "Win Lines",
+	
+	"Gamble": "Gamble",
+	"Player_Choice": "Player Choice",
+	"Final_Result": "Final Result",
+	"Red": "Red",
+	"Blue": "Blue"
+}

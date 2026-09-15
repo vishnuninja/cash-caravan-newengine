@@ -1,0 +1,43 @@
+Logo.png
+size:1024,512
+filter:Linear,Linear
+pma:true
+A
+bounds:932,419,86,91
+BG
+bounds:260,311,310,199
+C
+bounds:466,32,106,139
+rotate:90
+CARAVAN
+bounds:572,287,345,104
+CARAVAN shadow
+bounds:572,393,358,117
+COIN
+bounds:2,26,56,46
+FLOWER
+bounds:932,341,76,80
+rotate:90
+FLOWER SHADOW
+bounds:797,46,82,87
+rotate:90
+H
+bounds:607,52,92,92
+S
+bounds:701,56,72,94
+rotate:90
+VAN-L
+bounds:562,146,178,139
+VAN-R
+bounds:742,130,168,155
+flare1
+bounds:2,254,256,256
+rainbow-l
+bounds:282,140,278,169
+rainbow-l blur
+bounds:2,74,278,178
+star flare
+bounds:701,2,51,52
+text shine
+bounds:282,50,88,182
+rotate:90
