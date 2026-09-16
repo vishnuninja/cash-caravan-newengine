@@ -26,8 +26,6 @@ view.createView = function (argument) {
 		this.createSingleMask();
 	} else if (this.reelConfig.data.maskInfo.maskType == 2){
         this.createReelWiseMask();
-	} else if (this.reelConfig.data.maskInfo.maskType == 3){
-		this.createMaskWithSprite();
 	}	
 	if (this.reelConfig.reelGridTop) {
 		this.createTopGrid();
@@ -35,21 +33,7 @@ view.createView = function (argument) {
 	if (this.reelConfig.fsReelGridTop) {
 		this.createFSTopGrid();
 	}
-
-	if (this.reelConfig.reelGridTopAnim) {
-		this.createReelGridTopAnim();
-	}
-	//@todo can write extra elements code 
-	this.createAnticipation();
 	this.createExtraElements();
-    _mediator.subscribe("scaleReelMaskOnEachReelStop", this.updateReelWiseMask.bind(this));
-
-
-	setTimeout(function (){
-	    if(this.reelConfig.data.reelSpinConfig.hideTopSymbol){
-			this.toggleMask(false);
-		}
-	}.bind(this), 200);
 };
 
 
@@ -60,24 +44,6 @@ view.createExtraElements = function () {
 	// body...
 }
 view.showWildMultiplier = function(){}
-view.createAnticipation = function () {
-	//@todo create anticipate
-	/*if(this.reelConfig.scatterAnticipating){
-		this.scatterAnticipate = pixiLib.getElement("Sprite", this.reelConfig.scatterAnticipating);
-	}*/
-}
-view.createAnticipate = function () {
-	//@todo create anticipate
-	/*if(this.reelConfig.scatterAnticipating){
-		this.scatterAnticipate = pixiLib.getElement("Sprite", this.reelConfig.scatterAnticipating);
-	}*/
-}
-view.showAnticipate = function (reelId) {
-	//@todo show and set postion
-}
-view.clearAnticipate = function () {
-	//@todo hide anticipate
-}
 
 view.createBottomGrid = function (argument) {
 	//@todo need to update frame in freespin/normal spin
@@ -142,25 +108,9 @@ view.createFSTopGrid = function (argument) {
 	this.fsTopGrid.visible = false;
 }
 
-view.createReelGridTopAnim = function (argument) {
-	this.topAnim = pixiLib.getElement("Sprite", this.reelConfig.reelGridTopAnim.image);
-	this.topAnim.name = "topAnim";
-	this.addChild(this.topAnim);
-	pixiLib.setProperties(this.topAnim, this.reelConfig.reelGridTopAnim.props["VD"]);	
-}
-
 view.createSingleMask = function (argument) {
 	var maskPosition = this.reelConfig.data.maskInfo.maskPosition;
 	this.maskObj = pixiLib.getElement("Graphics", {w: maskPosition.width, h: maskPosition.height, type: maskPosition.type, pointsArray: maskPosition.pointsArray});
-	this.maskObj.name = "maskObject";
-	this.addChild(this.maskObj);
-	pixiLib.setProperties(this.maskObj, maskPosition);
-	//mask
-	this.reelContainer.mask = this.maskObj;
-}
-view.createMaskWithSprite = function (argument) {
-	var maskPosition = this.reelConfig.data.maskInfo.maskPosition;
-	 this.maskObj = pixiLib.getElement("Sprite", "reelFrameMask");
 	this.maskObj.name = "maskObject";
 	this.addChild(this.maskObj);
 	pixiLib.setProperties(this.maskObj, maskPosition);
@@ -182,18 +132,6 @@ view.createReelWiseMask = function () {
 	pixiLib.setProperties(this.maskObj, maskPosition);
 	var reelObj = this.reelContainer.getChildByName(("reelObj"+i));
 	reelObj.mask = this.maskObj; 
-	}
-}
-
-/**@vijay updating (scaling height) ReelWise Mask if required */
-view.updateReelWiseMask = function (i, yScaleFactor) {
-	if(this.reelConfig.data.maskInfo.reelStripScaleFactor && this.reelConfig.data.reelSpinConfig.hideTopSymbol){
-	this.getChildByName(("maskObject"+i)).scale.y = yScaleFactor;
-     if(yScaleFactor > 1){
-		 this.getChildByName(("maskObject"+i)).y = this.getChildByName(("maskObject"+i)).y - 10;
-	 } else {
-		 this.getChildByName(("maskObject"+i)).y = this.reelConfig.data.maskInfo.reelMaskPosition[i].y;
-	 }
 	}
 }
 
@@ -245,9 +183,9 @@ view.startSpin = function (argument) {
 	this.isAnticipateActive = false;
 	this.isAnticipateSndPlaying = false;
 	this.individualStrip("start");
-	if(this.reelConfig.data.reelSpinConfig.hideTopSymbol){
-		this.toggleMask(true);
-	}
+	// if(this.reelConfig.data.reelSpinConfig.hideTopSymbol){
+	// 	this.toggleMask(true);
+	// }
 };
 
 view.quickSpinStart = function (argument) {
@@ -262,14 +200,13 @@ view.quickSpinStart = function (argument) {
 
 	//start all reels at once 
 	for (var i = 0; i < this.reelConfig.data.noOfReels; i++) { 
-		this.updateReelWiseMask(i, 1);
 		_mediator.publish("onEachReelStart", i);
 		this.reels[i].startSpin();
 	}
 	_mediator.publish("allReelsStarted");
-	if(this.reelConfig.data.reelSpinConfig.hideTopSymbol){
-		this.toggleMask(true);
-	}
+	// if(this.reelConfig.data.reelSpinConfig.hideTopSymbol){
+	// 	this.toggleMask(true);
+	// }
 };
 
 view.individualStrip = function (spinType, isStopNow) {
@@ -277,7 +214,6 @@ view.individualStrip = function (spinType, isStopNow) {
 		if (this.startSpinCounter >= this.reels.length) {
 			this.startSpinCounter = this.reels.length - 1;
 		}
-		this.updateReelWiseMask(this.startSpinCounter, 1);
 		_mediator.publish("onEachReelStart", this.startSpinCounter);
 		this.reels[this.startSpinCounter].startSpin();
 	} else {
@@ -589,10 +525,6 @@ view.onAllReelsStopped = function () {
 	_sndLib.stop(_sndLib.sprite.reelSpinning);
 	// this.stopAnticipation();
 	clearTimeout(this.callNextReelInterval);
-
-	if(this.reelConfig.data.reelSpinConfig.hideTopSymbol){
-		this.toggleMask(false);
-	}
 }
 view.stopAnticipation = function (){
 	if(!this.isAnticipateActive){

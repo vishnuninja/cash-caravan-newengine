@@ -14,7 +14,6 @@ _ng.LoadConfig = {
             "controllers/GPanelController.js",
             "configs/ReelViewUIConfig.js",
             "configs/PaytableViewUIConfig.js",
-            // "views/GReelSymbol.js",
             "views/MegawaysSymbol.js",
             "views/GView.js",
             "views/GReelView.js",

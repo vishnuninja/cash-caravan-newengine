@@ -20,7 +20,6 @@ view.addSubscription = function () {
 	_mediator.subscribe("showFreeSpinEndedZeroBalance", this.showFreeSpinEndedZeroBalance.bind(this));
 	_mediator.subscribe("buyFreeSpinPopup", this.buyFreeSpinPopup.bind(this));
 	_mediator.subscribe("showGambleWindow", this.showGambleWindow.bind(this));
-	_mediator.subscribe("showGoldCoinAwarded", this.showGoldCoinAwarded.bind(this));
 	_mediator.subscribe("buyFreeSuperSpinPopup", this.buyFreeSuperSpinPopup.bind(this));
 	_mediator.subscribe("ExtraFSAwardpopup", this.ExtraFSAwardpopup.bind(this));
 	_mediator.subscribe("closeBuyFSPopup", this.closeBuyFSPopup.bind(this));
@@ -1879,55 +1878,6 @@ view.closeHistoryModePopup = function() {
 	}
 }
 
-view.showGoldCoinAwarded = function (callback) {
-	var gambleConfig = _ng.GameConfig.infoPopupView.goldWinPopup;
-
-	this.grayBg = pixiLib.getShape("rect", { w: _viewInfoUtil.getWindowWidth(), h: _viewInfoUtil.getWindowHeight() });
-	this.grayBg.alpha = 0;
-	this.grayBg.interactive = true;
-	coreApp.gameView.popupContainer.addChildAt(this.grayBg, 0);
-
-	this.popupParent = pixiLib.getElement();
-	this.addChild(this.popupParent);
-
-
-	this.goldRewardAnim = pixiLib.getElement("Spine", gambleConfig.background.spineImage);
-	this.popupParent.addChild(this.goldRewardAnim);
-	pixiLib.setProperties(this.goldRewardAnim, gambleConfig.background.props);
-	this.goldRewardAnim.state.setAnimation(0, gambleConfig.background.animationState.In, false);
-
-	const state = this.goldRewardAnim.state;
-
-	state.addListener({
-		complete: (trackEntry) => {
-			if (trackEntry.animation.name === gambleConfig.background.animationState.In) {
-				this.hideInfoPopup();
-				setTimeout(() => {
-					callback();
-				}, 50);
-			}
-		}
-	})
-
-	var multiplierWinValue = coreApp.gameModel.obj.current_round.post_matrix_info.gold_multiplier;
-
-	this.multiplierValue = pixiLib.getElement("Text", gambleConfig.multiplierText.textStyle);
-	pixiLib.setText(this.multiplierValue, multiplierWinValue+"x");
-	pixiLib.setProperties(this.multiplierValue, gambleConfig.multiplierText.props);
-	pixiLib.attachToSlot(this.goldRewardAnim, "emptyslot", this.multiplierValue);
-
-	this.hideInfoEventType = "";
-	this.hideInfoDelay = 0;
-	setTimeout(function () {
-		//Adding timeout so popup will be shown fully then enable spacebar
-		_mediator.publish("setSpaceBarEvent", "hideInfoPopup");
-	}, 500);
-	// pixiLib.addEvent(this.backBtn, this.hideInfoPopup.bind(this));
-	_ngFluid.call(this, gambleConfig.params);
-	this.onViewResize();
-	this.showInfoPopup();
-	_sndLib.play(_sndLib.sprite.goldReward);
-}
 view.showGambleWindow = function () {
   const urlParams = new URLSearchParams(window.location.search);
   const roundId = urlParams.get('round_id');

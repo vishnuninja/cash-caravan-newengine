@@ -2,7 +2,6 @@ var gWV = WinView.prototype;
 var FsTotalMultiplier = 0;
 
 gWV.addGameElements = function () {
-_mediator.subscribe("createGoldCoin", this.createGoldCoin.bind(this));
 	this.totalMultiplierValue = [];
 	this.freespinTotalValue = 0;
 	this.multiContainer = pixiLib.getContainer();
@@ -874,55 +873,6 @@ gWV.playLandAnim = function (reelId, position) {
 
 };
 //creation and tween
-gWV.createGoldCoin = function (callback) {
-	var newStripData = coreApp.gameController.model.spinData.getPostMatrix();
-	var rowIndex = newStripData.findIndex(row => row.includes("z"));
-	var colIndex = rowIndex !== -1 ? newStripData[rowIndex].indexOf("z") : -1;
-
-	if(rowIndex < 0) return;
-	var duration = (_ng.isQuickSpinActive) ? 0.1 : 0.5;
-	var scaleVal = (_ng.isQuickSpinActive && _ng.GameConfig.FastAnim) ? 3 : 1.7;   
-
-	var coinSym =  pixiLib.getElement("Spine", "candybear_coin");
-	const state = coinSym.state;
-	state.setAnimation(0, "cointhrow", true);
-	coinSym.scale.set(0.6);
-	coinSym.name = "coin_throw_sym";
-	coinSym.position.x = this.bearPos[_viewInfoUtil.viewType].x - 88;
-	coinSym.position.y = this.bearPos[_viewInfoUtil.viewType].y - 88;
-	
-	coinSym.state.timeScale = scaleVal;
-	this.addChild(coinSym);
-
-	// var symId = Math.floor(goldcoin_index%_ng.GameConfig.ReelViewUiConfig.data.noOfReels);
-	// var stripId = Math.floor(goldcoin_index/_ng.GameConfig.ReelViewUiConfig.data.noOfReels);
-	var symbolWorldPos = coreApp.gameView.reelView.reels[rowIndex].toGlobal(new PIXI.Point(0, coreApp.gameView.reelView.reels[rowIndex].symbolsPos[colIndex]));
-	var localPos = this.toLocal(symbolWorldPos);
-	
-	_sndLib.play(_sndLib.sprite.Coin_Shoot);
-	TweenMax.to(coinSym.scale, duration, { x: 1.2, y: 1.2,});
-
-	TweenMax.to(coinSym, duration, {
-		x: localPos.x,
-		y: localPos.y,
-		onComplete: () => {
-			state.clearListeners(); 
-			// _sndLib.play(_sndLib.sprite.goldReward);
-			state.setAnimation(0, "10xreward", false);
-			state.addListener({
-				complete: (trackEntry) => {
-					if (trackEntry.animation.name === "10xreward") {
-						setTimeout(() => {
-							coinSym.parent.removeChild(coinSym);
-								callback && callback();
-						}, 10);
-					}
-				}
-			});
-		}
-	});
-}
-
 gWV.createBearCharacter = function(){
 
 	this.bearCharacter = pixiLib.getElement("Spine", "CC_character_spine");
@@ -940,10 +890,6 @@ gWV.playBearWinAnimation = function (callback) {
 		// state.data.setMix("win", "idle", 0.7);
 		state.timeScale = timeScale;
 		state.setAnimation(0, "win", false);
-		
-		_mediator.publish("createGoldCoin", () => {
-			callback && callback();
-		});
 		// Add a listener to handle animation completion
 		state.addListener({
 			complete: (trackEntry) => {

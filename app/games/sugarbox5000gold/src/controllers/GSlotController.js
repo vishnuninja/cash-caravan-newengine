@@ -321,10 +321,6 @@ gSC.addSpecificEvents = function () {
     this.WasSpaceHeld=false;
     this.allReelsStopped = true;
     this.allTumbleFinished = true;
-    this.isMulValueUpdation = false;
-    
-    this.totalMultipliersOpened = 0;
-    this.totalMultiplierOnScreen = 0
     
     //SID UNCOMMIT
    _ng.isForceAllowed=true;
@@ -440,12 +436,7 @@ gSC.onAllReelStopped = async function () {
     _mediator.publish('showMultipler', this.model.spinData.proMulti);
     /* GOLD FEATURE */
     if (coreApp.gameModel.obj.current_round.spin_type !== "freespin" && coreApp.gameModel.obj.current_round.misc_prizes.count == 0 && coreApp.gameModel.obj.current_round.post_matrix_info.has_gold) {
-        _mediator.publish("playBearWinAnimation",()=> {
-            _mediator.publish("playSymbolFlipping", () => {
-                _mediator.publish(_events.slot.updateBalance);
-                _mediator.publish("callPostMatrixAction");
-            });
-        });
+        
     }else{
 
         _mediator.publish("callPostMatrixAction");
@@ -455,8 +446,6 @@ gSC.onAllReelStopped = async function () {
         _mediator.publish("checkExtraFreeSpinAward"); 
     }
 
-     //PopFunction
-     this.addMultiplierToSymbol();
      _mediator.publish("DisablePanel");
     if (coreApp.gameModel.obj.current_round.misc_prizes.count == 0) {
         this.allReelsStopped = true;
@@ -512,8 +501,6 @@ gSC.onAllReelStopped = async function () {
 
 
     if (coreApp.gameModel.obj.current_round.misc_prizes!="" &&coreApp.gameModel.obj.current_round.misc_prizes.count > 0) {
-        await this.view.reelView.multiplierOpenBeforeTumble();
-        console.log("Perform from GSlotController")
         this.view.reelView.performTumble();
     }
 }
@@ -523,7 +510,6 @@ gSC.AllTumbleFinish = function (num,reelID) {
     this.reelID = reelID;
     //with tumbles
     if ((num+1 == coreApp.gameModel.obj.current_round.misc_prizes.count) && reelID==5) {
-        // _mediator.publish("removeIncrementalMultipliers");
             _mediator.publish("createSticky");/* todo:remove later */
             _mediator.publish("hideFakeButton");
             this.allTumbleFinished = true;
@@ -551,7 +537,6 @@ gSC.AllTumbleFinish = function (num,reelID) {
     }
 
     else if(num == coreApp.gameModel.obj.current_round.misc_prizes.count){
-        // _mediator.publish("removeIncrementalMultipliers");
             _mediator.publish("createSticky");/* todo: remove later */
             _mediator.publish("hideFakeButton");
             this.allTumbleFinished = true;
@@ -613,18 +598,6 @@ gSC.onStartFreespins = function (delay) {
 
 // ///////////////////////////////////////////////////////////////////
 // }
-gSC.addMultiplierToSymbol = function()
-{
-	let tempArray = coreApp.gameModel.userModel.userData.current_round.screen_wins;
-	for(var i=0; i<tempArray.length; i++)
-    {
-        if(tempArray[i] > 0)
-        {
-            let stripId = i%6;
-            let symbolIndex = Math.floor(i/6) + 1;
-        }
-    }
-}
         
         
      
@@ -635,7 +608,6 @@ gSC.addMultiplierToSymbol = function()
 gSC.onBigWinShown = function (argument) {
     var waitTimer = ((coreApp.gameModel.isAutoSpinActive() || coreApp.gameModel.isFullFSActive()) && coreApp.gameModel.isBigWinActive()) ? 1100 : 100;
     setTimeout(this.callNextGameState.bind(this), waitTimer);
-    this.resetMultiplier();
 }
 gSC.onTotalWinShown = function (argument) {
     // Monitor changes in _ng.isForceAllowed to kill and restart tweens
@@ -672,16 +644,11 @@ gSC.onTotalWinShown = function (argument) {
                 }
 
             }
-            this.resetMultiplier();
             // Stop monitoring once the tweens are restarted
             clearInterval(checkallReelsStopped);
         }
     }.bind(this), 10); // Check every 100ms
 
-}
-
-gSC.resetMultiplier = function () {
-	_ng.resetMultiplierValue =true;
 }
 
 gSC.postMatrixCheck = function (state) {
@@ -785,9 +752,6 @@ gSC.onSpinClickHandler = function (isFreeSpin) {
     _mediator.publish("disableBuyFeature");
     _mediator.publish("removeHistBox");
     _mediator.publish("removeWinAnim");
-    _mediator.publish('removeMultipliers');
-    _ng.GameConfig.incrementMulArry = [];
-    _mediator.publish("removeIncrementalMultipliers");
     
     if(coreApp.gameModel.isFreeSpinActive()){
         // var leftValue = (coreApp.gameModel.userModel.userData.next_round.spins_left)-1;
@@ -819,11 +783,6 @@ if (!coreApp.gameModel.isFreeSpinActive()) {
     _mediator.publish("UpdateWin",0); 
     	_mediator.publish("resetTotalFSWin",0);  
 }
-    
-	if(_ng.resetMultiplierValue && coreApp.gameModel.isFreeSpinActive() == false && coreApp.gameModel.getIsFreeSpinEnded()==false){
-		_mediator.publish('showMultipler', 1);
-		_ng.resetMultiplierValue = false;
-	}
     this.allReelsStopped = false;
     // _mediator.publish("clearAllWins");
     _mediator.publish("ClearBonusSym");

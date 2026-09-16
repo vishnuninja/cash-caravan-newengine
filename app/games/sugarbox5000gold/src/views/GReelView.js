@@ -18,34 +18,17 @@ view.createView = function (argument) {
 		this.createSingleMask();
 	} else if (this.reelConfig.data.maskInfo.maskType == 2){
         this.createReelWiseMask();
-	} else if (this.reelConfig.data.maskInfo.maskType == 3){
-		this.createMaskWithSprite();
-	}	
+	}
 	if (this.reelConfig.reelGridTop) {
 		this.createTopGrid();
 	}
 	if (this.reelConfig.fsReelGridTop) {
 		this.createFSTopGrid();
 	}
-
-	if (this.reelConfig.reelGridTopAnim) {
-		this.createReelGridTopAnim();
-	}
-	//@todo can write extra elements code 
-	this.createAnticipation();
 	this.createExtraElements();
-    _mediator.subscribe("scaleReelMaskOnEachReelStop", this.updateReelWiseMask.bind(this));
-	// _mediator.subscribe("spinStartCheck",this.spinStartCheck.bind(this));
 	_mediator.subscribe("forceStopBySpace",this.forceStopBySpace.bind(this));
-	_mediator.subscribe("playSymbolFlipping",this.onGoldCoinFlipping.bind(this));
 	this.startSpinTimeoutArr = [];
 	this.stopSpinTimeoutArr = [];
-
-	setTimeout(function (){
-	    if(this.reelConfig.data.reelSpinConfig.hideTopSymbol){
-			this.toggleMask(false);
-		}
-	}.bind(this), 200);
 
     _mediator.subscribe("FadeReels",this.fadeReels.bind(this))
 };
@@ -175,10 +158,10 @@ view.performTumble = function(currentStep = 0) {
 		var isLastSymbol = (j === positions.length - 1);
 		this.reels[reelId].playSymbolAnimation(symbolId, isFirstSymbol, isLastSymbol);
 		if(this.winSymbolsToRemove[reelId]){
-		this.winSymbolsToRemove[reelId].push(symbolId);
+			this.winSymbolsToRemove[reelId].push(symbolId);
 		} else {
-		this.winSymbolsToRemove[reelId] = [];
-		this.winSymbolsToRemove[reelId].push(symbolId);
+			this.winSymbolsToRemove[reelId] = [];
+			this.winSymbolsToRemove[reelId].push(symbolId);
 		}
 	}
 }
@@ -254,30 +237,9 @@ view.moveAllSymbols = function() {
 }
 
 view.onMoveSymbolsComplete = async function() {
-  console.log("Move symbol completed for tumble ", this.currentTumbleIndex);
-  await this.reels.forEach(elem => elem.performMultiplierBoxOpen(this.currentTumbleIndex));
-
   this.currentTumbleIndex++;
-  console.log("Perform from ReelView")
   this.performTumble(this.currentTumbleIndex);
 };
-
-view.multiplierOpenBeforeTumble = async function() {
-  await this.reels.forEach(elem => elem.performMultiplierBoxOpen(null, true));
-};
-
-//GOLD FEATURE...
-view.onGoldCoinFlipping = function (callback) {
-	var newStripData = coreApp.gameController.model.spinData.getPostMatrix();
-	var rowIndex = newStripData.findIndex(row => row.includes("z"));
-	var colIndex = rowIndex !== -1 ? newStripData[rowIndex].indexOf("z") : -1;
-	var multiplierValue = coreApp.gameModel.obj.current_round.post_matrix_info.gold_multiplier;
-	this.reels[rowIndex].symbolsArray[colIndex].changeSymbol("z" + multiplierValue);
-	_mediator.publish("showGoldCoinAwarded", () => {
-		_mediator.publish("showGoldCoinWinAmount", coreApp.gameModel.obj.current_round.win_amount);
-		callback && callback();
-	});
-}
 
 view.hideReelSymbols = function (symbolArray, type) {
 	for (var i = 0; i < symbolArray.length; i++) {

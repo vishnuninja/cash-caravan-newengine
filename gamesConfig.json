@@ -13,7 +13,6 @@
             "controllers/GPanelController.js",
             "configs/ReelViewUIConfig.js",
             "configs/PaytableViewUIConfig.js",
-            "views/GReelSymbol.js",
             "views/GView.js",
             "views/GReelView.js",
             "views/GPanelView.js",

@@ -13,7 +13,6 @@ ticker.addEventListeners = function() {
     _mediator.subscribe("showFreeSpinEnded", this.onFreeSpinEnded.bind(this));
     _mediator.subscribe("continueUnfinishedGame", this.onUnfinishGame.bind(this));
     _mediator.subscribe("SHOW_TICKER_MESSAGE", this.updateTextWithCountUp.bind(this));
-    _mediator.subscribe("showGoldCoinWinAmount", this.showGoldCoinWinAmount.bind(this));
 }
 
 
@@ -116,9 +115,4 @@ ticker.updateTextWithCountUp = function(data) {
         let combined = lastTwo.join("");
         this.showWinText(combined);
     }
-}
-
-
-ticker.showGoldCoinWinAmount = function(winAmount){
-    this.showWinText(pixiLib.getFormattedAmount(winAmount));
 }

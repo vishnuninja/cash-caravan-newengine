@@ -25,12 +25,13 @@ _ng.ReelViewUiConfig = {
         "extraAddSymbols": ["a", "b", "c", "d", "e", "f", "g","h","i","j","w","s"],
         "ReelSymbolType": ["_6x","_5x","_4x","_3x","_2x","_1x"],  //The type of symbols which will be used in the reel during variable reel
         // "ReelHeightType":[0,40,45,22.5,40,35],//The position of the reel to accomodate the new reel size
-        "ReelHeightType":[-36 , 8, 30, 50, 50, 50, 10],//The position of the reel to accomodate the new reel size
+        // "ReelHeightType":[-36 , 8, 30, 50, 50, 50, 10],//The position of the reel to accomodate the new reel size
         "topReelYPos":0,
         // "symbolConfig": {"symbolWidth": 114, "symbolHeight": 110, "symbolXGap": 3, "symbolYGap": 1},
-        "symbolConfig": {"symbolWidth": 114, "symbolHeight": 110, "symbolXGap": 0, "symbolYGap": 0},
-        "eachReelPos": [725, -20, 125, 275, 425, 578, 742],
-        "eachReelYPos": [10, 10, 10, 10, 10, 10, 10], //Overwriting by reelHeightType...
+        "symbolConfig": {"symbolWidth": 114, "symbolHeight": 110, "symbolXGap": 0, "symbolYGap": 8},
+        // "eachReelPos": [-20, 125, 275, 425, 578, 742],
+        "eachReelPos": [48, 198, 348, 498, 650, 804],
+        "eachReelYPos": [35, 35, 35, 35, 35, 35, 35], //Overwriting by reelHeightType...
         //Adding mask to reels ,reel wise instead of whole due to top reel
         "maskInfo": {
             "maskType": "1",
@@ -47,7 +48,7 @@ _ng.ReelViewUiConfig = {
             // {x: 910, y: 175, width: 151.5, height: 460.5}
             // ]
         },
-        "reelPositionsWRTGrid": {x: 178, y: 182, scale:{x:1,y:1} },//width: 868 , height:872
+        "reelPositionsWRTGrid": {x: 178, y: 140, scale:{x:1,y:1} },//width: 868 , height:872
         "reelPositionsWRTGridFG": {x: 310, y: 20, scale:{x:1,y:1} },
         "reelSpinConfig":{
             "useBlur": true,

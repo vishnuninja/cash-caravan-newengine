@@ -40,18 +40,16 @@ class TumbleReelStrip extends PIXI.Container{
             symb.y = (symb.height + this.symConfig.symbolYGap) * i;
             this.symbolsPos.push(symb.y);
         }
-        this.actualSymbolHeight = this.symbolsArray[0].height;
+        this.reelHeight = (this.symConfig.symbolHeight + this.symConfig.symbolYGap) * this.symbolsArray.length;
     }
 
     startStripSpin(spinSpeed) {
         this.REEL_STATE = "reel_spin_started";
-        this.removeMultiplierBoxOpenAnim();
         this.parentView.setReelFallStatus(false);
         var symbolFallDuration = ("quick" === spinSpeed) ?  0.1 : .25;
-        var reelHeight = (this.symConfig.symbolHeight + this.symConfig.symbolYGap) * this.symbolsArray.length;
         for(let i= this.symbolsArray.length -1; i>=0; i--){
             let tween = gsap.to(this.symbolsArray[i], symbolFallDuration, { 
-                y: '+=' + reelHeight, 
+                y: '+=' + this.reelHeight, 
                 delay: ("quick" === spinSpeed) ? 0 : (this.symbolsArray.length - i) * 0.02, 
                 ease: Linear.easeIn, 
                 onComplete: function () {
@@ -82,7 +80,7 @@ class TumbleReelStrip extends PIXI.Container{
             this.addChild(symb);
             this.symbolsArray.push(symb);
             var yPos = (symb.height + this.symConfig.symbolYGap) * i;
-            symb.y = yPos * -1;
+            symb.y =  yPos - this.reelHeight;
             this.symbolsPos.push(yPos);
         }
     }
@@ -162,17 +160,17 @@ class TumbleReelStrip extends PIXI.Container{
         let symbolAnim = pixiLib.getElement("Spine", symAnimConfig.spineName);
         symbolAnim.name = symbolName;
         symbolAnim.scale.set(symAnimConfig.props.scale.x, symAnimConfig.props.scale.y);
-        symbolAnim.position.set(0, this.symbolsPos[symbolId]);
+        symbolAnim.position.set(0, (this.symbolsPos[symbolId] + currentSymbol.height/2));
         symbolAnim.state.timeScale = duration;/* TODO: */
         this.addChild(symbolAnim);
         this.symbolAnimations.push(symbolAnim);
         // if(isFirstSymbol)    this.parentView.playSymbolSoundOnce("symbolAnim");
-        currentSymbol.visible = false;
+        currentSymbol.alpha = 0;
 
-        let entry = symbolAnim.state.setAnimation(0, symAnimConfig.winAnimation + this.findSymbolType(this.symbolsArray), false);
+        let entry = symbolAnim.state.setAnimation(0, symAnimConfig.winAnimation + this.findSymbolType(this.symbolsArray), true);
         entry.listener = {
             complete: function () {
-                currentSymbol.visible = true;
+                currentSymbol.alpha = 1;
                 symbolAnim.visible = false;
                 if (isLastSymbol) this.parentView.onSymbolAnimationComplete();
                 //_sndLib.play(_sndLib.sprite.pop1)
@@ -204,7 +202,7 @@ class TumbleReelStrip extends PIXI.Container{
             symb.changeSymbol(newSymbolConfig.symbol.texture, this.findSymbolType(this.symbolsPos));
             symb.symName = newSymbolConfig.symbol.texture;
             this.addChild(symb);
-            symb.y -= ((this.actualSymbolHeight + this.symConfig.symbolYGap) * (i + 1) );
+            symb.y = (i * symb.height) - this.reelHeight;
             this.symbolsArray.unshift(symb);
         }
     }
@@ -224,99 +222,6 @@ class TumbleReelStrip extends PIXI.Container{
         }
     }
 
-    async performMultiplierBoxOpen(tumbleIndex, isBeforeTumble = false)
-    {	
-        for (let i = 0; i < this.symbolsArray.length; i++) {
-            if (this.symbolsArray[i].symName == "m") {
-                if(!this.symbolsArray[i]._animationPlayed){
-                    this.symbolsArray[i]._animationPlayed = true;
-                    this.symbolsArray[i].symbol.alpha = 0;
-                    
-                    var currentPos = (i * this.reelConfig.data.noOfReels) + this.reelId;
-                    var realMultiplier;
-                    if(isBeforeTumble)  realMultiplier = coreApp.gameModel.obj.current_round.screen_wins[currentPos];
-                    else    realMultiplier = coreApp.gameModel.obj.current_round.misc_prizes[tumbleIndex].screenWins[currentPos];
-                    this.symbolsArray[i]._incrementArr = this.getIncrementalMultipliersValues(realMultiplier);
-                    
-                    //Creating Multiplier Text......
-                    var multiTextStyle = { "type": "BitmapFont", "fontName": "box-Multiplier", "fontSize": 100, "align": "center", "maxWidth": 500 };
-                    var multiplierText = pixiLib.getElement("Text", multiTextStyle);
-                    multiplierText.anchor.set(.5);
-                    multiplierText.y = 100;
-                    pixiLib.setText(multiplierText, this.symbolsArray[i]._incrementArr[tumbleIndex || 0]+"x");
-                    multiplierText.name = "BitmapFont";
-                    this.symbolsArray[i]._multiText = multiplierText;
-
-                    var duration = (_ng.isQuickSpinActive && _ng.GameConfig.FastAnim) ? 3 : 1.5;   
-                    var color = this.getMultiplierSymbolColorTexture(realMultiplier);//PASS REAL MULTIPLIER VALUE
-                    
-                    var boxOpenAnim = pixiLib.getElement("Spine", "multiplier");
-                    pixiLib.attachToSlot(boxOpenAnim, "reward",multiplierText);
-                    boxOpenAnim.name = "boxOpenAnim";
-                    boxOpenAnim.scale.set(0.17);
-                    boxOpenAnim.y = 13;
-                    boxOpenAnim.state.timeScale = duration;
-                    this.symbolsArray[i].addChild(boxOpenAnim);
-                    this.symbolsArray[i]._boxOpenAnim = boxOpenAnim;
-                    
-                    _sndLib.play(_sndLib.sprite.boxOpen);
-                    let trackEntry = boxOpenAnim.state.setAnimation(0, color+"_multiplier", false);
-                    trackEntry.listener = {
-                        complete: () => {
-                            if(this.symbolsArray[i]._multiText)
-                                pixiLib.setText(this.symbolsArray[i]._multiText, this.symbolsArray[i]._incrementArr[tumbleIndex || 0]+"x");
-                        }
-                    };
-                }
-                else{
-                    //Increment here...
-                    if(this.symbolsArray[i]._multiText.text != this.symbolsArray[i]._incrementArr[tumbleIndex]+"x"){
-                        var color = this.getMultiplierSymbolColorTexture(this.symbolsArray[i]._incrementArr[this.symbolsArray[i]._incrementArr.length -1]);
-                        this.symbolsArray[i]._boxOpenAnim.state.setAnimation(0, color+"_multiplier", false);
-                        _sndLib.play(_sndLib.sprite.boxOpen);
-                        this.symbolsArray[i]._multiText.text = this.symbolsArray[i]._incrementArr[tumbleIndex]+"x"; 
-                    }
-                }
-            }
-        }
-    }
-
-    getIncrementalMultipliersValues(realMultiplier){
-        var multiplierValueArry = _ng.superBuyEnabled ? [20, 25, 50, 100, 1000, 5000] : [2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 25, 50, 100, 1000, 5000];
-        var incrementMulArry = [];
-        let totalTumbleCount = coreApp.gameModel.userModel.userData.current_round.misc_prizes.count || 1;
-        var realMultiplierIndex = multiplierValueArry.indexOf(realMultiplier);
-        for (let index = 0; index < totalTumbleCount; index++) {
-            var newIndex = Math.max(0, realMultiplierIndex-index);
-            incrementMulArry.unshift(multiplierValueArry[newIndex]);
-        }
-        return incrementMulArry;
-    }
-
-    getMultiplierSymbolColorTexture(mulValue){
-        var multiTexture;
-        if(mulValue <= 10 ) multiTexture = "green";
-        else if(10 < mulValue  &&  mulValue <= 20)  multiTexture = "blue";
-        else if(20 < mulValue &&  mulValue <= 50)   multiTexture = "pink";
-        else if(mulValue == 100)    multiTexture = "red";
-        else if(mulValue == 1000)   multiTexture = "multicolor";
-        
-        return multiTexture;
-    }
-
-    removeMultiplierBoxOpenAnim(){
-        for (let index = 0; index < this.symbolsArray.length; index++) {
-            if(this.symbolsArray[index]._boxOpenAnim){
-                this.symbolsArray[index]._boxOpenAnim.parent.removeChild(this.symbolsArray[index]._boxOpenAnim);
-                this.symbolsArray[index]._boxOpenAnim = null;
-                this.symbolsArray[index]._incrementArr = null;
-                this.symbolsArray[index]._multiText = null;
-                this.symbolsArray[index]._animationPlayed = null;
-                this.symbolsArray[index].symbol.alpha = 1;
-            }
-        }
-    }
-
     animateAllScatterOnReel()
     {
         for(let i=0; i< this.symbolsArray.length; i++)
@@ -331,13 +236,6 @@ class TumbleReelStrip extends PIXI.Container{
                             x: prevScale,y: prevScale});
                     }.bind(this)    
                 });
-                // TweenMax.to(this.symbolsArray[i].scale, 0.3,{
-                //     x: prevScale+.1, y: prevScale +.1, yoyo:true, repeat:2,
-                //     onComplete: function () {
-                //         TweenMax.to(this.symbolsArray[i].scale,0.3,{
-                //             x: prevScale,y: prevScale});
-                //     }.bind(this)
-                // });
             }
         }
     }
