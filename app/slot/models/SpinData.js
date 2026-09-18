@@ -543,6 +543,7 @@ spinInfo.setMatrix = function (obj, postMatrix) {
 				this.reels[j].push(tempMatrix[i][j]);
 			}
 		}
+		this.reels[tempMatrix.length - 1] = obj.current_round.topreel.split("");
 	}
 
 	// if(_ng.GameConfig.gameId == 14 || _ng.GameConfig.gameId == 1141){

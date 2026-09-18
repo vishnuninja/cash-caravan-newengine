@@ -170,6 +170,15 @@ view.createReels = function (argument) {
 		this.reels.push(reelObj);
 	}
 	pixiLib.setProperties(this.reelContainer, this.reelConfig.data.reelPositionsWRTGrid);
+	//Adding top reel...
+	this.topreelContainer = pixiLib.getContainer();
+	this.topreelContainer.name = "topreels"
+	this.addChild(this.topreelContainer);
+	var topReel = new TopTumbleReelStrip(i, this);
+	topReel.name = "topReel";
+	this.topreelContainer.addChild(topReel);
+	this.topreelContainer.position.set(386, 52);
+	this.reels.push(topReel);
 }
 
 

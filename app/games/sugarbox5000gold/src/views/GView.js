@@ -17,7 +17,6 @@ sView.createExtraElements = function () {
 	_mediator.subscribe("UpdateBet",this.UpdateBet.bind(this));
 	_mediator.subscribe("BuyRequest",this.BuyRequest.bind(this));
 	_mediator.subscribe("buyPanelVisible",this.BuyPanelVisible.bind(this));
-	_mediator.subscribe("toggleFadeContainer",this.toggleFadeContainer.bind(this));
 	// _mediator.subscribe("FSend",this.FSend.bind(this))
 	_mediator.subscribe("enableBuyFeature",this.enableBuyFeature.bind(this));
 	_mediator.subscribe("disableBuyFeature",this.disableBuyFeature.bind(this));
@@ -33,23 +32,10 @@ sView.createExtraElements = function () {
 	_mediator.subscribe("hideAndShowBuyControlls",this.hideAndShowBuyControlls.bind(this));
 	_mediator.subscribe("checkBalanceForBuyFeature",this.checkBalanceForBuyFeature.bind(this));
 
-	this.oldSlid=0;
-	this.NewSlid=0;
-	this.fadeTextArr = [];
-
-	this.createFadingContainer();
 	_mediator.subscribe("ResizeGview",this.ResizeGview.bind(this));
 	
 	// Add logo and replay animation
 	this.addingLogo();
-	
-			
-	// this.resizeForIpad();
-	try {
-		setInterval(() => {
-				this.toggleTextVisibility();
-		}, 2500);
-	} catch (e) { }
 
 	this.volBox=pixiLib.getContainer();
 	var blackBg=pixiLib.getRectangleSprite(326,53.5, 0x000000);
@@ -193,58 +179,18 @@ sView.addingLogo = function(){
 		}, 1000);
 	}
 }
-sView.toggleFadeContainer = function(flag){
-   this.fadingContainer.visible=flag;
-}
+
 sView.resizeForIpad = function(){
 	function isiPad() {
 		return /iPad/i.test(navigator.userAgent);
 	}
 	if (isiPad() && _viewInfoUtil.viewType === "VP") {	
-		this.fadingContainer.position.set(-316,38);
 		this.gameTitle.visible=true;
 	}
 	else if(isiPad() && _viewInfoUtil.viewType === "VL"){
-		this.fadingContainer.x = -10;
-		this.fadingContainer.y = -105;
 		this.gameTitle.visible=true;
 	}
 }
-
-sView.toggleTextVisibility = function() {
-    // Check if the spin_type is "freespin" or not
-    // In this case, the functionality is the same for both cases.
-		this.playFading(this.counter % 6);
-        this.counter++;
-        if (this.counter == 100) {
-            this.counter = 0;
-		}
-};
-
-sView.playFading = function(val) {
-
-	if(coreApp.gameController.isWindowFocused == false)
-		return;
-
-	//setting all the text alpha to 0
-	this.fadeTextArr.forEach(text => {
-		text.alpha = 0;
-	});
-
-	TweenMax.to(this.fadeTextArr[val], 1.2, {
-					alpha: 1,
-					ease: Power1.easeInOut,
-					onComplete: function (){
-						for (let index = 0; index < this.fadeTextArr.length; index++) {
-							TweenMax.to(this.fadeTextArr[index], 1.2, {
-								alpha: 0,
-								ease: Power1.easeInOut,
-							});
-						}
-					}.bind(this)
-	});
-}
-
 
 sView.onGameInitGame = function(){
 	var multiplier  = (coreApp.gameModel.isFreeSpinActive() == false && coreApp.gameModel.getIsFreeSpinEnded()==false) ? _ng.normalMultiplier : _ng.fsMultiplier;
@@ -310,8 +256,6 @@ sView.gameSpecificOnResize = function () {
 		// //HISTORY
 		// this.historyContainer.position.set(125,70);
 		// this.BuyPanelCon.addChild(this.historyContainer);
-		// //FADING CONTAINER
-		// this.fadingContainer.position.set(-42.5, -10);
 		
 		// // Hide buttons and panelBase in history mode
 		// if (isInHistoryMode) {
@@ -328,7 +272,6 @@ sView.gameSpecificOnResize = function () {
 
 			this.twoXBetBg.position.set(211,-109);
 			this.twoXBetBg.scale.set(0.53, 0.48);
-			this.fadingContainer.position.set(-318,61);
 			
 		// REPLAY BUTTON - Position below logo for iPad (centered, visible on screen)
 		if (this.replayButton) {
@@ -347,8 +290,6 @@ sView.gameSpecificOnResize = function () {
 			this.twoXBetBg.scale.set(0.53, 0.48);
 
 			this.panelBase.position.set(0,-29);
-			//FADING CONTAINER
-			this.fadingContainer.position.set(-322,30);
 			
 		// REPLAY BUTTON - Position below logo for mobile portrait (centered, visible on screen)
 		if (this.replayButton) {
@@ -442,12 +383,6 @@ sView.gameSpecificOnResize = function () {
 		this.BuyPanelCon.addChild(this.superFreeSpinBtn);
 		this.BuyPanelCon.addChild(this.twoXBetBg);
 		this.BuyPanelCon.addChild(this.historyContainer);
-			
-		//FADING CONTAINER
-		if (isiPad())
-			this.fadingContainer.position.set(41, -78);
-		else 
-			this.fadingContainer.position.set(-2, 21);
 
 		coreApp.gameView.panel.BuyBaseLeft.visible = false;
 		coreApp.gameView.panel.BuyBaseRight.visible = false;
@@ -885,10 +820,7 @@ sView.SliderMoved=function()
 		}
 }
 
-sView.ResizeGview = function(){
-	// this.resizeFadingContainer();
-	// this.resizeForIpad();
-	
+sView.ResizeGview = function(){	
 	if(this.BuyBtnVL){
 		if (_viewInfoUtil.viewType === "VL") {
 			this.BuyBtnVL.x = 30;
@@ -1456,154 +1388,6 @@ sView.tweenRemove = function(i){
 			this.historyboxContainer.removeChild(this.HistoryArray[i]);
 		}.bind(this)
 	});
-}
-
-sView.createFadingContainer = function () {
-
-	// const style = {
-	// 	align: "center",
-	// 	fill: "#ededed",
-	// 	fontFamily: "Tahoma",
-	// 	fontSize: 21,
-	// 	fontWeight: "bolder",
-	// 	lineJoin: "round",
-	// 	stroke: "#f708b7",
-	// 	strokeThickness: 6
-	// }
-
-	const style = {
-    align: "center",
-    fill: ["#FFFF33", "#ffc927", "#FFFF33"], 
-    fontFamily: "Baloo-Regular",
-    fontSize: 25,
-    // fontWeight: "bolder",
-    lineJoin: "round",
-
-    // stroke: "#D84315", 
-    stroke: "#8e4121", 
-    strokeThickness: 8,
-    dropShadow: true,
-    dropShadowColor: "#3E2723",
-    dropShadowDistance: 6,
-    dropShadowAngle: Math.PI / 2,
-    dropShadowBlur: 0 
-}
-	this.fadingContainer = pixiLib.getContainer();
-	this.mainContainer.addChild(this.fadingContainer);
-	this.fadingContainer.name = "fadingContainer";
-
-	//symbol pay anywhere on the screen
-	this.text1 = pixiLib.getContainer();
-	this.txt1 = pixiLib.getElement("Text", style);
-	this.txt1.name = "symbol pay anywhere on the screen";
-	this.txt1.anchor.set(0.5);
-	this.txt1.position.set(0,0);
-	pixiLib.setText(this.txt1, gameLiterals.sympay_any);
-	this.text1.addChild(this.txt1);
-	this.text1.position.set(695,55);
-	this.text1.alpha = 0;
-	this.fadingContainer.addChild(this.text1);
-	this.fadeTextArr.push(this.text1);
-
-	//MULTIPLIER(symbol) win upto 1000x mutliplier
-	this.text3 = pixiLib.getContainer();
-	this.txt3 = pixiLib.getElement("Text", style);
-	this.txt3.name = "win upto 5000x mutliplier";
-	this.txt3.anchor.set(0, 0.5);
-	this.txt3.position.set(-224, 0);
-	pixiLib.setText(this.txt3, gameLiterals.winupto);
-	this.text3.addChild(this.txt3);
-	this.fadingContainer.addChild(this.text3);
-	this.text3.position.set(755,55);
-	this.text3.alpha = 0;
-
-	//multiplier symbol
-	// var mSym = pixiLib.getElement("Sprite", "100x");
-	// mSym.name = "multiplierSymbol";
-	// mSym.scale.set(0.2);
-	// mSym.anchor.set(0, 0.5);
-	// mSym.position.set(-304, 0);
-	// this.text3.addChild(mSym);
-
-	this.fadeTextArr.push(this.text3);
-	
-	//WIN UPTO 25000X  BET
-	this.text2 = pixiLib.getContainer();
-	this.txt2 = pixiLib.getElement("Text", style);
-	this.txt2.name = "WIN UPTO 25000X  BET";
-	this.txt2.anchor.set(0.5, 0.5);
-	this.txt2.position.set(-60, 0);
-	this.text2.addChild(this.txt2);
-	pixiLib.setText(this.txt2, gameLiterals.text_screen4);
-	this.fadingContainer.addChild(this.text2);
-	this.text2.position.set(755, 55);
-	// this.text2.visible=false;
-	this.text2.alpha = 0;
-	this.fadeTextArr.push(this.text2);
-
-	//MULTIPLIER(symbol) MULTIPLIES FINAL TUMBLE WIN
-	this.text4 = pixiLib.getContainer();
-
-	this.mSymtxt4 = pixiLib.getElement("Sprite", "100x");
-	this.mSymtxt4.name = "multiplierSymbol";
-	this.mSymtxt4.scale.set(0.2);
-	this.mSymtxt4.anchor.set(0.5, 0.5);
-	this.text4.addChild(this.mSymtxt4);
-
-	this.txt4 = pixiLib.getElement("Text",style);
-	this.txt4.name = "MULTIPLIES FINAL TUMBLE WIN";
-	this.txt4.anchor.set(0.5, 0.5);
-	this.txt4.position.set(-60 + this.mSymtxt4.width/4, 0);
-	pixiLib.setText(this.txt4, gameLiterals.multHeading);
-	this.text4.addChild(this.txt4);
-
-	this.mSymtxt4.position.x = this.txt4.x - this.txt4.width / 2 - 20;
-
-	this.fadingContainer.addChild(this.text4);
-	this.text4.position.set(755, 55);
-	this.text4.alpha = 0;
-
-
-	this.fadeTextArr.push(this.text4);
-
-
-	//4X SCATTER(symbol) WINS FREE SPINS
-	this.text5 = pixiLib.getContainer();
-	this.txt5 = pixiLib.getElement("Text", style);
-	this.txt5.name = "4X SCATTER WINS FREE SPINS";
-	this.txt5.position.set(0, 0);
-	this.txt5.anchor.set(0.5);
-	pixiLib.setText(this.txt5,gameLiterals.winfree);
-	this.text5.addChild(this.txt5);
-	this.fadingContainer.addChild(this.text5);
-	this.text5.position.set(695, 55);
-	this.text5.alpha = 0;
-
-	//scatter symbol
-	var scatterSymbol = pixiLib.getElement("Sprite", "s");
-	scatterSymbol.name = "scatterSymbol";
-	scatterSymbol.scale.set(0.2);
-	scatterSymbol.anchor.set(0.5);
-	scatterSymbol.x = this.txt5.x - (this.txt5.width / 2) + 57;
-	this.text5.addChild(scatterSymbol);
-
-	this.fadeTextArr.push(this.text5);
-
-
-	//Game title
-	this.text6 = pixiLib.getContainer();
-	this.fadingTitle = pixiLib.getElement("Sprite","logo_small");
-	this.fadingTitle.name = "SYMBOLS PAY ANYWHERE ON THE SCREEN";
-	this.fadingTitle.position.set(-437,-25);
-	this.text6.addChild(this.fadingTitle);
-	this.fadingContainer.addChild(this.text6);
-	this.text6.scale.set(0.67);
-	this.text6.position.set(686,24);
-	// this.text6.visible=false;
-	this.text6.alpha = 0;
-	this.fadeTextArr.push(this.text6);
-	this.FSend=false;
-
 }
 
 sView._hideAndShowOfTwoXButton = function (bool){

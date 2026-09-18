@@ -26,7 +26,7 @@ _ng.GameConfig = {
     "incrementMulArry": [],
     "isGoldFeature": false,
     "AnticipateReq":false,
-    "defaultReels": ["agfeb", "afgeb", "afcdb", "aefcb", "acedb","hfceb"],
+    "defaultReels": ["agfeb", "afgeb", "afcdb", "aefcb", "acedb","hfceb", "bcde"],
     "FastAnim":false,
     "TurboOn":false,
     "superBuyEnabled":false,

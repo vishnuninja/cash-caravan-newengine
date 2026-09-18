@@ -36,17 +36,7 @@ _ng.ReelViewUiConfig = {
         "maskInfo": {
             "maskType": "1",
             "maskPosition": {x: 139, y: 176.5, width: 931, height:455},
-            "maskPositionTop": {x: 296, y: 48, width: 625, height:116.5}//top reel mask
-            // "maskType": "2",
-            // "reelMaskPosition": [
-            // {x: 297, y: 46, width: 618.5, height: 110.5},
-            // {x: 148, y: 175, width: 151.5, height: 460.5},
-            // {x: 298, y: 175, width: 151.5, height: 460.5},
-            // {x: 450, y: 175, width: 151.5, height: 460.5},
-            // {x: 602, y: 175, width: 151.5, height: 460.5},
-            // {x: 753, y: 175, width: 151.5, height: 460.5},
-            // {x: 910, y: 175, width: 151.5, height: 460.5}
-            // ]
+            // Top reel mask is hardcoded in TopTumbleReelStrip.js...
         },
         "reelPositionsWRTGrid": {x: 178, y: 140, scale:{x:1,y:1} },//width: 868 , height:872
         "reelPositionsWRTGridFG": {x: 310, y: 20, scale:{x:1,y:1} },
@@ -74,11 +64,13 @@ _ng.ReelViewUiConfig = {
         "isSymbolFadeInWins": true
     },
     "showScatterLand":true,
+    "reelViewFixedDimensions":{"w":375 , "h": 667},
     "layout": {
-        "VD": {"marginLeft": 48, "marginTop": 0, "scale": .85,"w":1038.84,"h":658.45},
-        "VL": {"marginLeft": 60, "marginTop": 10, "scale": .85,"w":1038.84,"h":658.45},
-        "VP": { "marginLeft": -55 , "marginTop": 0, "scale": .75,"w":795.04,"h":925.92}
+        "VD": {"marginLeft": -320, "marginTop": -50, "scale": 0.85},
+        "VL": {"marginLeft": -380, "marginTop": -8, "scale": 0.9},
+        "VP": {"marginLeft": -472, "marginTop": -250, "scale": 1}
     },
+    "showScatterLand":true,
     "iPadLayout": {
         "VD": {
             "marginLeft": 0,
@@ -86,14 +78,14 @@ _ng.ReelViewUiConfig = {
             "scale": 1
         },
         "VL":{
-            "marginLeft": -50,
-            "marginTop": -10,
+            "marginLeft": -380,
+            "marginTop": -80,
             "scale": 1
         },
         "VP": {
-            "marginLeft": -137+30,
-            "marginTop": -70,
-            "scale": 0.9
+            "marginLeft": -460,
+            "marginTop": -220,
+            "scale":1
         }
     },
     "reelGridBottom": {

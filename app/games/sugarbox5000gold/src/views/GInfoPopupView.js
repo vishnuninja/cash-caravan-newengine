@@ -373,7 +373,6 @@ view.onFsCloseHandler = function (eventType) {
 	_mediator.publish("UpdateWin", "");
 	_mediator.publish(_events.slot.updateBalance);
 	_mediator.publish("toggleTumbleBox", false);
-	_mediator.publish("toggleFadeContainer", true);
 	_mediator.publish("setSpaceBarEvent", "idle");
 	this.hideInfoEventType =(eventType == "collect") ? "onFSEndShown" : "showGambleWindow";
 	if(eventType == "onBackButtonClicked")

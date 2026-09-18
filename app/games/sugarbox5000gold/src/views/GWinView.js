@@ -85,7 +85,7 @@ gWV.addGameElements = function () {
 	this.cacheID = 100;
 	this.cachePos = 100;
 	this.bearPos = {
-		VD: { x: 1180, y: 375, scale: 0.67 },
+		VD: { x: 1200, y: 400, scale: 0.35 },
 		VL: { x: 1193, y: 360, scale: 0.67 },
 		VP: { x: 676, y: 869, scale: 0.7},
 	}
@@ -302,7 +302,6 @@ gWV.removeMultipliers = function () {
 			delete this.stickyContainer;
 		}
 		this.toggleTumbleBox(0);
-		_mediator.publish("toggleFadeContainer", true);
 		this.currentTotal = 0;
 		this.finalValue = 0;
 		this.multiplierTotal = 0;
@@ -595,7 +594,6 @@ gWV.findSticky = function () {
 gWV.TumbleWin = function (array, num, tickerValues) { //parsed values like which symbol name burst and the total number
 	if (coreApp.gameModel.userModel.userData.current_round.spin_type == "freespin") {
 		this.toggleTumbleBox(1);
-		_mediator.publish("toggleFadeContainer", false);
 	}
 	this.arrayTemp = array;
 	// console.log("tumbleWin " + array);

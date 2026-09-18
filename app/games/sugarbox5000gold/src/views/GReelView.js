@@ -68,12 +68,14 @@ view.startSpin = function (spinSpeed) {
 	_sndLib.play(reelSpinSound);
 	this.startSpinTimeoutArr = [];
 	var reelStartIntervalDuration = ("quick" === spinSpeed) ? 0 : 80;
-	for(let i=0;i<this.reels.length;i++){
+	for(let i=0;i<this.reels.length-1;i++){
 		var timeout = setTimeout(function () {
 			this.reels[i].startStripSpin(spinSpeed);
 		}.bind(this), i * reelStartIntervalDuration);
 		this.startSpinTimeoutArr.push(timeout);
 	}
+	//For top reel...
+	this.reels[6].startStripSpin(spinSpeed);
 };
 
 view.quickSpinStart = function () {
@@ -96,13 +98,16 @@ view.stopSpin = function (msg) {
 	}
 	if(this.spinResponseReceived && this.spinFallCompleted){
 		this.stopSpinTimeoutArr = [];
-		for(let i=0;i<this.reels.length;i++){
+		for(let i=0;i<this.reels.length-1;i++){
 			var timeout = setTimeout(function () {
 				this.reels[i].replaceWithNewSymbols();
 				this.reels[i].stopStripSpin();
 			}.bind(this), i * 80);
 			this.stopSpinTimeoutArr.push(timeout);
 		}
+		//For top reel...
+		this.reels[6].replaceWithNewSymbols();
+		this.reels[6].stopStripSpin();
 	}
 };
 
@@ -164,6 +169,18 @@ view.performTumble = function(currentStep = 0) {
 			this.winSymbolsToRemove[reelId].push(symbolId);
 		}
 	}
+	// Top reels... reelid = 6...
+	var topPositions = tumbleData[currentIndex].top_reel_position;
+	for (var j = 0; j < topPositions.length; j++) {
+		var symbolId = topPositions[j] - 1; // 1 is reduced because backend has 0 as 'v'...
+		this.reels[6].playSymbolAnimation(symbolId, false, false); // Last symbol and first symbol is given false as it should not interfere with the normal reel flow...
+		if(this.winSymbolsToRemove[6]){
+			this.winSymbolsToRemove[6].push(symbolId);
+		} else {
+			this.winSymbolsToRemove[6] = [];
+			this.winSymbolsToRemove[6].push(symbolId);
+		}
+	}
 }
 
 view.onSymbolAnimationComplete = function() {
@@ -222,6 +239,8 @@ view.addTumbleSymbols = function(tumbleIndex) {
       }
     }
   }
+  //For top reel...
+  stripData[6] = coreApp.gameModel.obj.current_round.misc_prizes[tumbleIndex].new_top_symbols.split('');
 
   for(var i in stripData) {
     this.reels[parseInt(i)].addTumbleSymbolsToStrip(stripData[i], tumbleIndex);

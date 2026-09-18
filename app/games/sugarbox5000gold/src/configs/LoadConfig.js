@@ -20,6 +20,8 @@ _ng.LoadConfig = {
             "views/GPanelView.js",
             "views/GWinView.js",
             "views/TumbleReelStrip.js",
+            "views/TopTumbleReelStrip.js",
+            "views/BuyPanelView.js",
             "model/gSpinData.js",
             "model/GCoreApp.js",
             "model/GPanelModel.js",
