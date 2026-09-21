@@ -258,4 +258,34 @@ class TumbleReelStrip extends PIXI.Container{
             }
         }
     }
+
+     playScatterWinAnimation(symbolId, isLastSymbol) {
+        let currentSymbol = this.symbolsArray[symbolId];
+        let duration = ((_ng.isQuickSpinActive && _ng.GameConfig.FastAnim) || _ng.externalUiController.getSpaceBarHoldStatus()) ? 3 : 1.7;   
+        let symbolName = currentSymbol.symName;
+        let symAnimConfig = _ng.GameConfig.symbolAnimations[symbolName][1];
+        let symbolAnim = pixiLib.getElement("Spine", symAnimConfig.spineName);
+        symbolAnim.name = symbolName;
+        symbolAnim.scale.set(symAnimConfig.props.scale.x, symAnimConfig.props.scale.y);
+        symbolAnim.position.set(0, (this.symbolsPos[symbolId] + currentSymbol.height/2));
+        symbolAnim.state.timeScale = duration;/* TODO: */
+        this.addChild(symbolAnim);
+        this.symbolAnimations.push(symbolAnim);
+        // if(isFirstSymbol)    this.parentView.playSymbolSoundOnce("symbolAnim");
+        currentSymbol.alpha = 0;
+
+        let entry = symbolAnim.state.setAnimation(0, symAnimConfig.winAnimation + this.findSymbolType(this.symbolsArray), true);
+        entry.listener = {
+            complete: function () {
+                currentSymbol.alpha = 1;
+                setTimeout( ()=> {
+                    symbolAnim.parent.removeChild(symbolAnim);
+                }, 10);
+                if (isLastSymbol) _mediator.publish("bonusSymbolAnimationCompleted");
+                //_sndLib.play(_sndLib.sprite.pop1)
+                // if(isFirstSymbol)    this.parentView.playSymbolSoundOnce("explosion");
+            }.bind(this)
+        };
+    }
+
 }

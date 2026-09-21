@@ -267,6 +267,18 @@ view.hideReelSymbols = function (symbolArray, type) {
 	}
 }
 
+view.bonusAnimation = function () {
+ var newReels = coreApp.gameModel.spinData.getReels();
+ var scatterPos = newReels.flatMap((row, rowIndex) => row.map((val, colIndex) => val === 's' ? [rowIndex, colIndex] : null).filter(val => val !== null)); 
+ for (let i = 0; i < scatterPos.length; i++) {
+  if(i == (scatterPos.length-1))
+   this.reels[scatterPos[i][0]].playScatterWinAnimation(scatterPos[i][1], true);
+  else
+   this.reels[scatterPos[i][0]].playScatterWinAnimation(scatterPos[i][1], false);
+ }
+}
+
+
 
 
 

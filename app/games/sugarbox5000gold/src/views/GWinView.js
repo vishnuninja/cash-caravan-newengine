@@ -719,7 +719,7 @@ gWV.playBonusSymbolAnimation = function (data) {
 	if (coreApp.gameModel.obj.current_round.misc_prizes.count == 0 || coreApp.gameModel.obj.current_round.misc_prizes == "") {
 		var bonusID = data.bonusID;
 		var reelMatrix = data.reelMatrix;
-		var bonusSymbol = _ng.GameConfig.bonusGames[bonusID].symbol;
+		var bonusSymbol = _ng.GameConfig.bonusSymbols[bonusID].symbol;
 		var animationDuration = this.animationConfig[bonusSymbol][0].animationDuration;
 		var symbolArray = [];
 		this.createWinSymbolContainer();
@@ -745,7 +745,7 @@ gWV.playBonusSymbolAnimation = function (data) {
 		if (coreApp.gameModel.obj.misc_prizes && coreApp.gameModel.obj.misc_prizes[coreApp.gameModel.obj.misc_prizes.count - 1] && coreApp.gameModel.obj.misc_prizes[coreApp.gameModel.obj.misc_prizes.count - 1].new_reel) {
 			var bonusID = data.bonusID;
 			var reelMatrix = coreApp.gameModel.obj.misc_prizes[coreApp.gameModel.obj.misc_prizes.count - 1].new_reel;
-			var bonusSymbol = _ng.GameConfig.bonusGames[bonusID].symbol;
+			var bonusSymbol = _ng.GameConfig.bonusSymbols[bonusID].symbol;
 			var animationDuration = this.animationConfig[bonusSymbol][0].animationDuration;
 			var symbolArray = [];
 			this.createWinSymbolContainer();

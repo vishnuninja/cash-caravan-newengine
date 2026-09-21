@@ -18,17 +18,17 @@ view.addSubscription = function () {
 	_mediator.subscribe("onFsCloseHandler", this.onFsCloseHandler.bind(this));
 	_mediator.subscribe("gotolobby", this.gotoLobby.bind(this));
 	_mediator.subscribe("showFreeSpinEndedZeroBalance", this.showFreeSpinEndedZeroBalance.bind(this));
-	_mediator.subscribe("buyFreeSpinPopup", this.buyFreeSpinPopup.bind(this));
-	_mediator.subscribe("showGambleWindow", this.showGambleWindow.bind(this));
-	_mediator.subscribe("buyFreeSuperSpinPopup", this.buyFreeSuperSpinPopup.bind(this));
+	// _mediator.subscribe("buyFreeSpinPopup", this.buyFreeSpinPopup.bind(this));
+	// _mediator.subscribe("showGambleWindow", this.showGambleWindow.bind(this));
+	// _mediator.subscribe("buyFreeSuperSpinPopup", this.buyFreeSuperSpinPopup.bind(this));
 	_mediator.subscribe("ExtraFSAwardpopup", this.ExtraFSAwardpopup.bind(this));
-	_mediator.subscribe("closeBuyFSPopup", this.closeBuyFSPopup.bind(this));
+	// _mediator.subscribe("closeBuyFSPopup", this.closeBuyFSPopup.bind(this));
 	_mediator.subscribe("spinStart", this.closeBuyFSPopup.bind(this));
 	_mediator.subscribe("WinExceededPopup", this.WinExceededPopup.bind(this));
-	_mediator.subscribe("resizeBuypopup", this.resizeBuypopup.bind(this));
+	// _mediator.subscribe("resizeBuypopup", this.resizeBuypopup.bind(this));
 	_mediator.subscribe("setFsPlayedcnt", this.setFsPlayedcnt.bind(this));
-	_mediator.subscribe("updateFreeSpinCost", this.updateFreeSpinCost.bind(this));
-	_mediator.subscribe("updateSuperSpinCost", this.updateSuperSpinCost.bind(this));
+	// _mediator.subscribe("updateFreeSpinCost", this.updateFreeSpinCost.bind(this));
+	// _mediator.subscribe("updateSuperSpinCost", this.updateSuperSpinCost.bind(this));
 	//bet adjustment 
 	_mediator.subscribe("createTotalBetSelector", this.createTotalBetSelector.bind(this));
 	_mediator.subscribe("updateSelectorContainerBet", this.updateSelectorContainerBet.bind(this));
@@ -45,91 +45,67 @@ view.addSubscription = function () {
 	// this.onViewResize();
 
 };
-view.showFreeSpinAwarded = function (numSpins, nextAction) {
+view.showFreeSpinAwarded = async function (numSpins, nextAction) {
 	this.isShowing_popup = true;
 
-	_mediator.publish("CreateScatterWinAnim");
-	setTimeout(() => {
-		// _mediator.publish("moveBuyFeature");
-		// if (_ng.isQuickSpinActive == true) {
-		//     _ng.turboActiveByUser = true;
-		// }
-		// _mediator.publish("onQuickSpinOff");
+	await this.gameView.playScatterWinTransition();
 
-		this.nextAction = nextAction;
+	this.nextAction = nextAction;
 
-		var fsPopupConfig = _ng.GameConfig.infoPopupView.freeSpinPopup;
-		var numSpins = coreApp.gameModel.getTotalFreeSpins();
-		// var numSpins = (Number.isInteger(parseInt(numSpins))) ? numSpins : coreApp.gameModel.getTotalFSTriggered();
+	var fsPopupConfig = _ng.GameConfig.infoPopupView.freeSpinPopup;
+	var numSpins = coreApp.gameModel.getTotalFreeSpins();
+	// var numSpins = (Number.isInteger(parseInt(numSpins))) ? numSpins : coreApp.gameModel.getTotalFSTriggered();
 
-		this.grayBg = pixiLib.getShape("rect", { w: _viewInfoUtil.getWindowWidth(), h: _viewInfoUtil.getWindowHeight() });
-		this.grayBg.alpha = 0.2;
-		this.grayBg.interactive = true;
-		this.grayBg.buttonMode = true;
-		coreApp.gameView.decoratorContainer.addChildAt(this.grayBg, 0);
+	this.grayBg = pixiLib.getShape("rect", { w: _viewInfoUtil.getWindowWidth(), h: _viewInfoUtil.getWindowHeight() });
+	this.grayBg.alpha = 0.6;
+	this.grayBg.interactive = true;
+	this.grayBg.buttonMode = true;
+	coreApp.gameView.decoratorContainer.addChildAt(this.grayBg, 0);
 
-		this.popupParent = pixiLib.getElement();
-		this.addChild(this.popupParent);
+	this.popupParent = pixiLib.getElement();
+	this.addChild(this.popupParent);
 
 
-		var congTxt = pixiLib.getElement("Spine", "congratulation");
-		this.popupParent.addChild(congTxt);
-		pixiLib.setProperties(congTxt, fsPopupConfig.descriptionImg.props);
-		congTxt.state.setAnimation(0, '2loop_freespins_shower', true);
-		congTxt.name = "free spin awarded";
-		
+ 	this.fsAwardPopup = pixiLib.getElement("Spine",fsPopupConfig.background.spineImg)
+	pixiLib.setProperties(this.fsAwardPopup, fsPopupConfig.background.props);
+	//ToDo: Do in, loop and out for spine...
+	this.fsAwardPopup.state.setAnimation(0,"youhavebeen_rewarded_loop",true)
+	this.popupParent.addChild(this.fsAwardPopup);
 
-		this.numSpinsTxt = pixiLib.getElement("Text", fsPopupConfig.fsValue.textStyle);
-		this.popupParent.addChild(this.numSpinsTxt);
-		pixiLib.setProperties(this.numSpinsTxt, fsPopupConfig.fsValue.props);
-		pixiLib.setText(this.numSpinsTxt, numSpins);
-
-		
-		var continueBtn = pixiLib.getButton(fsPopupConfig.continueButton.bgImage);
-		this.popupParent.addChild(continueBtn);
-		pixiLib.setProperties(continueBtn, fsPopupConfig.continueButton.props);
-
-		var continueText = pixiLib.getElement("Text", fsPopupConfig.continueText.textStyle);
-		continueBtn.addChild(continueText);
-		pixiLib.setProperties(continueText, fsPopupConfig.continueText.props);
-		pixiLib.setText(continueText, gameLiterals.continueText);
+	this.spinsTxt = pixiLib.getElement("Text", fsPopupConfig.fsValue.textStyle);
+	pixiLib.setText(this.spinsTxt, numSpins);
+	this.spinsTxt.name = "spinsTxt";
+	pixiLib.setProperties(this.spinsTxt, fsPopupConfig.fsValue.props);
+	pixiLib.attachToSlot(this.fsAwardPopup, "amount box 2", this.spinsTxt);
 
 
 
+	setTimeout(function () {
+		//Adding timeout so popup will be shown fully then enable spacebar
+		_mediator.publish("setSpaceBarEvent", "onFSContinueClick");
+	}, 1000);
+	pixiLib.addEvent(this.grayBg,()=>{
+		this.grayBg.interactive = false;
+		this.grayBg.buttonMode = false;
+		this.onFSContinueClick();
+	})
+	_ngFluid.call(this, fsPopupConfig.params);
+
+	this.onViewResize();
+	this.showInfoPopup();
+	coreApp.CURRENTACTIVEPOPUP = "congratulations_awarded";
+
+	//skipping the popup
+	if (_ng.autoPlayBeforeFg == true) {
+		pixiLib.setInteraction(continueBtn, false);
+		this.grayBg.interactive = false;
+		this.grayBg.buttonMode = false;
 		setTimeout(function () {
-			//Adding timeout so popup will be shown fully then enable spacebar
-			_mediator.publish("setSpaceBarEvent", "onFSContinueClick");
+			_mediator.publish("onFSContinueClick");
 		}, 1000);
-		pixiLib.addEvent(continueBtn,()=>{
-			this.grayBg.interactive = false;
-			this.grayBg.buttonMode = false;
-			this.onFSContinueClick();
-		})
-		pixiLib.addEvent(this.grayBg,()=>{
-			this.grayBg.interactive = false;
-			this.grayBg.buttonMode = false;
-			this.onFSContinueClick();
-		})
-		_ngFluid.call(this, fsPopupConfig.params);
+	}
 
-		this.onViewResize();
-		this.showInfoPopup();
-		coreApp.CURRENTACTIVEPOPUP = "congratulations_awarded";
-
-		//skipping the popup
-		if (_ng.autoPlayBeforeFg == true) {
-			pixiLib.setInteraction(continueBtn, false);
-			this.grayBg.interactive = false;
-			this.grayBg.buttonMode = false;
-			setTimeout(function () {
-				_mediator.publish("onFSContinueClick");
-			}, 1000);
-		}
-
-		_sndLib.play(_sndLib.sprite.fsAwardPopup);
-
-	}, 2300);
-
+	_sndLib.play(_sndLib.sprite.fsAwardPopup);
 };
 
 view.hideInfoPopup = function (eventToPublish, delay) {
@@ -391,103 +367,106 @@ view.onFsCloseHandler = function (eventType) {
 
 /* Latest code  */
 view.buyFreeSpinPopup = function () {
+	var buyPopup = new BuyFreeSpinPopup(this, "normalbuy");
+	buyPopup.create();
+	coreApp.gameView.popupContainer.addChild(buyPopup);
 
-	var buyfsConfig =  _ng.GameConfig.infoPopupView.BuyFSPopup
+	// var buyfsConfig =  _ng.GameConfig.infoPopupView.BuyFSPopup
 
-	this.grayBg = pixiLib.getShape("rect", { w: _viewInfoUtil.getWindowWidth(), h: _viewInfoUtil.getWindowHeight() });
-	this.grayBg.alpha = 0.6;
-	this.grayBg.interactive = true;
-	coreApp.gameView.popupContainer.addChildAt(this.grayBg, 0);
+	// this.grayBg = pixiLib.getShape("rect", { w: _viewInfoUtil.getWindowWidth(), h: _viewInfoUtil.getWindowHeight() });
+	// this.grayBg.alpha = 0.6;
+	// this.grayBg.interactive = true;
+	// coreApp.gameView.popupContainer.addChildAt(this.grayBg, 0);
 
-	this.popupParent = pixiLib.getElement();
-	this.popupParent.name = "popupParent";
-	this.addChild(this.popupParent);
+	// this.popupParent = pixiLib.getElement();
+	// this.popupParent.name = "popupParent";
+	// this.addChild(this.popupParent);
 
-	var backgroundBase = pixiLib.getElement("Sprite", buyfsConfig.background.bgImage);
-	backgroundBase.name = "backgroundBase";
-	this.popupParent.addChild(backgroundBase);
-    pixiLib.setProperties(backgroundBase, buyfsConfig.background.props);
+	// var backgroundBase = pixiLib.getElement("Sprite", buyfsConfig.background.bgImage);
+	// backgroundBase.name = "backgroundBase";
+	// this.popupParent.addChild(backgroundBase);
+    // pixiLib.setProperties(backgroundBase, buyfsConfig.background.props);
 
-	this.freespinCost = pixiLib.getFormattedAmount(coreApp.gameModel.panelModel.totalBet * 100);
+	// this.freespinCost = pixiLib.getFormattedAmount(coreApp.gameModel.panelModel.totalBet * 100);
 
-	this.AreYouSure = pixiLib.getElement("Text", buyfsConfig.descriptionText.textStyle);
-	this.AreYouSure.name = "AreYouSure";
-	pixiLib.setProperties(this.AreYouSure, buyfsConfig.descriptionText.props);
+	// this.AreYouSure = pixiLib.getElement("Text", buyfsConfig.descriptionText.textStyle);
+	// this.AreYouSure.name = "AreYouSure";
+	// pixiLib.setProperties(this.AreYouSure, buyfsConfig.descriptionText.props);
 
-	let updatedText = gameLiterals.areusure.replace("XZ", "10").replace("XY", this.freespinCost);
-	pixiLib.setText(this.AreYouSure, updatedText);
-	this.popupParent.addChild(this.AreYouSure);
+	// let updatedText = gameLiterals.areusure.replace("XZ", "10").replace("XY", this.freespinCost);
+	// pixiLib.setText(this.AreYouSure, updatedText);
+	// this.popupParent.addChild(this.AreYouSure);
 
-	this.buyButton = pixiLib.getButton(buyfsConfig.confirmButton.bgImage);
-	this.buyButton.name = "buyButton";
-	pixiLib.setProperties(this.buyButton, buyfsConfig.confirmButton.props);
-	this.popupParent.addChild(this.buyButton);
-	pixiLib.addEvent(this.buyButton, this.onBuyFeatureClick.bind(this));
+	// this.buyButton = pixiLib.getButton(buyfsConfig.confirmButton.bgImage);
+	// this.buyButton.name = "buyButton";
+	// pixiLib.setProperties(this.buyButton, buyfsConfig.confirmButton.props);
+	// this.popupParent.addChild(this.buyButton);
+	// pixiLib.addEvent(this.buyButton, this.onBuyFeatureClick.bind(this));
 
-	this.cancelFsButton = pixiLib.getButton("closeSuperWin");
-	this.cancelFsButton.name = "cancelFsButton";
-	pixiLib.setProperties(this.cancelFsButton, buyfsConfig.cancelButton.props);
-	this.popupParent.addChild(this.cancelFsButton);
-	pixiLib.addEvent(this.cancelFsButton, this.buyFeatureCancelClicked.bind(this));
+	// this.cancelFsButton = pixiLib.getButton("closeSuperWin");
+	// this.cancelFsButton.name = "cancelFsButton";
+	// pixiLib.setProperties(this.cancelFsButton, buyfsConfig.cancelButton.props);
+	// this.popupParent.addChild(this.cancelFsButton);
+	// pixiLib.addEvent(this.cancelFsButton, this.buyFeatureCancelClicked.bind(this));
 
-	pixiLib.addEvent(this.grayBg, this.buyFeatureCancelClicked.bind(this));
+	// pixiLib.addEvent(this.grayBg, this.buyFeatureCancelClicked.bind(this));
 
-	 _ngFluid.call(this, buyfsConfig.params);
-	this.onViewResize();
-	this.showInfoPopup();
-	this.showBuyPopupAnimation();
+	//  _ngFluid.call(this, buyfsConfig.params);
+	// this.onViewResize();
+	// this.showInfoPopup();
+	// this.showBuyPopupAnimation();
 
 }
-view.buyFreeSuperSpinPopup = function () {
-	var buysuperConfig =  _ng.GameConfig.infoPopupView.superBuyFSPopup
+// view.buyFreeSuperSpinPopup = function () {
+// 	var buysuperConfig =  _ng.GameConfig.infoPopupView.superBuyFSPopup
 
-	this.grayBg = pixiLib.getShape("rect", { w: _viewInfoUtil.getWindowWidth(), h: _viewInfoUtil.getWindowHeight() });
-	this.grayBg.alpha = 0.6;
-	this.grayBg.interactive = true;
-	coreApp.gameView.popupContainer.addChildAt(this.grayBg, 0);
+// 	this.grayBg = pixiLib.getShape("rect", { w: _viewInfoUtil.getWindowWidth(), h: _viewInfoUtil.getWindowHeight() });
+// 	this.grayBg.alpha = 0.6;
+// 	this.grayBg.interactive = true;
+// 	coreApp.gameView.popupContainer.addChildAt(this.grayBg, 0);
 
-	this.popupParent = pixiLib.getElement();
-	this.popupParent.name = "popupParent";
-	this.addChild(this.popupParent);
+// 	this.popupParent = pixiLib.getElement();
+// 	this.popupParent.name = "popupParent";
+// 	this.addChild(this.popupParent);
 
-	var backgroundBase = pixiLib.getElement("Sprite", buysuperConfig.background.bgImage);
-	backgroundBase.name = "backgroundBase";
-	this.popupParent.addChild(backgroundBase);
-    pixiLib.setProperties(backgroundBase, buysuperConfig.background.props);
+// 	var backgroundBase = pixiLib.getElement("Sprite", buysuperConfig.background.bgImage);
+// 	backgroundBase.name = "backgroundBase";
+// 	this.popupParent.addChild(backgroundBase);
+//     pixiLib.setProperties(backgroundBase, buysuperConfig.background.props);
 
-	this.superBuyCost = pixiLib.getFormattedAmount(coreApp.gameModel.panelModel.totalBet * coreApp.gameModel.spinData.superBuyfg);
+// 	this.superBuyCost = pixiLib.getFormattedAmount(coreApp.gameModel.panelModel.totalBet * coreApp.gameModel.spinData.superBuyfg);
 
-	this.AreYouSure = pixiLib.getElement("Text", buysuperConfig.descriptionText.textStyle);
-	this.AreYouSure.name = "AreYouSure";
-	pixiLib.setProperties(this.AreYouSure, buysuperConfig.descriptionText.props);
+// 	this.AreYouSure = pixiLib.getElement("Text", buysuperConfig.descriptionText.textStyle);
+// 	this.AreYouSure.name = "AreYouSure";
+// 	pixiLib.setProperties(this.AreYouSure, buysuperConfig.descriptionText.props);
 
-	let updatedText = gameLiterals.superDescription.replace("XW", "10").replace("XY", "20X").replace("XZ", this.superBuyCost);
-	pixiLib.setText(this.AreYouSure, updatedText);
-	this.popupParent.addChild(this.AreYouSure);
+// 	let updatedText = gameLiterals.superDescription.replace("XW", "10").replace("XY", "20X").replace("XZ", this.superBuyCost);
+// 	pixiLib.setText(this.AreYouSure, updatedText);
+// 	this.popupParent.addChild(this.AreYouSure);
 
 	
-	this.buyButton = pixiLib.getButton(buysuperConfig.confirmButton.bgImage);
-	this.buyButton.name = "buyButton";
-	pixiLib.setProperties(this.buyButton, buysuperConfig.confirmButton.props);
-	this.popupParent.addChild(this.buyButton);
+// 	this.buyButton = pixiLib.getButton(buysuperConfig.confirmButton.bgImage);
+// 	this.buyButton.name = "buyButton";
+// 	pixiLib.setProperties(this.buyButton, buysuperConfig.confirmButton.props);
+// 	this.popupParent.addChild(this.buyButton);
 
-	pixiLib.addEvent(this.buyButton, this.superBuyFeatureClick.bind(this));
+// 	pixiLib.addEvent(this.buyButton, this.superBuyFeatureClick.bind(this));
 
-	this.cancelFsButton = pixiLib.getButton("closeSuperWin");
-	this.cancelFsButton.name = "cancelFsButton";
-	pixiLib.setProperties(this.cancelFsButton, buysuperConfig.cancelButton.props);
-	this.popupParent.addChild(this.cancelFsButton);
+// 	this.cancelFsButton = pixiLib.getButton("closeSuperWin");
+// 	this.cancelFsButton.name = "cancelFsButton";
+// 	pixiLib.setProperties(this.cancelFsButton, buysuperConfig.cancelButton.props);
+// 	this.popupParent.addChild(this.cancelFsButton);
 
-	pixiLib.addEvent(this.cancelFsButton, this.superBuyCancelClicked.bind(this));
-	pixiLib.addEvent(this.grayBg, this.superBuyCancelClicked.bind(this));
+// 	pixiLib.addEvent(this.cancelFsButton, this.superBuyCancelClicked.bind(this));
+// 	pixiLib.addEvent(this.grayBg, this.superBuyCancelClicked.bind(this));
 
-	_ngFluid.call(this, buysuperConfig.params);
+// 	_ngFluid.call(this, buysuperConfig.params);
 
-	this.onViewResize();
-	this.showInfoPopup();
-	this.showBuyPopupAnimation();
+// 	this.onViewResize();
+// 	this.showInfoPopup();
+// 	this.showBuyPopupAnimation();
 
-}
+// }
 
 view.resizeBuypopup = function () {
 	//Add positions here , for rotating vp to vl or vl to vp
@@ -578,22 +557,22 @@ view.WinExceededPopup = function (totalBet) {
 		}
 	}
 }
-view.BuyServerReq = function (type) {
+// view.BuyServerReq = function (type) {
 
-	switch (type) {
-		case "BuyFreeSpinContent":
-			_ng.BuyFSenabled = true;
-			_mediator.publish("callBuyFreeSpinRequest");
-			break;
-		case "SuperBuyContent":
-			_ng.GameConfig.superBuyEnabled = true;
-			_mediator.publish("callSuperBuyRequest");
-			break;
-		default:
-			break;
-	}
-	_mediator.publish("spinStart");
-}
+// 	switch (type) {
+// 		case "BuyFreeSpinContent":
+// 			_ng.BuyFSenabled = true;
+// 			_mediator.publish("callBuyFreeSpinRequest");
+// 			break;
+// 		case "SuperBuyContent":
+// 			_ng.GameConfig.superBuyEnabled = true;
+// 			_mediator.publish("callSuperBuyRequest");
+// 			break;
+// 		default:
+// 			break;
+// 	}
+// 	_mediator.publish("spinStart");
+// }
 
 view.ExtraFSAwardpopup = function (callback) {
 

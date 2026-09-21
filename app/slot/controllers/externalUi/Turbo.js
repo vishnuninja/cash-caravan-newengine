@@ -7,17 +7,19 @@ var turbo = _ng.TurboEUI.prototype;
 
 
 turbo.setGameSpeed = function(speed) {
+    _ng.isQuickSpinActive = false;
     _ng.GameConfig.FastAnim = false;
     if (speed === 'normal') {
-        _mediator.publish("onSloAnimQuickSpinOn");
+        _ng.isQuickSpinActive = true;
+
     } else if (speed === 'quick') {
-        _mediator.publish("onSloAnimQuickSpinOn");
+        _ng.isQuickSpinActive = true;
         _ng.GameConfig.FastAnim = true;
-    } else if (speed === 'turbo') {
-        _mediator.publish("onSloAnimQuickSpinOff");
+        
     }
     this.updateTurboIcons(speed);
 }
+
 
 turbo.updateTurboIcons = function(speed) {
     window.externalUi.call('turbo-off-button', 'hide');

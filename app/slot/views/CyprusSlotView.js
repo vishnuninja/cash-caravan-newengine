@@ -229,6 +229,12 @@ p.createGameElements = function () {
     view.createView();
     /*******************************/
 
+    var view = new BuyPanelView();
+    view.name = "BuyPanelView";
+    this.reelView.addChild(view);
+    view.createView();
+    /*******************************/
+
     this.createSwipeScreen();
     this.createExtraElements();
     this.gameCreationCompleted();

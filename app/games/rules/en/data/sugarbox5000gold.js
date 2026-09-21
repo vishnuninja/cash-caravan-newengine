@@ -114,12 +114,12 @@ var gameLiterals = {
 	"multHeading" : "MULTIPLIES FINAL TUMBLE WIN",
 
 	//BASE GAME LEFT PANEL
-	"buyText" : "BUY",
-	"freeSpinText" : "FREE SPINS",
+	"buyText" : "BUY FREE SPINS",
+	// "freeSpinText" : "FREE SPINS",
 	"superText" : "SUPER",
 	"betText" : "BET",
-	"doubleText" : "DOUBLE CHANCE",
-	"winFeature" : "TO WIN FEATURE",
+	"doubleText" : "DOUBLE CHANCE TO WIN FEATURE",
+	// "winFeature" : "TO WIN FEATURE",
 	"freeSpinTxt" : "FREE SPINS \n LEFT",
 
 	//AUTOPLAY TEXTS

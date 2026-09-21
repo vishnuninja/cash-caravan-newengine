@@ -69,14 +69,6 @@ Panel.createView = function () {
                     this.spinControls.name = "spinControls";
                     this.spinControls.sortableChildren = true;
                 }
-                else if(element === "BuyControl")
-                    {
-                        e.pivot.x = 0.5;
-                        e.pivot.y = 0.5;
-                        this.BuyControl = e;
-                        this.BuyControl.name = "BuyControl";
-                        this.BuyControl.sortableChildren = true;
-                    }
                 //Add all children from children Key in current container
                 //children inside the container can't act as _ngFluid
                 //So just set the properties
@@ -196,23 +188,6 @@ Panel.createView = function () {
             }
             e.props = config.props;
             e.makeResponsive = (config.makeResponsive) ? true : false;
-
-
-            // if(e.name=="BuyControl")
-            //     {
-            //         if(_viewInfoUtil.viewType=="VP" ||_viewInfoUtil.viewType=="VL"){
-            //             this.createBuyPanel_VP(e);
-            //             if(coreApp.gameModel.obj.previous_round){
-            //                 pixiLib.setText(this.amtTxt,pixiLib.getFormattedAmount(coreApp.gameModel.obj.previous_round.coin_value*coreApp.gameModel.spinData.buyfg));
-            //             pixiLib.setText(this.twoxbetamt,pixiLib.getFormattedAmount(coreApp.gameModel.obj.previous_round.coin_value*coreApp.gameModel.spinData.antebet));
-            //             }
-            //             else{
-            //                 pixiLib.setText(this.amtTxt,"$"+100);
-            //             }
-            //         }
-                    
-                    
-            //     }
 
             if(e.name=="spinControls"){
                 if(_viewInfoUtil.viewType=="VP" ||_viewInfoUtil.viewType=="VL"){
@@ -1244,9 +1219,6 @@ Panel.onResize = function () {
                 } else {
                     scaleX = this[this.elementsForResize[i]].props.portScaleX || 1;
                     scaleY = this[this.elementsForResize[i]].props.portScaleY || 1;
-                    coreApp.gameView.reelView.addChildAt(this["BuyControl"]);
-                    this["BuyControl"].scale.set(1);
-                    this["BuyControl"].position.set(670, 1000);
                 }
                 this[this.elementsForResize[i]].setScale(scaleX, scaleY);
             } else {

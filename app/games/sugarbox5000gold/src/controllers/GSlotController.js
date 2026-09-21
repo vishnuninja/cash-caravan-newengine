@@ -1029,9 +1029,7 @@ gSC.callNextGameState = function () {
         _mediator.publish("clearAllWins");
 
         if (!this.gameStateAnimation) {
-            setTimeout(function () {
-                _mediator.publish("playBonusSymbolAnimation", { bonusID: 100, reelMatrix: this.model.getReelMatrix() });
-            }.bind(this), 10);
+            this.view.reelView.bonusAnimation();
             this.gameStateAnimation = true;
         } else {
             this.gameStateAnimation = false;
